@@ -1,0 +1,3867 @@
+@charset "UTF-8";
+/** This clear-unit function helps removing the Unit of Any Element.
+* Cases To Use: For Example:
+* Constant Declaration: const $element-height: 40px;
+* Usage 1 Get Untiless Output:
+  line-height: clear-unit($element-height) / body('font-size');
+* Usage 2 Same Constant Get Unit Output:
+  height: $element-height;
+* Saves declaring 2 variables or Constants & makes multi usage
+* This is used inside rem function
+* Please don't alter without consulting project team members
+*/
+/** Omni Card component
+* Note for Development Team:
+* Omni Card Component does not support cross branding as of now.
+* As each brand have their own styles intact.
+*/
+/** Progress Steps Funtion
+* Note for Development Team:
+* Progress Steps Component does not support cross branding as of now.
+* As each brand have their own styles intact.
+*/
+/** Omni Card component
+* Note for Development Team:
+* Omni Card Component does not support cross branding as of now.
+* As each brand have their own styles intact.
+*/
+.payment-icon-new {
+  height: 34px;
+  min-width: 54px;
+}
+
+/** This clear-unit function helps removing the Unit of Any Element.
+* Cases To Use: For Example:
+* Constant Declaration: const $element-height: 40px;
+* Usage 1 Get Untiless Output:
+  line-height: clear-unit($element-height) / body('font-size');
+* Usage 2 Same Constant Get Unit Output:
+  height: $element-height;
+* Saves declaring 2 variables or Constants & makes multi usage
+* This is used inside rem function
+* Please don't alter without consulting project team members
+*/
+/** Omni Card component
+* Note for Development Team:
+* Omni Card Component does not support cross branding as of now.
+* As each brand have their own styles intact.
+*/
+/** Progress Steps Funtion
+* Note for Development Team:
+* Progress Steps Component does not support cross branding as of now.
+* As each brand have their own styles intact.
+*/
+/** Omni Card component
+* Note for Development Team:
+* Omni Card Component does not support cross branding as of now.
+* As each brand have their own styles intact.
+*/
+.payment-icon-new {
+  height: 34px;
+  min-width: 54px;
+}
+
+/*********************************************************************************
+ * site (holister)
+ *********************************************************************************/
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*--------------------*/
+/* State Rules -------*/
+/*--------------------*/
+.hidden {
+  display: none !important;
+}
+
+.visibility-hidden {
+  visibility: hidden !important;
+}
+
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/*Blitz Color Library*/
+/* $gray-6 */
+/* $gray-8 */
+/* $gray-7 */
+/* navigation */
+/* $tan-13: #e6e0c8; */
+/* $tan-14: #cec6ae; */
+/* $tan-15: #dacab2; */
+/* $tan-16: #cdc7b2; */
+/* $gray-19: #4f4c4a; */
+/* modals */
+/* color filter colors */
+/* $white-4 */
+/* $tan-8 */
+/* $tan-4 */
+/* $white-5 */
+/* $white-3 */
+/* $navy-blue */
+/* $green-2 */
+/* $gray-12 */
+/* $gray-11 */
+/*Secondary Button*/
+/*Other Button*/
+/*--------------------*/
+/* Primary Nav -------*/
+/*--------------------*/
+/* Product Page */
+/* $white-4 */
+/* footer */
+/* $gray-1 */
+/* Paths */
+/* Blue Mobile Navigation */
+/* $white-2 */
+/* $gray-1 */
+/* $tan-4 */
+/* Size Tiles */
+/* Quick View Modal */
+/* Paths */
+/*********************************************************************************
+ * mixins.scss (brand -- Hollister)
+ *********************************************************************************/
+/*--------------------*/
+/* Mixins ------------*/
+/*--------------------*/
+.fullwidth {
+  width: 100% !important;
+}
+
+/* common colors */
+/* navigation */
+/* color filter colors */
+/* Product Page */
+/* footer */
+/* Blue Mobile Navigation */
+/* Paths */
+/*--------------------*/
+/* Example HTML ------*/
+/*---------------------
+
+Follow this structure when at all possible. If you MUST have a different HTML structure, you should
+subclass it at the bottom of this file and use as little new CSS as possible.
+
+<div class="icon" aria-hidden="true" data-icon="iconShippingBox"></div>
+<a>Text that follows icon</a>
+----------------------*/
+/*--------------------*/
+/* Icon Font ---------*/
+/*--------------------*/
+.hol-redesign .icon:before,
+.hol-reimagined .icon:before {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.icon--facebook:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--twitter:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--pinterest:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--google-plus:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--instagram:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--youtube:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--rss:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--flickr:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--vimeo:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.icon--chkcart:before {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+/*********************************************************************************
+ * layout.scss
+ *********************************************************************************/
+body {
+  background-color: #fcfcfa;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+@ author :: crmoser
+@ date   :: 10.27.14
+Moved from home.css & deleted that file for all brands.
+**/
+.home .content {
+  width: 100%;
+}
+
+.content-wrapper {
+  background-color: transparent;
+  padding-top: 0;
+}
+
+/*********************************************************************************
+ * hco redesign errors
+*********************************************************************************/
+.hol-reimagined .validator-error-required {
+  font-size: 13px;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+#phone .error {
+  margin: 0 132px;
+}
+
+/*Formatting Search Error page (for invalid search terms) for Hco desktop (ECOMM-12746 - @jboza)*/
+.error div#search-error-content {
+  background: inherit;
+  border-bottom: 1px solid gray;
+  color: #716b5a;
+  display: block;
+  height: 55px;
+  margin: 0 auto 55px auto;
+  padding-bottom: 0px;
+  text-align: left;
+  text-transform: none;
+  width: 930px;
+}
+
+.error div#search-error-content p {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body.bag-conf-open {
+  overflow: hidden;
+  position: inherit;
+}
+
+#accountsection-passwordupdate #customer-service h3 {
+  line-height: 48px;
+}
+
+#accountsection-passwordupdate #passwordupdate-form .actions a {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  background-color: #e8e3d6;
+  color: #0b1a33;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-bottom: 0;
+  padding: 0 12px;
+  text-transform: uppercase;
+}
+
+#accountsection-passwordupdate #passwordupdate-form .data {
+  margin: 0 0 18px 0;
+}
+
+#accountsection-passwordupdate #passwordupdate-form h3 {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #cac7c0;
+  color: #101830;
+  margin-bottom: 20px;
+  padding-bottom: .6em;
+  text-transform: uppercase;
+}
+
+#accountsection-passwordupdate #passwordupdate-form input {
+  width: 230px;
+}
+
+#accountsection-passwordupdate #passwordupdate-form label {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: #394448;
+  text-transform: none;
+}
+
+#accountsection-passwordupdate #passwordupdate-form p {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #716b5a;
+  line-height: 16px;
+  text-transform: none;
+}
+
+#accountsection-passwordupdate .section-content {
+  background-color: #fefcf5;
+  border: 1px solid #dedbd2;
+  padding: 15px 15px 20px 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#accountsection-passwordupdate .section-header {
+  border-bottom: 0;
+  margin: 0;
+}
+
+#accountsection-passwordupdate .section-header h2 {
+  color: #716b5a;
+  line-height: 48px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+#accountsection-passwordupdate #primary-content {
+  background: none;
+}
+
+.change-password__tooltip-wrap {
+  position: relative;
+}
+
+.change-password__tooltip-toggle {
+  background-color: #FCFCFA;
+  border: 1px solid #e8e3d9;
+  color: #716b5a;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 3px;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  font-size: 1.3rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.change-password__tooltip {
+  background-color: #fff;
+  border: 1px solid #e8e3d9;
+  display: none;
+  left: 269px;
+  padding: 15px;
+  position: absolute;
+  top: 4px;
+  width: 200px;
+  z-index: 10;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.change-password__tooltip:after {
+  background: #fff;
+  border-bottom: 1px solid #e8e3d9;
+  border-left: 1px solid #e8e3d9;
+  content: '';
+  display: block;
+  height: 8px;
+  left: -5px;
+  position: absolute;
+  top: 20px;
+  width: 8px;
+  z-index: 12;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#accountsection-passwordupdate #passwordupdate-form .change-password__tooltip h4 {
+  line-height: 18px;
+}
+
+#accountsection-passwordupdate #passwordupdate-form .change-password__tooltip p {
+  line-height: 16px;
+  margin-bottom: 0;
+  width: auto;
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+.change-password__tooltip-toggle:hover + .change-password__tooltip {
+  display: block;
+}
+
+/*********************************************************************************
+ * _bagpreview.scss (base)
+ *********************************************************************************/
+a.bagpreview__item-edit {
+  background-color: #FCFCFA;
+  border-color: #ece9e2;
+  color: #716b5a;
+}
+
+a.bagpreview__item-edit:hover {
+  background-color: #fff;
+}
+
+a.disabled.bagpreview__item-edit {
+  background-color: #fcfaf4;
+  border-color: #F5F4F2;
+  color: #d0cdc8;
+}
+
+.bagpreview {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  visibility: visible;
+}
+
+.bagpreview.fixed {
+  position: fixed;
+  top: 96px;
+}
+
+.touch .bagpreview {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.bagpreview__wrapper {
+  background-color: #fefcf5;
+  border: solid 1px;
+  border-color: #dedbd2;
+  margin: 0;
+  padding: 11px 15px 20px 15px;
+  width: 188px;
+}
+
+.bagpreview__header {
+  font-size: 13px;
+  font-size: 1.3rem;
+  border-bottom: solid 1px;
+  border-color: #cac7c0;
+  color: #101830;
+  position: relative;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+}
+
+.bagpreview__item-price.grid-product__price {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.bagpreview__empty {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  padding-top: 12px;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.bagpreview__totals--row-visible {
+  display: table-row;
+}
+
+.bagpreview--items-scrolled .bagpreview__header {
+  border-color: transparent;
+}
+
+/*********************************************************************************
+ * items list
+ *********************************************************************************/
+.bagpreview__items {
+  margin: 30px 0 0 0;
+}
+
+.bagpreview__items-wrapper {
+  position: relative;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$var);
+  opacity: 1;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.bagpreview__items-wrapper.loading {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$var);
+  opacity: 0;
+}
+
+.bagpreview__items-wrapper.loading ul {
+  height: 240px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.bagpreview__items-wrapper ul {
+  visibility: visible;
+}
+
+/*********************************************************************************
+ * item
+ *********************************************************************************/
+.bagpreview__item {
+  height: 80px;
+}
+
+.bagpreview__item h5 {
+  line-height: 110%;
+  margin-left: 15px;
+  padding: 0.1em 0 0.3em 0;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.bagpreview__item h5.smaller {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.bagpreview__item .bagpreview__item-price {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.bagpreview__item img {
+  border: solid 3px #fff;
+  -moz-box-shadow: -1px 1px 1px 1px rgba(153, 153, 153, 0.1);
+  -webkit-box-shadow: -1px 1px 1px 1px rgba(153, 153, 153, 0.1);
+  box-shadow: -1px 1px 1px 1px rgba(153, 153, 153, 0.1);
+  margin: 0;
+  max-width: 66px;
+}
+
+.bagpreview__item-content {
+  height: 80px;
+  margin: 0 0 0 72px;
+  overflow: hidden;
+  position: relative;
+  width: 116px;
+}
+
+.bagpreview__item--actions-enabled .bagpreview__item-description {
+  display: none;
+}
+
+.bagpreview__item--actions-enabled .bagpreview__item-actions {
+  display: block;
+}
+
+.csstransitions .bagpreview__item--actions-enabled .bagpreview__item-description {
+  display: block;
+  -moz-transform: translate(10px, 0px);
+  -o-transform: translate(10px, 0px);
+  -webkit-transform: translate(10px, 0px);
+  transform: translate(10px, 0px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$var);
+  opacity: 0;
+}
+
+.csstransitions .bagpreview__item--actions-enabled .bagpreview__item-actions {
+  -moz-transform: translate(10px, 0px);
+  -o-transform: translate(10px, 0px);
+  -webkit-transform: translate(10px, 0px);
+  transform: translate(10px, 0px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$var);
+  opacity: 1;
+}
+
+.bagpreview__item-description,
+.bagpreview__item-actions {
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.csstransitions .bagpreview__item-description, .csstransitions
+.bagpreview__item-actions {
+  -moz-transition-duration: 0.2s, 0.2s;
+  -o-transition-duration: 0.2s, 0.2s;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  transition-duration: 0.2s, 0.2s;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.bagpreview__item-description {
+  display: block;
+}
+
+.csstransitions .bagpreview__item-description {
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$var);
+  opacity: 1;
+}
+
+.bagpreview__item-actions {
+  display: none;
+  left: 15px;
+  margin: 0;
+  max-width: 90px;
+  min-width: 70px;
+  padding: 18px 0 0 0;
+  text-align: center;
+}
+
+.csstransitions .bagpreview__item-actions {
+  display: block;
+  left: 0;
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$var);
+  opacity: 0;
+}
+
+.bagpreview__item-actions a {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.bagpreview__item-actions a.bagpreview__item-edit {
+  display: block;
+}
+
+.bagpreview__item-actions a.bagpreview__item-remove {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+}
+
+.bagpreview__item-actions a.bagpreview__item-remove:hover {
+  text-decoration: underline;
+}
+
+a.bagpreview__item-remove {
+  color: #716b5a;
+}
+
+/*********************************************************************************
+ * totals
+ *********************************************************************************/
+.bagpreview__totals {
+  border-top: none;
+  padding: 10px 0 0 0;
+}
+
+.bagpreview__totals--row-type1 th, .bagpreview__totals--row-type1 td {
+  padding-top: 15px;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.bagpreview__totals--row-type1 span {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+.bagpreview__totals--row-type2 th, .bagpreview__totals--row-type2 td,
+.bagpreview__totals--row-type3 th,
+.bagpreview__totals--row-type3 td {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+.bagpreview__totals--row-type2 th, .bagpreview__totals--row-type2 td {
+  padding-top: 0;
+}
+
+.bagpreview__totals--row-type3 th, .bagpreview__totals--row-type3 td {
+  padding-top: 8px;
+}
+
+.bagpreview__totals--subtotal td,
+.bagpreview__totals--subtotal th,
+.bagpreview__totals--total td,
+.bagpreview__totals--total th,
+.bagpreview__totals--shipping td,
+.bagpreview__totals--shipping th {
+  padding-bottom: 6px;
+}
+
+.bagpreview__totals--total td, .bagpreview__totals--total th {
+  border-bottom: solid 1px #ccc6b4;
+}
+
+.bagpreview__totals--shipping a:hover,
+.bagpreview__totals--promocode-entry a:hover,
+.bagpreview__totals--promocode-add-cta a:hover {
+  color: #918b7e;
+  text-decoration: underline;
+}
+
+.bagpreview__totals--promocode-add-form {
+  text-align: left;
+}
+
+.bagpreview__totals--promocode-add-form input, .bagpreview__totals--promocode-add-form button {
+  font-size: 12px;
+  font-size: 1.2rem;
+  height: 25px;
+  line-height: 25px;
+}
+
+.bagpreview__totals--promocode-add-form button {
+  padding: 0 12px;
+}
+
+.bagpreview__totals--promocode-add-form .error {
+  font-size: 13px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.bagpreview__totals--savings th, .bagpreview__totals--savings td {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.bagpreview__totals--total-mobile-summary {
+  display: none;
+}
+
+/*********************************************************************************
+ * actions
+ *********************************************************************************/
+.bagpreview__actions {
+  padding: 0;
+}
+
+.bagpreview__additional-items,
+.bagpreview__edit-cta {
+  display: none;
+}
+
+.bagpreview__checkout-cta {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 16px auto;
+  padding: 7px 0 6px 0;
+}
+
+/*------------------------
+  Jeans Lounge Module
+------------------------*/
+.home .jeans-lounge-wrapper {
+  margin-left: -50%;
+  width: 200%;
+}
+
+.home .jeans-lounge {
+  height: 420px;
+  margin: 0px auto;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.home .jeans-lounge .jeans-lounge-sign {
+  background: url("/is/image/anf/hol-hp-jeans-lounge-bg-01.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  float: left;
+  height: 100%;
+  width: 686px;
+}
+
+/*------------------------
+  Popup Video Module
+------------------------*/
+.home .video-popup {
+  background: url("/is/image/anf/hol-hp-jeans-lounge-bg-02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  float: left;
+  height: 100%;
+  width: 714px;
+}
+
+.home .video-popup .video-module {
+  background: none;
+  height: 100%;
+  min-width: 705px;
+  padding: 0px;
+}
+
+.home .video-popup .video-module ul {
+  height: 100%;
+}
+
+.home .video-popup .video-module ul li {
+  cursor: pointer;
+  min-height: 200px;
+  width: 100%;
+}
+
+.home .video-popup .video-module ul li img {
+  height: 277px;
+  width: 491px;
+}
+
+.home .video-popup .overlay {
+  background: black;
+  display: none;
+  filter: alpha(opacity=70);
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2300;
+}
+
+.home .video-popup .video-wrapper {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2350;
+}
+
+.home .video-popup .video {
+  display: block;
+  margin: 5% auto;
+  position: relative;
+  z-index: 2400;
+}
+
+.video-end-overlay .video-end-links {
+  height: 50px;
+  margin-top: -25px;
+}
+
+.video-end-overlay .overlay-button {
+  display: inline-block;
+}
+
+.video-end-overlay .product-link-button {
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.slideout-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.slideout-wrapper .slideout-trigger {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-wrapper .slideout-target {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+/*------------------------
+ card stack styles
+------------------------*/
+.card-stack {
+  position: relative;
+}
+
+.card-stack .card-content {
+  width: 100%;
+}
+
+.card-stack .card-padding {
+  display: none;
+  width: 100%;
+}
+
+.card-stack .card-fixed .card-padding {
+  display: block;
+}
+
+.card-stack .card-fixed .card-content {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+/*------------------------
+Auto Scroll styles
+------------------------*/
+.auto-scroll {
+  display: none;
+}
+
+.auto-scroll-waypoint {
+  position: absolute;
+}
+
+/*------------------------
+2015 Gift Guid
+------------------------*/
+#nav-primary-gift_guide {
+  display: none;
+}
+
+.gg-placeholder {
+  padding: 4px 6px;
+  vertical-align: top;
+}
+
+.gg-placeholder.gg-placeholder-show {
+  display: inline-block;
+}
+
+body.category-view .gift-guide-content #primary-content {
+  overflow: visible;
+}
+
+.gift-guide-grid {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.gift-guide-grid .gift-guide-card.gift-guide-product {
+  cursor: pointer;
+}
+
+.gift-guide-grid .gift-guide-card.gift-guide-product .grid-product__image-wrap:after {
+  background: transparent;
+}
+
+.gift-guide-grid .gift-guide-card.gift-guide-product:hover .grid-product__image-wrap:after {
+  opacity: 0;
+}
+
+.gift-guide-grid .gift-guide-card.gift-guide-product:hover .grid-product__info {
+  opacity: 0;
+  z-index: 0;
+}
+
+.gift-guide-grid .gift-guide-card.gift-guide-product:hover .grid-product__quick-view-wrapper .gift-guide-quick-view, .gift-guide-grid .gift-guide-card.gift-guide-product:hover .grid-product__quick-view-wrapper .product-save {
+  color: #6f6c5b;
+}
+
+.gift-guide-grid .gift-guide-card.gift-guide-product:hover .grid-product__quick-view-wrapper .gift-guide-quick-view:before, .gift-guide-grid .gift-guide-card.gift-guide-product:hover .grid-product__quick-view-wrapper .product-save:before {
+  color: #b1aea5;
+}
+
+.gift-guide-grid .top-row {
+  padding-bottom: 10px;
+}
+
+.gift-guide-grid .gift-guide-product {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: inherit;
+  min-height: 299px;
+  padding: 4px 6px;
+  position: relative;
+  width: 239px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product {
+  min-height: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.gift-guide-grid .gift-guide-product:hover .grid-product__info {
+  opacity: 1;
+  z-index: 3;
+}
+
+.gift-guide-grid .gift-guide-product:hover .gift-guide-quick-view {
+  text-align: right;
+}
+
+.gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper {
+  z-index: 3;
+}
+
+.gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper .gift-guide-quick-view, .gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper .product-save {
+  background-color: transparent;
+  color: #f9f5e7;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 0;
+  font-weight: 700;
+  width: 31%;
+}
+
+.gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper .gift-guide-quick-view:before, .gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper .product-save:before {
+  color: #f9f5e7;
+}
+
+.gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper .gift-guide-quick-view:hover, .gift-guide-grid .gift-guide-product:hover .grid-product__quick-view-wrapper .product-save:hover {
+  font-size: 1.2rem;
+}
+
+.gift-guide-grid .gift-guide-product:hover .grid-product__image-wrap:after {
+  opacity: .7;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__tag {
+  display: none;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__image-wrap {
+  min-height: 0px;
+  padding: 3px;
+  width: 100%;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__image-wrap .grid-product__image {
+  position: static;
+  width: 100%;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__image-wrap:after {
+  background: #000;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.gift-guide-grid .gift-guide-product .gift-guide-quick-view {
+  bottom: 3px;
+  color: #6f6c5b;
+  display: block;
+  font-size: 0;
+  height: 22px;
+  line-height: 20px;
+  padding: 5px 28px 0 9px;
+  position: absolute;
+  right: 3px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  width: 60px;
+}
+
+.gift-guide-grid .gift-guide-product .gift-guide-quick-view:before {
+  color: #b1aea5;
+  display: inline-block;
+  font-size: 1.9rem;
+  -webkit-font-smoothing: antialiased;
+  font-variant: normal;
+  font-weight: 400;
+  height: 40px;
+  line-height: 1;
+  position: absolute;
+  right: 3px;
+  speak: none;
+  text-transform: none;
+  top: 5px;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info {
+  box-sizing: border-box;
+  left: 0;
+  min-height: auto;
+  padding-left: 10px;
+  padding-right: 3px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product__description {
+  display: none;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product__name {
+  color: #f9f5e7;
+  font-size: 18px;
+  letter-spacing: 1.17px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product__info-swatch-alt {
+  color: #b6afa2;
+  font-size: 1.4rem;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product_overlay-button {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product_overlay-button .cta-button {
+  border-color: #fefcf5;
+  border-style: solid;
+  border-width: 1px;
+  color: #fefcf5;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 9px 50px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product_overlay-button .cta-button:hover {
+  background: #fefcf5;
+  color: black;
+  opacity: .8;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product__price {
+  letter-spacing: 1.17px;
+  margin-top: 5px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product__price .grid-product__price--low, .gift-guide-grid .gift-guide-product .grid-product__info .grid-product__price .grid-product__price--high {
+  color: #B6AFA2;
+  font-size: 18px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info .grid-product__price .grid-product__price--high + .grid-product__price--low, .gift-guide-grid .gift-guide-product .grid-product__info .grid-product__price .product-category__promo-price {
+  color: #B83639;
+  font-size: 18px;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__info {
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.gift-guide-grid .gift-guide-product .grid-product__quick-view-wrapper {
+  left: 0;
+  right: initial;
+  width: 100%;
+}
+
+.gift-guide-grid .big-product-left, .gift-guide-grid .big-product-right {
+  width: 478px;
+}
+
+.gift-guide-grid .big-product-left {
+  float: left;
+}
+
+.gift-guide-grid .grid-product-buffer {
+  margin-bottom: 1px;
+}
+
+.gift-guide-grid .big-product-right {
+  float: right;
+  margin-right: 4px;
+}
+
+.gift-guide-grid .gift-card {
+  float: right;
+  margin-right: 4px;
+}
+
+.gift-guide-grid .gift-card:hover .grid-product__info {
+  display: none;
+}
+
+.gift-guide-grid .instajoy .instajoy-activate {
+  cursor: pointer;
+}
+
+.gift-guide-grid .instajoy .instajoy-option {
+  display: none;
+}
+
+.peekaboo {
+  overflow: hidden;
+}
+
+/*********************************************************************************
+  _shared.scss
+ *********************************************************************************/
+.help-desktop section.help-view__module,
+.help-desktop section.help-view__module .giftcardandmerchandisecredit__content section,
+.help-desktop section.help-view__module .helpwithorder section {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.help-view__content {
+  padding: 15px 6px 15px;
+}
+
+.help-view__content h2 {
+  margin-bottom: 0;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+.help-view__content h3 {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.help-view__content h4 {
+  cursor: pointer;
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+
+.help-view__content .validator-error-required p {
+  /*Had to do this in order to display error message*/
+  background: none;
+  color: #852d2d !important;
+  /*Had to do this in order to display error message*/
+  font-size: 15px !important;
+  /*Had to do this in order to display error message*/
+  font-size: 1.5rem !important;
+  text-transform: uppercase;
+}
+
+.help-view__content h5 {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.help-view__content p,
+.help-view__content p + ul li,
+.help-view__content ol li,
+.help-view__content h5 + ul li {
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.help-view__content .shipping-tab ol {
+  padding-left: 0;
+}
+
+.help-view__content label {
+  padding: 12px 0 5px;
+}
+
+.help-view__content textarea,
+.help-view__content input,
+.help-view__content select {
+  height: 30px;
+}
+
+.help-view__content select {
+  height: 50px;
+}
+
+.help-view__content input {
+  height: 30px;
+  margin-bottom: 7px;
+}
+
+.help-view__content textarea {
+  height: 120px;
+}
+
+.help-view__content #submit {
+  margin-top: 20px;
+}
+
+.help-view__content p + ul#tab-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.help-view__module {
+  margin: 5px auto;
+  width: 96%;
+}
+
+.help-view__module .main-content ul li div {
+  display: none;
+}
+
+.help-view__close {
+  display: none;
+}
+
+.help-view__title:after {
+  float: right;
+  margin-top: 2px;
+  padding: 0px 20px 0 0;
+}
+
+.help-view__title:before {
+  display: block;
+  float: left;
+  line-height: 18px;
+  min-width: 41px;
+  padding: 2px 8px 0 8px;
+  text-align: center;
+}
+
+.help-view-espot {
+  display: none;
+  overflow: hidden;
+}
+
+.help-view__module--open .help-view__title:after {
+  content: '\e01c';
+}
+
+.help-view__module--open .help-view-espot {
+  display: block;
+}
+
+.help-view__module--closed .help-view__title:after {
+  content: '\e00e';
+}
+
+.help-view__module--closed .help-view__close {
+  display: none;
+}
+
+.help-view__title {
+  padding-top: 17px;
+}
+
+.help-view__module--closed .help-view__content {
+  display: none;
+}
+
+.help-view--hide {
+  display: none;
+}
+
+.faq__content {
+  padding: 5px 6px 15px;
+}
+
+.help-view__content .help-view__legal,
+.help-view__content .help-view__legal a {
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.help-desktop .help-view__page-wrap {
+  height: 720px;
+  padding: 70px 0;
+}
+
+.help-desktop #help-view__module-wrap {
+  margin: 0 auto;
+  position: relative;
+  width: 948px;
+}
+
+.help-desktop [data-pos='0'],
+.help-desktop [data-pos='1'] {
+  top: 0;
+}
+
+.help-desktop [data-pos='2'],
+.help-desktop [data-pos='3'] {
+  top: 181px;
+}
+
+.help-desktop [data-pos='4'],
+.help-desktop [data-pos='5'] {
+  top: 362px;
+}
+
+.help-desktop [data-pos='6'],
+.help-desktop [data-pos='7'] {
+  top: 543px;
+}
+
+.help-desktop .help-view__module {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  -webkit-transition: top 0.5s ease-in-out,  left 0.5s ease-in-out,  width 0.5s ease-in-out, height 0.5s ease-in-out, max-height 0.5s ease-in-out, margin-left 0.5s ease-in-out;
+  -moz-transition: top 0.5s ease-in-out,  left 0.5s ease-in-out,  width 0.5s ease-in-out, height 0.5s ease-in-out, max-height 0.5s ease-in-out, margin-left 0.5s ease-in-out;
+  -o-transition: top 0.5s ease-in-out,  left 0.5s ease-in-out,  width 0.5s ease-in-out, height 0.5s ease-in-out, max-height 0.5s ease-in-out, margin-left 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out, left 0.5s ease-in-out,  width 0.5s ease-in-out, height 0.5s ease-in-out, max-height  0.5s ease-in-out, margin-left 0.5s ease-in-out;
+  -ms-transition-property: none;
+}
+
+.help-desktop .help-view__module .linkified {
+  left: -10000px;
+  position: absolute;
+}
+
+.help-desktop .help-view__module.right {
+  left: 482px;
+}
+
+.help-desktop .no-animate.help-view__module {
+  -o-transition-property: none;
+  -moz-transition-property: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+
+.help-desktop .help-view__module--closed {
+  cursor: pointer;
+  height: 166px;
+  margin-right: 15px;
+  max-height: 166px;
+  width: 466px;
+  z-index: 4;
+}
+
+.help-desktop .help-view__module--open {
+  max-height: 10000px;
+  position: absolute;
+  width: 946px;
+  z-index: 5;
+}
+
+.help-desktop .help-view__module--open .help-view__title {
+  padding: 18px 15px 13px 10px;
+}
+
+.help-desktop .help-view__title-wrap {
+  cursor: pointer;
+}
+
+.help-desktop .help-view__module--closed .help-view__title-wrap {
+  height: 166px;
+  position: relative;
+  width: 466px;
+}
+
+.help-desktop .help-view__module--closed .help-view__title {
+  font-size: 1.9rem;
+  padding-top: 0;
+  text-align: center;
+}
+
+.help-desktop .help-view__module--closed .help-view__title:after {
+  display: none;
+}
+
+.help-desktop .help-view__module--closed .help-view__title:before {
+  float: left;
+  height: 35px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.help-desktop .help-view__content {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.help-desktop .help-view__content select {
+  border: 1px solid;
+  font-size: 15px;
+  height: 40px;
+  padding: .7rem 2.5%;
+  text-transform: none;
+  width: 100%;
+}
+
+.help-desktop .help-view__content input {
+  border: 1px solid;
+  font-family: sans-serif;
+  font-size: 15px;
+  height: 25px;
+  padding: .7rem 2.5%;
+  text-transform: none;
+  width: 95%;
+}
+
+.help-desktop .help-view__content textarea {
+  border: 1px solid;
+  font-size: 15px;
+  height: 120px;
+  padding: .7rem 2.5%;
+  text-transform: none;
+  width: 95%;
+}
+
+.help-desktop .help-view__content label {
+  color: #999;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.help-desktop .help-view__content h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.help-desktop .help-view__content a.button {
+  border: 1px solid;
+  display: block;
+  margin: .1em 0;
+  padding: 12px 5%;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
+}
+
+.help-desktop .help-view__content .column__left {
+  float: left;
+  padding-bottom: 20px;
+  padding-right: 2%;
+  width: 47%;
+}
+
+.help-desktop .help-view__content .column__right {
+  float: left;
+  padding-left: 3%;
+  width: 47%;
+}
+
+.help-desktop #help-faq .column__right:last-of-type {
+  padding-bottom: 20px;
+}
+
+.help-desktop #help-faq .help-view__content p {
+  padding-bottom: 0px;
+}
+
+.help-desktop .faq__content {
+  padding: 0 20px;
+}
+
+.exOrder .contact-us__optional--exOrder,
+.exOrderInq .contact-us__optional--exOrderInq,
+.retExQuest .contact-us__optional--retExQuest,
+.proQuest .contact-us__optional--proQuest,
+.other .contact-us__optional--other,
+.billPriceInq .contact-us__optional--billPriceInq,
+.strRetExQuest .contact-us__optional--strRetExQuest,
+.wantToModel .contact-us__optional--wantToModel,
+.strFeed .contact-us__optional--strFeed,
+.strOther .contact-us__optional--strOther {
+  display: block;
+}
+
+.contact-us__content {
+  padding: 6px 6px 9px;
+}
+
+.contact-us__label {
+  color: #999999;
+  display: block;
+  font-size: 1.6rem;
+  padding: 12px 0 0;
+}
+
+.contact-us__buttons {
+  border: 1px solid #D6D6D6;
+  float: left;
+  margin: 15px 0px;
+  width: 100%;
+}
+
+.contact-us__button {
+  color: #666666;
+  float: left;
+  font-family: "DS Trade Gothic Condensed", "Trade Gothic Condensed", sans-serif;
+  font-size: 1.6rem;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: none;
+  width: 50%;
+}
+
+.contact-us--selected {
+  background: #666666;
+  color: #ffffff;
+}
+
+.contact-us__stores-issues,
+.contact-us__online-issues {
+  margin-bottom: 15px;
+}
+
+.help-view__content .contact-us__header {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.contact-us__content ul#customer-service-phone-list {
+  color: #666666;
+  font-size: 1.4rem;
+}
+
+.contact-us__content ul#customer-service-phone-list li {
+  clear: both;
+  padding-top: 0px;
+  width: 100%;
+}
+
+.contact-us__content ul#customer-service-phone-list li table {
+  margin-top: 0;
+  max-width: 330px;
+  width: 100%;
+}
+
+.contact-us__content ul#customer-service-phone-list li table th,
+.contact-us__content ul#customer-service-phone-list li table td {
+  border: none;
+  padding: 0.3rem 0.6em 0.6rem 0;
+  text-align: left;
+}
+
+.contact-us__content ul#customer-service-phone-list li table th {
+  min-width: 137px;
+}
+
+.contact-us__content ul#customer-service-phone-list li h3,
+.contact-us__content ul#customer-service-phone-list li th {
+  color: #2c2a27;
+  font-family: "DS Trade Gothic Condensed", "Trade Gothic Condensed", sans-serif;
+  font-size: 1.6rem;
+}
+
+.contact-us__content ul#customer-service-phone-list li h3 {
+  border: none;
+  padding-bottom: 12px;
+}
+
+.contact-us__content ul#customer-service-phone-list li table tr.alt table thead tr,
+.contact-us__content ul#customer-service-phone-list li table tr {
+  background: none;
+}
+
+.contact-us__response {
+  padding: 20px 25px 30px 0;
+}
+
+.contact-us__response h3 {
+  font-size: 20px;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+/* Tweet Us Help Link */
+.anf.help-desktop .contact-us__tweet-us-innerText {
+  /* bring the text up a little higher for ANF */
+  display: block;
+  margin-top: -23px;
+  padding-left: 36px;
+}
+
+.hol.help-desktop .contact-us__tweet-us-innerText {
+  /* bring the text up a little higher for HOL */
+  display: block;
+  margin-top: -24px;
+  padding-left: 32px;
+}
+
+.kids.help-desktop .contact-us__tweet-us-innerText {
+  display: block;
+  margin-top: -22px;
+  padding-left: 30px;
+}
+
+.anf.help-mobile .contact-us__tweet-us-innerText {
+  display: block;
+  margin-top: -24px;
+  padding-left: 30px;
+}
+
+.kids.help-mobile .contact-us__tweet-us-innerText {
+  /* bring the text up a little higher for KIDS */
+  display: block;
+  margin-top: -22px;
+  padding-left: 30px;
+}
+
+.hol.help-mobile .contact-us__tweet-us-innerText {
+  /* bring the text up (even more) a little higher for HOL mobile */
+  display: block;
+  margin-top: -24px;
+  padding-left: 30px;
+}
+
+/* anf desktop */
+.anf div.contact-us__tweet-us > a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.anf h3.contact-us__tweet-us {
+  color: #2c2a27;
+  font-size: 2rem;
+  font-size: 16px;
+  margin-top: 15px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.anf h3.contact-us__tweet-us:before {
+  content: "";
+  font-family: "Responsive Icons";
+  font-size: 1.4em;
+}
+
+/* hol */
+.hol.help-mobile h3.contact-us__tweet-us:before {
+  content: "";
+  font-family: "Responsive Icons";
+  font-size: 2rem;
+}
+
+.hol.help-desktop h3.contact-us__tweet-us:before {
+  content: "";
+  font-family: "Responsive Icons";
+  font-size: 2rem;
+  padding-right: 7px;
+  text-transform: uppercase;
+}
+
+.kids h3.contact-us__tweet-us:before {
+  content: '\e015';
+  font-family: 'siteicons';
+  font-size: 1.2em;
+}
+
+.kids h3.contact-us__tweet-us {
+  color: #2c2a27;
+  font-family: "DS Trade Gothic Condensed", "Trade Gothic Condensed", sans-serif;
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+}
+
+.hol h3.contact-us__tweet-us {
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* kids desktop */
+.kids .contact-us__tweet-us a {
+  text-decoration: none;
+}
+
+/* AgeGate styles/logic  */
+.contact-us__agegate {
+  /* if we have agegate then we should hide contact form and phone numbers */
+  /* User is underage */
+  /* User is above required age */
+}
+
+.contact-us__agegate .contact-us__agegate-form {
+  display: block;
+}
+
+.contact-us__agegate .contact-us__agegate-underage {
+  display: none;
+  margin: 20px 0;
+}
+
+.contact-us__agegate + .contact-us__content-wrap {
+  display: none;
+}
+
+.contact-us__agegate.underageUser {
+  /* hide agegate form */
+  /* show underage message */
+  /* hide contact form and phone numbers */
+}
+
+.contact-us__agegate.underageUser .contact-us__agegate-form {
+  display: none;
+}
+
+.contact-us__agegate.underageUser .contact-us__agegate-underage {
+  display: block;
+}
+
+.contact-us__agegate.underageUser + .contact-us__content-wrap {
+  display: none;
+}
+
+.contact-us__agegate.aboveAge {
+  /* hide agegate form */
+  /* show underage message */
+  /* hide contact form and phone numbers */
+}
+
+.contact-us__agegate.aboveAge .contact-us__agegate-form {
+  display: none;
+}
+
+.contact-us__agegate.aboveAge .contact-us__agegate-underage {
+  display: none;
+}
+
+.contact-us__agegate.aboveAge + .contact-us__content-wrap {
+  display: block;
+}
+
+/* End AgeGate */
+.help-desktop .contact-us__content {
+  padding: 0 20px 0;
+}
+
+.help-desktop .contact-us__content.contact-us__content--aaq {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.help-desktop .contact-us__response {
+  float: left;
+  padding: 20px 25px 0px 0;
+  width: 306px;
+}
+
+.help-desktop #contact-us__form {
+  float: left;
+  padding: 15px 25px 0 0;
+  width: 306px;
+}
+
+.help-desktop .contact-us__call-us-wrap {
+  border-left: 1px solid #D6D6D6;
+  float: left;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  padding-top: 17px;
+}
+
+.help-desktop .contact-us__call-us-wrap .contact-us__header {
+  margin-bottom: 0;
+}
+
+.help-desktop .contact-us__header {
+  padding-top: 0;
+}
+
+.help-desktop .help-view__content input {
+  height: 22px;
+}
+
+.help-desktop .help-view__content label {
+  padding: 5px 0 2px;
+}
+
+.help-desktop .contact-us__content ul#customer-service-phone-list li {
+  clear: none;
+  float: left;
+  width: 255px;
+}
+
+.help-desktop .contact-us__content ul#customer-service-phone-list li.customer-service__local-numbers {
+  padding: 0 0 0 40px;
+}
+
+.help-desktop .help-view__legal .legal-checkbox {
+  float: left;
+  width: auto;
+}
+
+.help-desktop .help-view__legal .legal-checkbox__label {
+  display: inline-block;
+  padding-left: 1rem;
+  width: 80%;
+}
+
+.help-mobile .help-view__legal .legal-checkbox {
+  float: left;
+  margin-top: 1rem;
+}
+
+.help-mobile .help-view__legal .legal-checkbox__label {
+  display: inline-block;
+  padding-left: 1rem;
+  width: 80%;
+}
+
+.contact-us__dispute-disclaimer {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact-us__dispute-disclaimer a {
+  text-decoration: underline;
+}
+
+.gift-card__content {
+  padding: 5px 6px 15px;
+}
+
+.help-view__content .gift-card__header {
+  border: none;
+  font-family: "DS Trade Gothic", "Trade Gothic", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2px;
+  padding-bottom: 0;
+}
+
+.giftcardandmerchandisecredit__content a.submit {
+  margin: 15px 0;
+}
+
+.help-view__content .gift-card__balance-response {
+  display: none;
+}
+
+.help-view__content #gift-card__form {
+  padding-top: 7px;
+}
+
+.help-view__content #gift-card__form #gift-card__messages #spex-error {
+  background-color: #852d2d;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+.help-view__content .gift-card__tab {
+  display: none;
+  max-width: 610px;
+}
+
+.help-view__content .gift-card__tab--active {
+  display: block;
+}
+
+.help-view__content #gift-card__tab-links {
+  border: 1px solid #D6D6D6;
+  color: #666;
+  margin-top: 15px;
+  overflow: auto;
+  width: 100%;
+}
+
+.help-view__content .gift-card__tab-link {
+  background: none;
+  display: block;
+  float: left;
+  font-size: 1.6rem;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+.help-view__content a.gift-card__tab--active {
+  background: #666666;
+  color: #ffffff;
+}
+
+.help-view__content li.gift-card__tab--active {
+  border-bottom: 1px solid #666;
+}
+
+.help-view__content .gift-card__info-item {
+  color: #666;
+  font-family: "DS Trade Gothic Condensed", "Trade Gothic Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin: 8px 20px;
+}
+
+.help-view__content #help__processing-indicator:before {
+  content: none;
+}
+
+.help-view__content .gift-card__tab img {
+  margin: 20px auto;
+  max-width: 266px;
+  width: 70%;
+}
+
+.help-view__content .gift-card__tab h3 {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.help-view__content .gift-card__tab p {
+  color: #666;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.help-view__content .gift-card__info-count {
+  padding-right: 10px;
+}
+
+.help-desktop #gift-card__form a.submit {
+  margin-top: 15px;
+}
+
+.help-desktop .gift-card__balance-wrap {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  float: left;
+  padding-right: 162px;
+  width: 290px;
+}
+
+.help-desktop .gift-card__balance-wrap .g-recaptcha .reCaptchaError {
+  background: #852D2D;
+  border-bottom: 1px #852D2D solid;
+  border-left: 3px #852D2D solid;
+  border-right: 1px #852D2D solid;
+  border-top: 3px #852D2D solid;
+}
+
+.help-desktop .giftcardandmerchandisecredit__content {
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.help-desktop .giftcardandmerchandisecredit__content .main-content {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  float: left;
+  padding: 0 162px 20px 0;
+  width: 290px;
+}
+
+.help-desktop .help-view__content .gift-card__header {
+  margin-top: 15px;
+}
+
+.help-desktop .gift-card__tab-wrap {
+  float: right;
+  padding-left: 20px;
+  padding-right: 116px;
+  width: 315px;
+}
+
+.help-desktop li.gift-card__tab--active {
+  border: none;
+}
+
+.help-desktop #gift-card-merchandise-credit li {
+  padding: 0;
+}
+
+.help-desktop #gift-card-merchandise-credit h4 {
+  font-size: 13px;
+}
+
+.help-desktop #gift-card-merchandise-credit p,
+.help-desktop #gift-card-merchandise-credit h5 {
+  padding-left: 16px;
+}
+
+.help-mobile .gift-card__balance-wrap .g-recaptcha {
+  margin-bottom: 16px;
+}
+
+.help-mobile .gift-card__balance-wrap .g-recaptcha div:first-child {
+  margin: auto;
+}
+
+.help-mobile .gift-card__balance-wrap .g-recaptcha div:first-child.reCaptchaError {
+  background: #852D2D;
+  border-bottom: 1px #852D2D solid;
+  border-left: 3px #852D2D solid;
+  border-right: 1px #852D2D solid;
+  border-top: 3px #852D2D solid;
+}
+
+@media (max-width: 414px) {
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title-wrap {
+    height: 50px;
+    position: relative;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title {
+    max-width: 250px;
+    padding-top: 5px;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title:before {
+    line-height: 26px;
+    padding-top: 8px;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title:after {
+    position: absolute;
+    right: 0;
+    top: 17px;
+  }
+}
+
+.helpwithorder__content {
+  padding: 7px 6px 15px;
+}
+
+.helpwithorder__content .helpwithorder__content li.submit {
+  margin-top: 16px;
+}
+
+.help-desktop .helpwithorder__content {
+  padding: 0 20px 0;
+}
+
+.help-desktop #order-tracking__form {
+  border-right: 1px solid #d6d6d6;
+  float: left;
+  padding: 15px 30px 20px 0;
+  width: 355px;
+}
+
+.help-desktop .helpwithorder__content .main-content {
+  border-left: 1px solid #d6d6d6;
+  float: left;
+  margin-left: -1px;
+  max-width: 490px;
+  padding: 10px 0 25px 25px;
+}
+
+.help-desktop .helpwithorder__content .main-content div {
+  padding-left: 20px;
+}
+
+.helpwithorder__content p {
+  padding-bottom: 0;
+}
+
+.returnsandexchanges__content {
+  padding: 0px 6px 15px;
+}
+
+#returns-and-exchanges div {
+  padding-left: 20px;
+}
+
+.help-desktop .returnsandexchanges__content {
+  padding: 0px 20px 15px;
+}
+
+.shippingandhandling__content {
+  padding: 3px 6px 10px;
+}
+
+.help-view__module--open #us-tab,
+.help-view__module--open #hk-tab,
+.help-view__module--open #ca-tab,
+.help-view__module--open #int-tab {
+  display: none;
+}
+
+.help-view__module ul#shipping-tabs-list h3, .help-view__module ul#shipping-tabs-list .shipping-header {
+  cursor: default;
+  padding-left: 0;
+}
+
+.help-view__module ul#shipping-tabs-list h3:before, .help-view__module ul#shipping-tabs-list .shipping-header:before {
+  content: none;
+}
+
+.help-view__module ul#shipping-tabs-list h4 {
+  cursor: default;
+  padding-left: 0;
+}
+
+.help-view__module--open #tab-links {
+  overflow: auto;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.help-view__module--open #tab-links li {
+  padding-right: 0;
+}
+
+.help-view__module--open #tab-links .button {
+  background: #ffffff;
+  border-color: #D6D6D6;
+  color: #666666;
+  font-family: "DS Trade Gothic", "Trade Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.help-view__module--open #tab-links .us-tab > .button,
+.help-view__module--open #tab-links .ca-tab > .button,
+.help-view__module--open #tab-links .int-tab > .button {
+  background: none;
+  height: auto;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.help-view__module--open #tab-links .button.selected,
+.help-view__module--open #tab-links .button.active {
+  background: #666666;
+  color: #ffffff;
+}
+
+.help-view__module--open .ca-tab a {
+  border-bottom: none;
+  border-top: none;
+}
+
+.help-view__module--open a.button {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.help-view__module ul#shipping-tabs-list h4:before {
+  content: none;
+}
+
+.help-view__module ul#shipping-tabs-list .table, .help-view__module ul#shipping-tabs-list #countries {
+  overflow-x: auto;
+  padding-top: 10px;
+}
+
+.help-view__module ul#shipping-tabs-list li .table table {
+  margin-top: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.help-view__module ul#shipping-tabs-list li .table table td,
+.help-view__module ul#shipping-tabs-list li .table table th {
+  height: 30px;
+}
+
+.help-view__module .shipping-wrap .table table thead tr {
+  background: none;
+}
+
+.help-desktop .shippingandhandling__content {
+  padding: 3px 20px 15px;
+}
+
+.help-desktop .help-view__module--open .ca-tab a,
+.help-desktop .help-view__module--open .us-tab a {
+  line-height: 32px;
+}
+
+.help-desktop .help-view__module--open .ca-tab a {
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid;
+}
+
+.help-desktop .help-view__module--open #tab-links .button {
+  background: none;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  padding: 15px 6px;
+  width: 203px;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list h3, .help-desktop .help-view__module ul#shipping-tabs-list .shipping-header {
+  border-bottom: none;
+  padding: 0;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list h4 {
+  padding-top: 0;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list li .table {
+  padding: 10px 0 0 0;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list li .table table thead tr.alt th,
+.help-desktop .help-view__module ul#shipping-tabs-list li .table table tbody tr,
+.help-desktop .help-view__module ul#shipping-tabs-list li .table table thead tr {
+  background: none;
+  border: 1px solid;
+  font-size: 11px;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list li .table table thead tr th,
+.help-desktop .help-view__module ul#shipping-tabs-list li .table table thead tr.alt th {
+  border: 1px solid;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  padding: 2px 5px;
+  text-align: center;
+  width: 35px;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list li .table table.gift-card tbody tr th {
+  width: 35px;
+}
+
+#other-regions th, #other-regions td {
+  border-width: 0;
+}
+
+.sizechart__content {
+  padding: 20px 6px 5px;
+}
+
+.sizechart__content .sizechart-view-full-chart,
+.size-chart__header {
+  display: none;
+}
+
+.sizechart__content .size-chart__header {
+  display: block;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.sizechart__content hr,
+.sizechart__content .sizechart-tab,
+.sizechart__content .sizechart-tab div,
+.sizechart__content .sizechart-tab h3,
+.sizechart__content .sizechart-tab ul,
+.sizechart__content .sizechart-tab p {
+  display: none;
+}
+
+.sizechart__content .size-charts-wrap--open .sizechart-tab h3,
+.sizechart__content .size-charts-wrap--open .sizechart-tab,
+.sizechart__content .sizechart-tab.selected .section-content {
+  display: block;
+}
+
+.sizechart__content .size-charts-wrap {
+  padding-left: 18px;
+}
+
+.sizechart__content .size-charts-wrap--open .sizechart-tab h3 {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.sizechart__content .size-charts-wrap--open .sizechart-tab {
+  height: 17px;
+  padding-bottom: 8px;
+}
+
+.sizechart__content .sizechart-tab.selected {
+  height: auto;
+}
+
+.sizechart__content .sizechart-tab.selected .section-content {
+  padding: 0 20px 12px 15px;
+}
+
+.sizechart__content li.table {
+  overflow-x: auto;
+}
+
+.sizechart__content li.table table {
+  min-width: 100%;
+}
+
+.sizechart__content li.table table th {
+  text-transform: none;
+}
+
+.sizechart__content .help-view__module ul.sizechart-tabs-list li .table table td,
+.sizechart__content .help-view__module ul.sizechart-tabs-list li .table table th {
+  height: 30px;
+  white-space: nowrap;
+}
+
+.help-view__module #mens.size-charts-wrap {
+  margin-top: 0 !important;
+  /*had to use important do to previous important override*/
+}
+
+.help-desktop .sizechart__content ul.sizechart-tabs-list li h3:first-of-type {
+  padding-top: 0;
+}
+
+/*********************************************************************************
+ * site.scss (holister)
+ *********************************************************************************/
+/*Some variables for help page*/
+/*Mobile First*/
+.help-view .content-wrap {
+  padding: 20px;
+}
+
+.help-mobile .help-view__content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.help-view__content .validator-error-required p {
+  background: none;
+  color: #852D2D;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.help-view__content .validator-error-required label {
+  /*Had to use important here to override global level important.*/
+  color: #7d796f !important;
+}
+
+.help-view__content .validator-error-required select,
+.help-view__content .validator-error-required input,
+.help-view__content .validator-error-required textarea {
+  /*Had to use important here to override global level important.*/
+  background: #852D2D !important;
+}
+
+.help-view__content #gift-card__form #gift-card__messages #spex-error {
+  background: 0 0;
+  box-sizing: border-box;
+  clear: left;
+  color: #862728 !important;
+  display: block;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding: 0 0 0 .5rem;
+  text-align: left;
+  text-transform: uppercase;
+  width: 95%;
+}
+
+.help-view__content .all-required-error li,
+.help-view__content .data-error li {
+  background: none;
+  /*Had to use important here to override global level important.*/
+  color: #852D2D !important;
+}
+
+.help-view__module--closed .help-view__title:after {
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-view__title-wrap {
+  background: #fefcf5;
+  border: 1px solid #e8e3d7;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.help-view__title {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.help-view__title:before {
+  bottom: 20px;
+  left: 20px;
+}
+
+.faq__title:before {
+  font-size: 2.5rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .faq__title:before {
+  line-height: 24px;
+}
+
+.giftcardandmerchandisecredit__title:before {
+  font-size: 2.5rem;
+  padding: 2px auto 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .giftcardandmerchandisecredit__title:before {
+  line-height: 34px;
+}
+
+.contact-us__title:before {
+  font-size: 2.5rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .contact-us__title:before {
+  line-height: 36px;
+}
+
+.shippingandhandling__title:before {
+  font-size: 2.8rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .shippingandhandling__title:before {
+  line-height: 31px;
+}
+
+.returnsandexchanges__title:before {
+  font-size: 24.5px;
+  font-size: 2.45rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .returnsandexchanges__title:before {
+  line-height: 24px;
+}
+
+.helpwithorder__title:before {
+  font-size: 2.4rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .helpwithorder__title:before {
+  line-height: 24px;
+}
+
+.sizechart__title:before {
+  font-size: 3.0rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .sizechart__title:before {
+  line-height: 39px;
+}
+
+.currency__title:before {
+  font-size: 3.0rem;
+  padding: 2px 10px 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--closed .currency__title:before {
+  line-height: 24px;
+}
+
+.help-view__module {
+  margin: 5px auto;
+  width: 96%;
+}
+
+.help-view__module h1 {
+  text-transform: uppercase;
+}
+
+.faq__content {
+  padding: 5px 6px 15px;
+}
+
+.help-desktop .contact-us__content--aaq {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.help-view__module--open {
+  background: #fefcf5;
+  border: 1px solid #e8e3d7;
+}
+
+.help-view__module--open .help-view__title-wrap {
+  border: none;
+  border-bottom: 1px solid #e8e3d7;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.help-view__module--open .help-view__title-wrap .help-view__title {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  margin: 0;
+  padding: 20px 0 20px 0px;
+  position: relative;
+}
+
+.help-view__module--open .help-view__title-wrap .help-view__title:after {
+  bottom: 20px;
+  font-size: 20px;
+  font-size: 2rem;
+  position: absolute;
+  right: 0px;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-view__module--closed .help-view__title {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  position: relative;
+}
+
+.help-view__module--closed .help-view__title:after {
+  bottom: 20px;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0px;
+}
+
+.help-view__content {
+  /* Submit, Continue buttons etc. */
+}
+
+.help-view__content label,
+.help-view__content p,
+.help-view__content p + ul li,
+.help-view__content ol li,
+.help-view__content h5 + ul li {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.help-view__content p a {
+  color: #716b5a;
+  text-decoration: underline;
+}
+
+.help-view__content textarea,
+.help-view__content input,
+.help-view__content select {
+  background: #ffffff;
+  border-color: #dbd5c7;
+  color: #7d796f;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 95%;
+}
+
+.help-view__content textarea {
+  width: 90%;
+}
+
+.help-view__content a.button {
+  background: #e8e2d6;
+  border: none;
+  box-sizing: border-box;
+  color: #091a31;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding: 0;
+  text-shadow: none;
+  width: 95%;
+}
+
+.help-view__content a.button:hover {
+  background: #c5bb9e;
+}
+
+.help-view__content a#submit {
+  margin-top: 10px;
+}
+
+.help-view__content h2 {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+}
+
+.help-view__content h3 {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.help-view__content h4 {
+  color: #7d796f;
+  cursor: pointer;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 15px;
+  position: relative;
+}
+
+.help-view__content h4:before {
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid #7d796f;
+  border-top: 6px solid transparent;
+  content: '';
+  font-size: 1.2rem;
+  height: 0;
+  left: 0;
+  padding-right: 10px;
+  position: absolute;
+  top: 2px;
+  width: 0;
+}
+
+.help-view__content h4:hover {
+  color: #394448;
+}
+
+.help-view__content h4.help-view__accordion--open:before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #7d796f;
+  content: '';
+  font-size: 1.2rem;
+  left: -3px;
+  padding: 10px 0;
+  position: absolute;
+  top: 6px;
+}
+
+.help-view__content h4.help-view__accordion--open + div {
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.help-view__content h4.help-view__accordion--open + div p {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.3rem;
+}
+
+.help-view__content h4.help-view__accordion--open + div p a {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.help-view__content h2 {
+  border: none;
+  color: #394448;
+  font-size: 1.6rem;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.help-view__content h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.help-desktop .validator-error-invalid #order-email-field {
+  background: #852d2d !important;
+}
+
+.help-desktop .help-view__title {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.help-desktop .faq__title:before {
+  font-size: 3.0rem;
+}
+
+.help-desktop .giftcardandmerchandisecredit__title:before {
+  font-size: 3.0rem;
+}
+
+.help-desktop .contact-us__title:before {
+  font-size: 3.0rem;
+}
+
+.help-desktop .shippingandhandling__title:before {
+  font-size: 4.0rem;
+}
+
+.help-desktop .returnsandexchanges__title:before {
+  font-size: 3.0rem;
+}
+
+.help-desktop .helpwithorder__title:before {
+  font-size: 3.0rem;
+}
+
+.help-desktop .sizechart__title:before {
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+.help-desktop .help-view__content {
+  /* Submit, Continue buttons etc. */
+}
+
+.help-desktop .help-view__content label,
+.help-desktop .help-view__content p,
+.help-desktop .help-view__content p + ul li,
+.help-desktop .help-view__content ol li,
+.help-desktop .help-view__content h5 + ul li {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.help-desktop .help-view__content p a {
+  color: #716b5a;
+  text-decoration: underline;
+}
+
+.help-desktop .help-view__content p a:hover {
+  text-decoration: underline;
+}
+
+.help-desktop .help-view__content textarea, .help-desktop .help-view__content input, .help-desktop .help-view__content select {
+  background: #ffffff;
+  border-color: #dbd5c7;
+  color: #7d796f;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 95%;
+}
+
+.help-desktop .help-view__content textarea {
+  width: 90%;
+}
+
+.help-desktop .help-view__content .column__left {
+  border-right: 1px solid #e8e3d7;
+}
+
+.help-desktop .help-view__content .column__right {
+  border-left: 1px solid #e8e3d7;
+  margin-left: -1px;
+}
+
+.help-desktop .help-view__content a.button {
+  background: #e8e2d6;
+  border: none;
+  box-sizing: border-box;
+  color: #091a31;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding: 5px 0;
+  text-shadow: none;
+  width: 95%;
+}
+
+.help-desktop .help-view__content a.button:hover {
+  background: #c5bb9e;
+}
+
+.help-desktop .help-view__content a#submit {
+  margin-top: 10px;
+}
+
+.help-desktop .help-view__content h4 {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.help-desktop .help-view__content h4:hover {
+  color: #394448;
+}
+
+.help-desktop .help-view__content h2 {
+  border: none;
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.help-desktop .help-view__content h3 {
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.help-desktop .help-view__content h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.help-desktop .help-view__content .all-required-error .message,
+.help-desktop .help-view__content .data-error .message {
+  color: #999999;
+}
+
+.help-view__module--open {
+  background: #fefcf5;
+  border: 1px solid #e8e3d7;
+}
+
+.help-view__module--open .help-view__title-wrap {
+  border: none;
+  border-bottom: 1px solid #e8e3d7;
+  border-radius: 2px 2px 0px 0px;
+  position: relative;
+}
+
+.help-view__module--open .help-view__title-wrap .help-view__title {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.9rem;
+  margin: 5px 0 0 0;
+  padding: 14px 0 14px 20px;
+}
+
+.help-view__module--open .help-view__title-wrap .help-view__title:after {
+  bottom: 19px;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+  content: "";
+  font-family: "Responsive Icons";
+}
+
+.help-desktop .help-view__module--open .help-view__title-wrap .help-view__title:after {
+  content: "";
+  font-family: "Responsive Icons";
+  font-size: 1.8rem;
+}
+
+.help-view__module--closed .help-view__title {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.9rem;
+  position: relative;
+  width: 100%;
+}
+
+.help-view__module--closed .help-view__title:after {
+  bottom: 24px;
+  font-size: 1.6rem;
+  position: absolute;
+}
+
+.shipping-help.desktop .shipping-tab table.merch tbody tr td:last-child {
+  border-right: 1px solid #333;
+}
+
+/* Rewards Terms & Conditions Page */
+/* Desktop won't get it's 'special' background at top on it's own */
+.content-wrap.rewards-legal.desktop {
+  background: url("/is/image/anf/hol-20220515-hbg-cc_update.png?wid=1160") no-repeat top;
+}
+
+/* fix mobile margins */
+div.mobile #rewards-legal-section {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* wrapping this in #rewards-legal-section because a lot of styles are still i espots for other rewards pages */
+#rewards-legal-section {
+  /*flexbox align*/
+  /*sprite styles*/
+  /*font*/
+  /*table styles for T&C*/
+  /*IE8 fall back for flexbox*/
+}
+
+#rewards-legal-section .about-page {
+  padding-top: 40px;
+}
+
+#rewards-legal-section .about-container .about-block {
+  display: inline-block;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+#rewards-legal-section .about-page .about-container .about-club {
+  padding-bottom: 34px;
+}
+
+#rewards-legal-section .desc-copy {
+  position: relative;
+}
+
+#rewards-legal-section .desc-earn {
+  right: 16%;
+}
+
+#rewards-legal-section .desc-ship {
+  right: 23.6%;
+}
+
+#rewards-legal-section .desc-gift {
+  right: 24.4%;
+}
+
+#rewards-legal-section .flexer-align {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  -webkit-justify-content: space-between;
+  /* Safari 6.1+ */
+  justify-content: space-between;
+}
+
+#rewards-legal-section .aligner {
+  max-width: 50%;
+}
+
+#rewards-legal-section .ship-sprite,
+#rewards-legal-section .money-sprite,
+#rewards-legal-section .gift-sprite {
+  background: url("/is/image/anf/hol-20220515-icons-sprite.png") no-repeat;
+  display: inline-block;
+  height: 60px;
+  padding-right: 20px;
+  width: 40px;
+}
+
+#rewards-legal-section .money-sprite {
+  background-position: -167px -40px;
+}
+
+#rewards-legal-section .ship-sprite {
+  background-position: -287px -40px;
+}
+
+#rewards-legal-section .gift-sprite {
+  background-position: -49px -40px;
+}
+
+#rewards-legal-section .about-container p,
+#rewards-legal-section .about-container h2,
+#rewards-legal-section .about-container h5,
+#rewards-legal-section .accountsection #primary-content .about-page .more-info a {
+  color: #2d3039;
+}
+
+#rewards-legal-section .about-container h2 {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.9em;
+  letter-spacing: .1px;
+}
+
+#rewards-legal-section .about-page .about-container h2 {
+  margin-bottom: 0;
+}
+
+#rewards-legal-section .about-page .how-info h2:not(.grid__header) {
+  padding: 10px 0 3px;
+}
+
+#rewards-legal-section .about-container h5 {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: .3px;
+  line-height: 16px;
+}
+
+#rewards-legal-section .about-container p {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.3em;
+  line-height: 27px;
+}
+
+#rewards-legal-section .about-container .how-info p {
+  padding-bottom: 12px;
+}
+
+#rewards-legal-section .about-container .flexer-align .desc-copy p {
+  font-size: 1.1em;
+}
+
+#rewards-legal-section .accountsection #primary-content .about-page .more-info .legal {
+  font-size: 1em;
+}
+
+#rewards-legal-section html body.accountV2 .about-container .grid__header {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsQAAAACCAMAAABopToxAAAAOVBMVEUwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkYwQkcwQkbbiVAdAAAAE3RSTlMaJSESKRYeNjAOMzwtRkEJUV53tQBT0wAAAulJREFUOMtlkluW2zAMQ/kmRUqyp/tfbOHpZ3MSWYJA8OaYJGz3rZ47/edPTvaPbGd7f9jtHPOfjN6Z3Lfn55yfn5b3bSHr8Do/qMyqeQ9f7G5Os0yJlbzJykWW47rZslgiiZsIq+yJRFJxBd+prs1yZzPPNhPpuu9097lzOMs4hXPOS3nupub4/Mmx39nXiaw+z4SgdcwNp2CtEDaiFpx2Ze7yTZJp2VtsgwwkQM2qHrIvcYTHHUjJk2w8Jzfrb3uSQmOmNHZJZV6upCTotEkVBCSKduRkwspbyF1cApJBpE2TfcAORD5lKURla7nZIi7yPBRmu+FvKGxfyCb/EgQ/dEM+f8wkzh6LXKjUHF2ElupSAUk+TiqmLlKf3xQy8dJoT9nq2w0YjKQKVxLBttZDz/IQpIBJdYAGjyywI8pZvkKcShS+RQAzxfoocCYEtg/54lrWs/SBxWyL8ncVxKpOa+yJUPL1KLCfXbFwyL1IXA2eQHg4vIr6z1XzPKGKQBgRpP+LSSJZ583eOXmdy95k/nkl7iR73J/uKjtyTtDtn9P3nLScVdhioK2am+0U58n5cxTlTmxEPi9TH4+dZmVyM8bYjLfILr5bqUcY+TmbuQRJc3YL35lzpuz2sZv7hplRHrjsdE7UbfOa5vO+UqZRtVVKnNmAavkLQ4hncWOpChJqJH/VITkl4LlHRNNKdgJaLVQcERQ5bEy1B65pISomwiGcAU2hxMpBLPgu3yEQVWiTUjyKZnGA5ZBkN2SRStLD0V9CV7JtFjtzbKJJGERb+fufNPQ9f4aRZ0G6pNcSwZClqJI6GcX8vj7kWy2SIMeH6begyHkJRBEjbgSohGK/+EIwyQb+v9neutqrkGT6bNwRLZMlGbCo6o7luoLBhTx2jYUqpYteouiMfGBnXl++1BdFhuNBqkyLLCIpBPXsKMDg5ag75luJKPyZM2AlsbXW89TFukTcQA3PoxhjtnZ41ZViPRT/i38BeNIfmzDuaZwAAAAASUVORK5CYII=);
+  background-position: 0 30px;
+  background-repeat: no-repeat;
+  border-bottom: none;
+  clear: none;
+  display: table-cell;
+  font-size: 2rem;
+  line-height: 24px;
+  margin: 0 0 20px;
+  padding: 0 0 18px 0;
+  width: 705px;
+}
+
+#rewards-legal-section .about-container .more-info a {
+  text-decoration: underline;
+}
+
+#rewards-legal-section .about-container .more-info a:hover {
+  color: #6f6b5b;
+}
+
+#rewards-legal-section .about-container .terms-and-conditions h2 {
+  padding: 40px 0px 2px 0px;
+}
+
+#rewards-legal-section .about-container .terms-and-conditions h4 {
+  font-size: 1.4em;
+}
+
+#rewards-legal-section .about-container .terms-and-conditions h4 + h4 {
+  padding-bottom: 12px;
+}
+
+#rewards-legal-section .about-container .terms-and-conditions h5 {
+  font-size: 1.4em;
+  padding: 17px 0px 5px 0px;
+}
+
+#rewards-legal-section .about-container .terms-and-conditions ul li {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+#rewards-legal-section .about-container .terms-and-conditions .secondary-bullet li {
+  list-style-type: circle;
+  margin-left: 40px;
+}
+
+#rewards-legal-section .about-container a {
+  text-decoration: underline;
+}
+
+#rewards-legal-section .about-container table {
+  margin: 20px 112px;
+  width: 69%;
+}
+
+#rewards-legal-section .about-container th {
+  border: 1px solid;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  width: 50%;
+}
+
+#rewards-legal-section .about-container td {
+  border: 1px solid;
+  font-size: 1.3em;
+  line-height: 22px;
+  text-align: center;
+}
+
+#rewards-legal-section .no-js .flexer-align {
+  display: block;
+  width: 100%;
+}
+
+#rewards-legal-section .no-js .aligner {
+  padding-top: 10px;
+}
+
+#rewards-legal-section .no-js .aligner,
+#rewards-legal-section .no-js .desc-copy {
+  float: left;
+  margin-top: 23px;
+}
+
+#rewards-legal-section .no-js .flexer-align .more-info {
+  float: right;
+}
+
+#rewards-legal-section .no-js .desc-copy {
+  margin-top: 29px;
+  padding: 0px 80px;
+  right: 0px;
+  text-align: left;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*--------------------*/
+/* State Rules -------*/
+/*--------------------*/
+.hidden {
+  display: none !important;
+}
+
+.visibility-hidden {
+  visibility: hidden !important;
+}
+
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/*Blitz Color Library*/
+/* $gray-6 */
+/* $gray-8 */
+/* $gray-7 */
+/* navigation */
+/* $tan-13: #e6e0c8; */
+/* $tan-14: #cec6ae; */
+/* $tan-15: #dacab2; */
+/* $tan-16: #cdc7b2; */
+/* $gray-19: #4f4c4a; */
+/* modals */
+/* color filter colors */
+/* $white-4 */
+/* $tan-8 */
+/* $tan-4 */
+/* $white-5 */
+/* $white-3 */
+/* $navy-blue */
+/* $green-2 */
+/* $gray-12 */
+/* $gray-11 */
+/*Secondary Button*/
+/*Other Button*/
+/*--------------------*/
+/* Primary Nav -------*/
+/*--------------------*/
+/* Product Page */
+/* $white-4 */
+/* footer */
+/* $gray-1 */
+/* Paths */
+/* Blue Mobile Navigation */
+/* $white-2 */
+/* $gray-1 */
+/* $tan-4 */
+/* Size Tiles */
+/* Quick View Modal */
+.help-view__content .contact-us__buttons {
+  border: none;
+  width: 95%;
+}
+
+.help-view__content .contact-us__buttons .contact-us__button {
+  background: #fcf9f1;
+  border: 1px solid #dbd5c7;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  width: 48%;
+}
+
+.help-view__content .contact-us__buttons .contact-us__button:first-child {
+  margin-right: 4%;
+}
+
+.help-view__content .contact-us__buttons .contact-us__button.contact-us--selected {
+  background: #c5bb9e;
+  color: #fcf9f1;
+}
+
+.help-view__content .contact-us__call-us h3 {
+  padding: 0;
+}
+
+.help-view__content .contact-us__call-us h3:before {
+  border: none;
+}
+
+.help-view__content .contact-us__response h3 {
+  color: #394448;
+  padding-left: 0;
+}
+
+.help-view__content .contact-us__response h3:before {
+  display: none;
+}
+
+.contact-us__content {
+  /* Age gate */
+  /* legal links */
+}
+
+.contact-us__content ul#customer-service-phone-list li h3,
+.contact-us__content ul#customer-service-phone-list li th {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.contact-us__content ul#customer-service-phone-list li h3 {
+  text-transform: uppercase;
+}
+
+.contact-us__content ul#customer-service-phone-list li th {
+  text-transform: capitalize;
+}
+
+.contact-us__content ul#customer-service-phone-list li td {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.contact-us__content .contact-us__agegate-form h2 {
+  border-bottom: 1px solid #D1D1C8;
+  padding-bottom: 0.6em;
+}
+
+.contact-us__content .contact-us__agegate-form .form-wrap {
+  margin: 15px 0;
+}
+
+.contact-us__content .contact-us__agegate-form .form-wrap .actions ul li {
+  float: none;
+  max-width: 306px;
+  min-width: 220px;
+}
+
+.contact-us__content .contact-us__agegate-form .form-wrap .actions ul li a.submit {
+  margin-bottom: 15px;
+}
+
+.contact-us__content .contact-us__agegate-form .form-wrap .data ul {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-us__content .contact-us__agegate-form .validator {
+  display: none;
+  padding-left: 0;
+}
+
+.contact-us__content .contact-us__agegate-form #agegate-fields li {
+  padding-bottom: 8px;
+}
+
+.contact-us__content .contact-us__agegate-form #agegate-fields li input[type='radio'] {
+  height: auto;
+  margin: 0 10px 3px 0;
+  padding: 0;
+  width: auto;
+}
+
+.contact-us__content .contact-us__agegate-form #agegate-fields li label {
+  color: #394448;
+  display: inline-block;
+  float: none;
+  font-size: 1.5rem;
+  padding: 0 5px 0 0;
+  text-transform: lowercase;
+  width: auto;
+}
+
+.contact-us__content .contact-us__agegate-form #agegate-fields li label.radio-required {
+  color: #852D2D;
+}
+
+.contact-us__content .contact-us__agegate-form .legal {
+  border-top: 1px solid #D1D1C8;
+  margin-top: 19px;
+  padding-top: 18px;
+}
+
+.contact-us__content .contact-us__call-us p.help-view__legal,
+.contact-us__content ul li.help-view__legal,
+.contact-us__content .legal,
+.contact-us__content .links ul li {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.contact-us__content .contact-us__call-us p.help-view__legal #blank-space,
+.contact-us__content ul li.help-view__legal #blank-space,
+.contact-us__content .legal #blank-space,
+.contact-us__content .links ul li #blank-space {
+  display: block;
+}
+
+.contact-us__content .contact-us__call-us p.help-view__legal a,
+.contact-us__content ul li.help-view__legal a,
+.contact-us__content .legal a,
+.contact-us__content .links ul li a {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  text-decoration: underline;
+}
+
+.contact-us__content ul li.help-view__legal {
+  margin: 15px 0;
+}
+
+.contact-us__content ul li.help-view__legal +
+li.help-view__legal {
+  margin-top: -10px;
+}
+
+.contact-us__content .contact-us__call-us p.help-view__legal {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.contact-us__content .contact-us__agegate-underage p {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.contact-us__dispute-disclaimer {
+  color: #7f7c69;
+  font-size: 1.4rem;
+}
+
+/*overriding some mobile '!important' styles */
+section.content-area .contact-us__content #agegate .legal {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 14px !important;
+  font-size: 1.4rem !important;
+  text-transform: uppercase;
+}
+
+section.content-area .contact-us__content #agegate .legal a {
+  font-family: inherit;
+  font-size: inherit !important;
+}
+
+.help-desktop .contact-us__label {
+  text-transform: uppercase;
+}
+
+.help-desktop .help-view__content .contact-us__buttons {
+  border: none;
+  width: 95%;
+}
+
+.help-desktop .help-view__content .contact-us__buttons .contact-us__button {
+  background: #fcf9f1;
+  border: 1px solid #dbd5c7;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  width: 48%;
+}
+
+.help-desktop .help-view__content .contact-us__buttons .contact-us__button:first-child {
+  margin-right: 4%;
+}
+
+.help-desktop .help-view__content .contact-us__buttons .contact-us__button.contact-us--selected {
+  background: #c5bb9e;
+  color: #fcf9f1;
+}
+
+.help-desktop .help-view__content .customer-service__local-numbers {
+  padding: 0 0 0 20px;
+}
+
+.help-view__content label,
+.help-view__content .gift-card__header {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+}
+
+.help-view__content #gift-card-merchandise-credit h4 {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.help-view__content #gift-card__tab-links {
+  border: none;
+  width: 95%;
+}
+
+.help-view__content #gift-card__tab-links li {
+  background: #fcf9f1;
+  border: 1px solid #dbd5c7;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  width: 48%;
+}
+
+.help-view__content #gift-card__tab-links li:first-child {
+  margin-right: 4%;
+}
+
+.help-view__content #gift-card__tab-links li .gift-card__tab-link {
+  width: 100%;
+}
+
+.help-view__content #gift-card__tab-links li .gift-card__tab--active {
+  background: #c5bb9e;
+  color: #fcf9f1;
+}
+
+.help-view__content .gift-card__balance-response .gift-card__balance-header {
+  color: #7d796f;
+  font-size: 1.6rem;
+  line-height: 19px;
+  padding-bottom: 4px;
+  padding-left: 0;
+}
+
+.help-view__content .gift-card__balance-response .gift-card__balance-header:before {
+  content: none;
+}
+
+.help-view__content .gift-card__balance-response .gift-card__balance-amount {
+  color: #394448;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.help-view__content .gift-card__balance-response .gift-card__balance-number {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.7rem;
+}
+
+.help-view__content .gift-card__balance-response .gift-card__balance-number .gc-number {
+  color: #394448;
+  font-size: 1.6rem;
+}
+
+.help-view__content .gift-card__balance-response .gift-card__check-another-button {
+  margin-top: 42px;
+}
+
+.help-desktop .giftcardandmerchandisecredit__content .main-content {
+  width: 292px;
+}
+
+.help-desktop .gift-card__balance-wrap {
+  width: 292px;
+}
+
+.help-desktop #gift-card-merchandise-credit h4:before {
+  top: 3px;
+}
+
+.help-desktop #gift-card-merchandise-credit h4.help-view__accordion--open:before {
+  left: -3px;
+  top: 6px;
+}
+
+@media (max-width: 375px) {
+  .help-view__module--open .help-view__title-wrap .help-view__title,
+  .help-view__module--closed .help-view__title {
+    position: static;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title-wrap {
+    height: 65px;
+    position: relative;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title {
+    max-width: 270px;
+    padding-top: 13px;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title:before {
+    line-height: 26px;
+    padding-top: 8px;
+  }
+  .help-mobile #help-giftcardandmerchandisecredit .help-view__title:after {
+    position: absolute;
+    right: 0;
+    top: 21px;
+  }
+}
+
+.exOrder .contact-us__optional--exOrder,
+.exOrderInq .contact-us__optional--exOrderInq,
+.retExQuest .contact-us__optional--retExQuest,
+.proQuest .contact-us__optional--proQuest,
+.other .contact-us__optional--other,
+.billPriceInq .contact-us__optional--billPriceInq,
+.strRetExQuest .contact-us__optional--strRetExQuest,
+.wantToModel .contact-us__optional--wantToModel,
+.strFeed .contact-us__optional--strFeed,
+.strOther .contact-us__optional--strOther {
+  display: block;
+}
+
+.helpwithorder__content .error {
+  display: none;
+}
+
+.returnsandexchanges__content #returns-and-exchanges li {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.returnsandexchanges__content #returns-and-exchanges h4 {
+  padding: 0 15px;
+}
+
+.help-view__module--open #tab-links .us-tab > .button,
+.help-view__module--open #tab-links .ca-tab > .button,
+.help-view__module--open #tab-links .int-tab > .button {
+  background: #fcf9f1;
+  border: none;
+  line-height: 50px;
+}
+
+.shippingandhandling__content #shipping-tabs-list p,
+.shippingandhandling__content #shipping-tabs-list li {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.3rem;
+}
+
+.help-view__module ul#shipping-tabs-list h4 {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.help-view__module--open .shippingandhandling__conten {
+  border: none;
+  width: 99%;
+}
+
+.help-view__module--open .shippingandhandling__conten li {
+  border: 1px solid #dbd5c7;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 2%;
+  width: 100%;
+}
+
+.help-view__module--open .shippingandhandling__conten li:last-child {
+  margin-right: 0;
+}
+
+.help-view__module--open .shippingandhandling__conten li a.button {
+  background: #fcf9f1;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.5rem;
+  line-height: 50px;
+  min-height: 50px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.help-view__module--open .shippingandhandling__conten li a.button.selected {
+  background: #c5bb9e;
+  color: #fcf9f1;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list h4 {
+  color: #7d796f;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.help-desktop .help-view__module ul#shipping-tabs-list h4:hover {
+  cursor: default;
+}
+
+.help-desktop .shippingandhandling__content #shipping-tabs-list p,
+.help-desktop .shippingandhandling__content #shipping-tabs-list li {
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.3rem;
+}
+
+.help-desktop .shippingandhandling__content #shipping-tabs-list p {
+  margin: 10px 0 0;
+  padding: 5px 0;
+}
+
+.help-desktop .help-view__module--open .shippingandhandling__ {
+  border: none;
+  width: 100%;
+}
+
+.help-desktop .help-view__module--open .shippingandhandling__ li {
+  background: #fcf9f1;
+  border: 1px solid #dbd5c7;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  margin-right: 5px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  width: 211px;
+}
+
+.help-desktop .help-view__module--open .shippingandhandling__ li:last-child {
+  margin-right: 0;
+}
+
+.help-desktop .help-view__module--open .shippingandhandling__ li a.button {
+  line-height: 18px;
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.help-desktop .help-view__module--open .shippingandhandling__ li a.selected,
+.help-desktop .help-view__module--open .shippingandhandling__ li a.button.active {
+  background: #c5bb9e;
+  color: #fcf9f1;
+}
+
+.sizechart__content .size-chart__header,
+h3.help-view__content {
+  cursor: pointer;
+  font-family: "DS PF DIN Max", "PF DIN Max", sans-serif;
+  font-size: 1.7rem;
+  padding-left: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.sizechart__content .size-chart__header:before,
+h3.help-view__content:before {
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #394448;
+  border-top: 5px solid transparent;
+  content: '';
+  font-size: 1.2rem;
+  height: 0;
+  left: 0;
+  padding-right: 10px;
+  position: absolute;
+  top: 3px;
+  width: 0;
+}
+
+.sizechart__content .size-chart__header.size-chart__header--open:before,
+h3.help-view__content.size-chart__header--open:before {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #394448;
+  content: '';
+  font-size: 1.2rem;
+  left: -3px;
+  padding: 10px 0;
+  position: absolute;
+  top: 6px;
+}
+
+.help-view__content .sizechart-tab.selected h3:before {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #394448;
+  content: '';
+  font-size: 1.2rem;
+  left: -3px;
+  padding: 10px 0;
+  position: absolute;
+  top: 6px;
+}
+
+.sizechart__content .size-charts-wrap.wrap {
+  margin-top: 0 !important;
+  /*had to use important here to override existing important*/
+}
+
+.sizechart__content ul.sizechart-tabs-list li {
+  margin-bottom: 0;
+}
+
+.help-desktop .help-view__module ul.sizechart-tabs-list li table tr,
+.help-desktop .help-view__module ul.sizechart-tabs-list li table thead tr,
+.help-desktop .help-view__module ul.sizechart-tabs-list li table tr.alt {
+  border: 1px solid #e8e3d7;
+  font-size: 1.3rem;
+}
+
+.help-desktop .help-view__module ul.sizechart-tabs-list li table td,
+.help-desktop .help-view__module ul.sizechart-tabs-list li table th {
+  border: 1px solid #e8e3d7;
+}
+
+.help-desktop .help-view__module ul.sizechart-tabs-list li table thead th,
+.help-desktop .help-view__module ul.sizechart-tabs-list li table thead td {
+  border: 1px solid #e8e3d7;
+}
+
+.help-desktop .help-view__module ul.sizechart-tabs-list li .table table thead tr th,
+.help-desktop .help-view__module ul.sizechart-tabs-list li .table table thead tr.alt th,
+.help-desktop .help-view__module ul.sizechart-tabs-list li .table table thead tr,
+.help-desktop .help-view__module ul.sizechart-tabs-list li .table table tbody tr,
+.help-desktop .help-view__module ul.sizechart-tabs-list li .table table tbody td {
+  border: 1px solid #e8e3d7;
+}

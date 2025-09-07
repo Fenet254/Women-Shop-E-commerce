@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>home</title>
 </head>
 <body>
@@ -31,25 +31,64 @@
 <ul>
     <li><a href="shop-all.html">Shop All</a></li>
     <li><a href="bottoms.html">Bottoms</a></li>
-    <li><a href="bubbles-sunsuits.html">Bubbles & Sunsuits</a></li>
+    <li><a href="shoes.html"> Shoes</a></li>
     <li><a href="dresses.html" class="active">Dresses</a></li>
-    <li><a href="girls-sets.html">Girl's Sets</a></li>
-    <li><a href="outerwear.html">Outerwear</a></li>
     <li><a href="pajamas.html">Pajamas</a></li>
+    <li><a href="jawlery.html">Jawlery</a></li>
+    <li><a href="bags.html">Bags</a></li>
     <li><a href="skirts-skorts.html">Skirts & Skorts</a></li>
-    <li><a href="swim.html">Swim</a></li>
-    <li><a href="tops.html">Tops</a></li>
+    <li><a href="jeans.html">Jeans</a></li>
+    <li><a href="coat.html">Coat</a></li>
   </ul>
 </div>
 </nav>
 <div class="slider">
   <div class="slide-track">
     <img class="slide" src="two.png">
+    <img class="slide" src="g.png">
     <img class="slide" src="three.png">
+    <img class="slide" src="one.png">
+    <img class="slide" src="t.png">
+    <img class="slide" src="to.png">
+    <img class="slide" src="w.png">
   </div>
   <button class="prev">&#10094;</button>
   <button class="next">&#10095;</button>
 </div>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('menuDropdown');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  }
+  const track = document.querySelector('.slide-track');
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let currentIndex = 0;
+
+  function updateSlidePosition() {
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length; // Loop back to start
+    updateSlidePosition();
+  }
+
+  function showPrevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop back to end
+    updateSlidePosition();
+  }
+
+  nextBtn.addEventListener('click', showNextSlide);
+  prevBtn.addEventListener('click', showPrevSlide);
+
+  setInterval(showNextSlide, 3000);
+
+  window.addEventListener('resize', updateSlidePosition);
+</script>
 </div>
 </body>
 </html>

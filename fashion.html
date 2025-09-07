@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="edit.css">
+    <title>fashion</title>
+</head>
+<body>
+    <h1>FASHION</h1>
+<div  class="product-card">
+     <h3 class="product-title">Cotton Shirt</h3>
+  <img src="shirt-white.png" alt="Stylish Shirt" class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">1000 birr</p>
+  <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+    <label for="colorSelect">Choose a color:</label>
+     <select id="colorSelect" onchange="changeBoxColor()">
+  <option value="white">White</option>
+  <option value="blue">Blue</option>
+  <option value="pink">Pink</option>
+     </select>
+  </div>
+</div>
+<div  class="product-card">
+     <h3 class="product-title"> Dress</h3>
+  <img src="pink-dress.png" alt="dress" class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">2000 birr</p>
+  <p class="product-description">Soft, beutiful dress that is perfect for casual or semi-formal wear.</p>
+    <label for="colorSelect">Choose a color:</label>
+     <select id="colorSelect" onchange="changeBoxColor()">
+  <option value="white">pink</option>
+  <option value="blue">Blue</option>
+  <option value="pink">white</option>
+     </select>
+  </div>
+</div>
+<div  class="product-card">
+     <h3 class="product-title">Jeans</h3>
+  <img src="black-jeans.png" alt="Stylish Shirt" class="product-image" id="shirtbox">
+  <div id="product-info" class="product-info">
+    <p class="product-price">1800 birr</p>
+  <p class="product-description">Perfect for casual or semi-formal wear.</p>
+    <label for="colorSelect">Choose a color:</label>
+     <select id="colorSelect" onchange="changeBoxColor()">
+  <option value="white">black</option>
+  <option value="blue">Blue</option>
+  <option value="pink">Pink</option>
+     </select>
+  </div>
+</div>
+<div  class="product-card">
+     <h3 class="product-title">Coat</h3>
+  <img src="red-coat.png" alt="Stylish Shirt" class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">1000 birr</p>
+  <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+    <label for="colorSelect">Choose a color:</label>
+     <select id="colorSelect" onchange="changeBoxColor()">
+  <option value="white">Red</option>
+  <option value="blue">Blue</option>
+  <option value="pink">Pink</option>
+     </select>
+  </div>
+</div>
+<div  class="product-card">
+     <h3 class="product-title">Pajamas</h3>
+  <img src="pink-pijama.png" alt="Stylish " class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">1500 birr</p>
+  <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+    <label for="colorSelect">Choose a color:</label>
+     <select id="colorSelect" onchange="changeBoxColor()">
+  <option value="white">Pink</option>
+  <option value="blue">Blue</option>
+  <option value="pink">Black</option>
+     </select>
+  </div>
+</div>
+<div  class="product-card">
+     <h3 class="product-title">Bags</h3>
+  <img src="blue-bag.png" alt="Stylish " class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">2100 birr</p>
+  <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+    <label for="colorSelect">Choose a color:</label>
+     <select id="colorSelect" onchange="changeBoxColor()">
+  <option value="blue">Blue</option>
+  <option value="pink">Pink</option>
+     </select>
+  </div>
+</div>
+
+<div  class="product-card">
+     <h3 class="product-title">Skirt</h3>
+  <img src="skirt.png" alt="Stylish " class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">900 birr</p>
+  <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+  </div>
+</div>
+<div  class="product-card">
+     <h3 class="product-title">Bottoms</h3>
+  <img src="bottoms.png" alt="" class="product-image" >
+  <div id="product-info" class="product-info">
+    <p class="product-price">1100 birr</p>
+  <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+  </div>
+</div>
+<script>
+    function showSelectedColor() {
+  const color = document.getElementById('colorSelect').value;
+  const display = document.getElementById('selectedColorDisplay');
+  display.textContent = `You selected: ${color}`;
+}
+function changeBoxColor() {
+  const color = document.getElementById('colorSelect').value;
+  const images = document.getElementsByClassName('product-image');
+
+  // Assuming there's only one image with this class
+  const shirtImage = images[0];
+
+  // Map color to image filename
+  let imageMap = {
+    white: 'shirt-white.png',
+    blue: 'shirt-blue.png',
+    pink: 'shirt-pink.png';
+    black:''
+  };
+
+  shirtImage.src = imageMap[color];
+}
+
+</script>
+</body>
+</html>

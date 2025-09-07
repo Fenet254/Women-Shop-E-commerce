@@ -94,7 +94,6 @@ h1 {
   color: hsl(0, 0%, 4%);
   z-index: 1000;
 }
-
 .menu-dropdown {
   display: none;
   position: absolute;
@@ -140,11 +139,10 @@ h1 {
   height: auto;
 }
 .slide {
-  min-width: 100%;
+  padding-top: 35px;
+  min-width: 50%;
   transition: transform 0.3s ease;
 }
-
-/* Navigation buttons */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -164,9 +162,7 @@ h1 {
   right: 10px;
 }
 
-/* Hover effect */
 .slide:hover {
   opacity: 0.85;
   transform: scale(1.03);
 }
-
