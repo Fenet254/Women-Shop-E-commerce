@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsla(0, 11%, 81%, 0.363);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color:lab(4.12% 0.68 0.24);
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  margin: 5px;
+  background-color: oklab(63.55499999999999% -0.06436 -0.09062 / 0.51);
+  border-radius:18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: rgb(12, 8, 8);
+  font-weight: bold;
+padding: 40px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: rgb(214, 13, 13);
+}
+.search-bar {
+  display: flexbox;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+.search-bar input[type="text"] {
+  padding: 10px 25px;
+  width: 570px;
+  border: 4px solid #1b1719;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.search-bar button {
+  padding: 5px 5px;
+  background-color:hsla(0, 64%, 74%, 0.755);
+  color: rgba(6, 30, 134, 0.407);
+  border: none;
+
+  margin: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #9b1592;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  color: lab(31.74% -35.29 25.37);
+  z-index: 1000;
+}
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: #fff0f5;
+  border: 1px solid #010101;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.menu-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-dropdown li {
+  margin: 10px 0;
+}
+.menu-dropdown a {
+  text-decoration: none;
+  color: hsl(330, 7%, 53%);
+  font-weight: 500;
+}
+.menu-dropdown a:hover {
+  color: #a61e65;
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+
+  font-size: 550px;
+  align-items: center;
+  
+
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
