@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="suit.css">
+    <title>suits</title>
+</head>
+<body>
+    <h2>SKIRTS</h2>
+ <div class="product-card">
+  <img id="mainImage" src="skirt10.png" alt="Main Shirt View" />
+
+  <div class="thumbnail-row">
+    <img src="skirt1.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt2.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt3.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt4.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt5.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt7.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt8.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt10.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt11.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt12.png" onclick="changeImage(this)" alt="View" />
+    <img src="skirt13.png" onclick="changeImage(this)" alt="View" />
+  </div>
+  
+     
+  <div class="product-info">
+    <h3 class="product-title">Stylish</h3>
+    <p class="product-price">200 birr</p>
+    <p class="product-description">Soft, breathable cotton with a tailored fit. Perfect for casual or semi-formal wear.</p>
+    <button onclick="showSelectedColor()">Buy Now</button>
+    <p id="selectedColorDisplay"></p>
+    </body>
+  </div>
+  <script>
+    function changeImage(thumbnail) {
+  const mainImage = document.getElementById("mainImage");
+  mainImage.src = thumbnail.src;
+  }
+  </script>
+</html>
