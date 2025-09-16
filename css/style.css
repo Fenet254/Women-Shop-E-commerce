@@ -1,5 +1,5 @@
 body {
-  background-image: url("../html/");
+  background-image: url("../ii.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,6 +58,7 @@ padding: 25px;
   margin: 20px;
   margin: 6px;
   margin-top: 20px;
+  margin-left: 150px;
 
 }
 .search-bar input[type="text"] {
