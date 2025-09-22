@@ -210,7 +210,7 @@ text-align: center;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-/* Individual product card styling */
+
 .product-card {
   width: 200px;
   font-family: Arial, sans-serif;
