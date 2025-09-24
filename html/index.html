@@ -21,16 +21,49 @@
     </a>
     <div class="nav-links">
       
+<<<<<<< Updated upstream
       <a href="home.html">Home</a>
        <a href="category.html"> Category</a>
       <a href="account.html">Account</a></li>
       <a href="carts.html">Cart</a>
       <a href="wishlist.html">Wishlist</a>
        <a href="offers.html">Offers</a>
+=======
+      <a href="home">Home</a>
+       <a href="shoes.html"> Category</a>
+      <a href="jawlery.html">Account</a></li>
+      <a href="bags.html">Cart</a>
+      <a href="makeup.html">Wishlist</a>
+       <a href="makeup.html">Offers</a>
+>>>>>>> Stashed changes
     </div>
 </nav>
- 
+ <div class="slider">
+<div class="slide-track">
+  <img class="slide" src="../one.png">
+  <img class="slide" src="../two.png">
+  <img class="slide" src="../three.png">
+  <img class="slide" src="../four.png">
+  <img class="slide" src="../five.png">
+  <img class="slide" src="../six.png">
+  <img class="slide" src="../eight.png">
+  <img class="slide" src="../nine.png">
+  <img class="slide" src="../ten.png">
+  <img class="slide" src="../elleven.png">
+  <img class="slide" src="../twelve.png">
+  <img class="slide" src="../thirteen.png">
+  <img class="slide" src="../foutheen.png">
+  <img class="slide" src="../fifteen.png">
+  <img class="slide" src="../sixteen.png">
+  <img class="slide" src="../seventen.png">
+  <img class="slide" src="../eighteen.png">
+  <img class="slide" src="../twelve.png">
+  <img class="slide" src="../twtw.png">
 </div>
+<button class="prev">&#10094;</button>
+<button class="next">&#10095;</button>
+</div>
+<<<<<<< Updated upstream
 
  </div>
 <footer>
@@ -90,12 +123,42 @@
   </div>
 </footer>
 
+=======
+</div>
+>>>>>>> Stashed changes
 
 <script>
-function goToDetail(productName) {
-  window.location.href = productName + ".html";
-}
+  const track = document.querySelector('.slide-track');
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let currentIndex = 0;
+
+  function updateSlidePosition() {
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length; // Loop back to start
+    updateSlidePosition();
+  }
+
+  function showPrevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop back to end
+    updateSlidePosition();
+  }
+
+  nextBtn.addEventListener('click', showNextSlide);
+  prevBtn.addEventListener('click', showPrevSlide);
+
+  // Auto-slide every 3 seconds
+  setInterval(showNextSlide, 3000);
+
+  window.addEventListener('resize', updateSlidePosition);
 </script>
+
 </div>
 </body>
 </html>

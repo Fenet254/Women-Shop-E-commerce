@@ -227,3 +227,34 @@ text-align: center;
 .product-card img:hover {
   transform: scale(1.05);
 }
+.slider {
+  position: relative;
+  width: 500px; /* Adjust as needed */
+  overflow: hidden;
+
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
