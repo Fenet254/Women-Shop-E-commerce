@@ -7,7 +7,7 @@
 body, html {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ded3db;
+  background-color: #aca7ab;
 }
 
 /* Heading */
@@ -94,44 +94,4 @@ h1 {
     align-items: center;
   }
 }
-/* Menu toggle icon */
-.menu-toggle {
-  text-align: center;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-/* Dropdown menu */
-.menu-dropdown {
-  display: none;
-  text-align: center;
-}
-
-.menu-dropdown ul {
-  list-style: none;
-  padding: 0;
-}
-
-.menu-dropdown li {
-  margin: 8px 0;
-}
-
-.menu-dropdown a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.menu-dropdown a:hover {
-  color: #007bff;
-}
-
-.menu-dropdown a.active {
-  color: #007bff;
-  font-weight: bold;
-}
-
 
