@@ -41,8 +41,8 @@ h1 {
 
 .search-bar button {
   padding: 10px 20px;
-  background-color: hsla(0, 90%, 4%, 0.755);
-  color: rgb(208, 119, 171);
+  background-color: hsla(0, 27%, 38%, 0.755);
+  color: rgb(240, 240, 233);
   border: none;
   border-radius: 15px;
   font-size: 16px;
@@ -51,12 +51,12 @@ h1 {
 }
 
 .search-bar button:hover {
-  background-color: #1cdb33;
+  background-color: #0c0d0c;
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: #7b3c67;
+  background-color: #959093;
   border-radius: 18px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
