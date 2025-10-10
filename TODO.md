@@ -6,7 +6,7 @@
 - [x] Update js/script.js: Add core functions for rendering products, localStorage for cart/wishlist, event listeners for nav/search/slider.
 
 ## Phase 2: Page Updates
-- [ ] Update html/index.html: Add featured products grid, enhance hero slider, consistent header/footer.
+- [x] Update html/index.html: Add featured products grid, enhance hero slider, consistent header/footer.
 - [ ] Update html/category.html: Dynamic category nav, product grid with filters.
 - [ ] Create html/skirt.html: Product page for skirts/dresses (grid, filters).
 - [ ] Create html/suit.html: Product page for suits.
