@@ -2,8 +2,8 @@
 
 ## Phase 1: Core Setup
 - [x] Create js/products.js: Define product array with images, prices, descriptions, categories (use existing image folders).
-- [ ] Update css/style.css: Overhaul for pink/purple theme, responsiveness, animations, product cards, modals, dark mode support.
-- [ ] Update js/script.js: Add core functions for rendering products, localStorage for cart/wishlist, event listeners for nav/search/slider.
+- [x] Update css/style.css: Overhaul for pink/purple theme, responsiveness, animations, product cards, modals, dark mode support.
+- [x] Update js/script.js: Add core functions for rendering products, localStorage for cart/wishlist, event listeners for nav/search/slider.
 
 ## Phase 2: Page Updates
 - [ ] Update html/index.html: Add featured products grid, enhance hero slider, consistent header/footer.
