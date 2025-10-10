@@ -8,9 +8,9 @@
 ## Phase 2: Page Updates
 - [x] Update html/index.html: Add featured products grid, enhance hero slider, consistent header/footer.
 - [x] Update html/category.html: Dynamic category nav, product grid with filters.
-- [ ] Create html/skirt.html: Product page for skirts/dresses (grid, filters).
-- [ ] Create html/suit.html: Product page for suits.
-- [ ] Update html/Clothes.html: Integrate product grid for clothes sub-items.
+- [x] Create html/skirt.html: Product page for skirts/dresses (grid, filters).
+- [x] Create html/suit.html: Product page for suits.
+- [x] Update html/Clothes.html: Integrate product grid for clothes sub-items.
 - [ ] Update html/carts.html: Display cart items, total, checkout simulation.
 - [ ] Update html/wishlist.html: Display wishlist items.
 - [ ] Update html/account.html: Login/register forms with localStorage.
