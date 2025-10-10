@@ -1,0 +1,28 @@
+# TODO: Advanced E-Commerce Girls Shop
+
+## Phase 1: Core Setup
+- [ ] Create js/products.js: Define product array with images, prices, descriptions, categories (use existing image folders).
+- [ ] Update css/style.css: Overhaul for pink/purple theme, responsiveness, animations, product cards, modals, dark mode support.
+- [ ] Update js/script.js: Add core functions for rendering products, localStorage for cart/wishlist, event listeners for nav/search/slider.
+
+## Phase 2: Page Updates
+- [ ] Update html/index.html: Add featured products grid, enhance hero slider, consistent header/footer.
+- [ ] Update html/category.html: Dynamic category nav, product grid with filters.
+- [ ] Create html/skirt.html: Product page for skirts/dresses (grid, filters).
+- [ ] Create html/suit.html: Product page for suits.
+- [ ] Update html/Clothes.html: Integrate product grid for clothes sub-items.
+- [ ] Update html/carts.html: Display cart items, total, checkout simulation.
+- [ ] Update html/wishlist.html: Display wishlist items.
+- [ ] Update html/account.html: Login/register forms with localStorage.
+- [ ] Update html/offers.html: Discounted products page.
+
+## Phase 3: Advanced Features
+- [ ] Add interactivity: Auto-slider, search/filter JS, add to cart/wishlist buttons, quantity selectors.
+- [ ] Add uniqueness: Dark mode toggle, image zoom modals, infinite scroll, animations (fade-in, hover effects).
+- [ ] Add functionality: Product detail modals, sorting (price, name), responsive mobile menu.
+- [ ] Test: Launch in browser, verify cart persistence, responsiveness, interactivity.
+
+## Phase 4: Polish & Demo
+- [ ] Refine UI: Ensure beautiful design, unique elements (e.g., custom icons, gradients).
+- [ ] Optimize: Accessibility, performance.
+- [ ] Final test and demo.
