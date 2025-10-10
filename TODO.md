@@ -1,7 +1,7 @@
 # TODO: Advanced E-Commerce Girls Shop
 
 ## Phase 1: Core Setup
-- [ ] Create js/products.js: Define product array with images, prices, descriptions, categories (use existing image folders).
+- [x] Create js/products.js: Define product array with images, prices, descriptions, categories (use existing image folders).
 - [ ] Update css/style.css: Overhaul for pink/purple theme, responsiveness, animations, product cards, modals, dark mode support.
 - [ ] Update js/script.js: Add core functions for rendering products, localStorage for cart/wishlist, event listeners for nav/search/slider.
 
