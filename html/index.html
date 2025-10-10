@@ -1,118 +1,128 @@
+</div>
+
+
+</div>
+</body>
+</html>
+=======
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Girls Shop - Fashion & Beauty</title>
 </head>
 <body>
-   <h1>GIRLS SHOP</h1>
-   <div class="search-bar">
-  <form action="search.html" method="GET">
-    <input type="text" name="query" placeholder="Search products..." required>
-    <button type="submit">Search</button>
-  
-  </form>
-   </div>
-  <nav class="navbar">
-    <a href="../html/index.html" class="logo">
-      <img src="../im.png" alt="Logo">
-    </a>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="../im.png" alt="Girls Shop Logo">
+        </a>
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="Search products..." required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="category.html">Categories</a>
+            <a href="account.html">Account</a>
+            <a href="carts.html">Cart</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="offers.html">Offers</a>
+        </div>
+    </nav>
 
-    
-    <div class="nav-links">
-      <a href="home.html">Home</a>
-       <a href="category.html"> Category</a>
-      <a href="account.html">Account</a></li>
-      <a href="carts.html">Cart</a>
-      <a href="wishlist.html">Wishlist</a>
-       <a href="offers.html">Offers</a>
-    </div>
-</nav>
- <div class="slider">
-<div class="slide-track">
-  <img class="slide" src="../one.png">
-  <img class="slide" src="../two.png">
-  <img class="slide" src="../three.png">
-  <img class="slide" src="../four.png">
-  <img class="slide" src="../five.png">
-  <img class="slide" src="../six.png">
-  <img class="slide" src="../eight.png">
-  <img class="slide" src="../nine.png">
-  <img class="slide" src="../ten.png">
-  <img class="slide" src="../elleven.png">
-  <img class="slide" src="../twelve.png">
-  <img class="slide" src="../thirteen.png">
-  <img class="slide" src="../foutheen.png">
-  <img class="slide" src="../fifteen.png">
-  <img class="slide" src="../sixteen.png">
-  <img class="slide" src="../seventen.png">
-  <img class="slide" src="../eighteen.png">
-  <img class="slide" src="../twelve.png">
-  <img class="slide" src="../twtw.png">
-</div>
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-</div>
- </div>
-  this is the change buchoo made
-<footer>
-  <div class="footer-container">
-    <!-- About Section -->
-    <div class="footer-section">
-      <h3>About Us</h3>
-      <p>
-        Welcome to <b>GlowCart</b> 💖 — your one-stop shop for fashion, beauty, hair,
-        and lifestyle. We bring you everything women love, with style and trust.
-      </p>
+    <div class="slider">
+        <div class="slide-track">
+            <img class="slide" src="../one.png" alt="Fashion Slide 1">
+            <img class="slide" src="../two.png" alt="Fashion Slide 2">
+            <img class="slide" src="../three.png" alt="Fashion Slide 3">
+            <img class="slide" src="../four.png" alt="Fashion Slide 4">
+            <img class="slide" src="../five.png" alt="Fashion Slide 5">
+            <img class="slide" src="../six.png" alt="Fashion Slide 6">
+            <img class="slide" src="../eight.png" alt="Fashion Slide 7">
+            <img class="slide" src="../nine.png" alt="Fashion Slide 8">
+            <img class="slide" src="../ten.png" alt="Fashion Slide 9">
+            <img class="slide" src="../elleven.png" alt="Fashion Slide 10">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Return & Refund Policy</a></li>
-        <li><a href="#">Shipping Information</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
+    <h2>Featured Products</h2>
+    <div class="filters">
+        <select onchange="filterByCategory(this.value)">
+            <option value="all">All Categories</option>
+            <option value="dresses">Dresses</option>
+            <option value="skirts">Skirts</option>
+            <option value="suits">Suits</option>
+            <option value="pajamas">Pajamas</option>
+        </select>
+        <select onchange="sortProducts(this.value)">
+            <option value="">Sort By</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name">Name</option>
+        </select>
+    </div>
+    <div class="product-container">
+        <!-- Products will be rendered here by JS -->
     </div>
 
-    <!-- Customer Support -->
-    <div class="footer-section">
-      <h3>Customer Support</h3>
-      <ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Order Tracking</a></li>
-        <li><a href="#">Wishlist</a></li>
-        <li><a href="#">My Account</a></li>
-      </ul>
-    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Welcome to <b>Girls Shop</b> 💖 — your ultimate destination for fashion, beauty, and lifestyle. Discover trendy dresses, elegant suits, cozy pajamas, and more!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return & Refund Policy</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <p>📍 Addis Ababa, Ethiopia</p>
+                <p>📧 support@girlsshop.com</p>
+                <p>📞 +251 912 345 678</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Girls Shop. All Rights Reserved.</p>
+            <div class="payment-icons">
+                💳 Visa | 💳 MasterCard | 💳 PayPal
+            </div>
+        </div>
+    </footer>
 
-   
-    <div class="footer-section">
-      <h3>Get in Touch</h3>
-      <p>📍 Addis Ababa, Ethiopia</p>
-      <p>📧 support@glowcart.com</p>
-      <p>📞 +251 912 345 678</p>
-      <div class="social-icons">
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 GlowCart. All Rights Reserved.</p>
-    <div class="payment-icons">
-      💳 Visa | 💳 MasterCard | 💳 PayPal
-    </div>
-  </div>
-</footer>
+    <script src="../js/products.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
 
 =======
 </div>
