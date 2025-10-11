@@ -103,14 +103,14 @@ function initApp() {
       const productCard = document.createElement('div');
       productCard.className = 'product-card';
       productCard.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" onclick="openModal(${product.id})">
+        <img src="${product.image}" alt="${product.name}" loading="lazy" onclick="openModal(${product.id})">
         <div class="info">
           <h3>${product.name}</h3>
           <p>${product.description}</p>
           <div class="price">$${product.price}</div>
           <div class="buttons">
-            <button class="add-to-cart" onclick="addToCart(${product.id})">Add to Cart</button>
-            <button class="add-to-wishlist" onclick="addToWishlist(${product.id})">❤️</button>
+            <button class="add-to-cart" onclick="addToCart(${product.id})" aria-label="Add ${product.name} to cart">Add to Cart</button>
+            <button class="add-to-wishlist" onclick="addToWishlist(${product.id})" aria-label="Add ${product.name} to wishlist">❤️</button>
           </div>
         </div>
       `;
