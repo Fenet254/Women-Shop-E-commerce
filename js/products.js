@@ -93,6 +93,76 @@ const products = [
   { id: 70, name: "Mascara", price: 24.99, image: "../twen.png", category: "makeup", description: "Lengthening mascara." },
   { id: 71, name: "Blush", price: 22.99, image: "../twtw.png", category: "makeup", description: "Rosy blush." },
 
+  // Human Hair
+  { id: 72, name: "Straight Wig", price: 99.99, image: "../one.png", category: "human-hair", description: "Natural straight wig." },
+  { id: 73, name: "Curly Extensions", price: 79.99, image: "../two.png", category: "human-hair", description: "Beautiful curly extensions." },
+  { id: 74, name: "Bob Wig", price: 89.99, image: "../three.png", category: "human-hair", description: "Chic bob wig." },
+  { id: 75, name: "Lace Frontal", price: 119.99, image: "../four.png", category: "human-hair", description: "Premium lace frontal." },
+  { id: 76, name: "Braided Hair", price: 69.99, image: "../five.png", category: "human-hair", description: "Stylish braided hair." },
+
+  // Additional products for more variety
+  // More Dresses
+  { id: 77, name: "Lace Wedding Dress", price: 249.99, image: "../image/dressimage/dress2.png", category: "dresses", description: "Elegant lace wedding dress." },
+  { id: 78, name: "Summer Short Dress", price: 39.99, image: "../image/dressimage/dress4.png", category: "dresses", description: "Light summer short dress." },
+  { id: 79, name: "Velvet Evening Dress", price: 159.99, image: "../image/dressimage/dress6.png", category: "dresses", description: "Luxurious velvet evening dress." },
+  { id: 80, name: "Floral Maxi Dress", price: 79.99, image: "../image/dressimage/dress8.png", category: "dresses", description: "Flowery floral maxi dress." },
+  { id: 81, name: "Casual Denim Dress", price: 59.99, image: "../image/dressimage/dress10.png", category: "dresses", description: "Comfortable denim dress." },
+
+  // More Skirts
+  { id: 82, name: "Leather Mini Skirt", price: 59.99, image: "../image/skirtimage/skirt2.png", category: "skirts", description: "Trendy leather mini skirt." },
+  { id: 83, name: "Silk Midi Skirt", price: 69.99, image: "../image/skirtimage/skirt8.png", category: "skirts", description: "Smooth silk midi skirt." },
+  { id: 84, name: "Denim Short Skirt", price: 34.99, image: "../image/skirtimage/skirt12.png", category: "skirts", description: "Casual denim short skirt." },
+  { id: 85, name: "Pleated Chiffon Skirt", price: 49.99, image: "../image/skirtimage/skirt4.png", category: "skirts", description: "Elegant pleated chiffon skirt." },
+  { id: 86, name: "High-Waist Pencil Skirt", price: 54.99, image: "../image/skirtimage/skirt6.png", category: "skirts", description: "Professional high-waist pencil skirt." },
+
+  // More Suits
+  { id: 87, name: "Summer Linen Suit", price: 139.99, image: "../image/suitimage/suit5.png", category: "suits", description: "Breathable summer linen suit." },
+  { id: 88, name: "Formal Tuxedo", price: 279.99, image: "../image/suitimage/suit9.png", category: "suits", description: "Premium formal tuxedo." },
+  { id: 89, name: "Office Pant Suit", price: 169.99, image: "../image/suitimage/suit3.png", category: "suits", description: "Professional office pant suit." },
+  { id: 90, name: "Blazer and Skirt Set", price: 189.99, image: "../image/suitimage/suit7.png", category: "suits", description: "Stylish blazer and skirt set." },
+  { id: 91, name: "Casual Blazer", price: 99.99, image: "../image/suitimage/suit1.png", category: "suits", description: "Versatile casual blazer." },
+
+  // More Pajamas
+  { id: 92, name: "Cotton Nightgown", price: 29.99, image: "../image/pjamaimage/blue-pjama.png", category: "pajamas", description: "Comfortable cotton nightgown." },
+  { id: 93, name: "Silk Robe Set", price: 59.99, image: "../image/pjamaimage/black-pjama.png", category: "pajamas", description: "Elegant silk robe set." },
+  { id: 94, name: "Flannel Pajama Set", price: 39.99, image: "../image/pjamaimage/blue-pjama.png", category: "pajamas", description: "Warm flannel pajama set." },
+  { id: 95, name: "Satin Chemise", price: 34.99, image: "../image/pjamaimage/black-pjama.png", category: "pajamas", description: "Smooth satin chemise." },
+
+  // More Shoes
+  { id: 96, name: "Gold Sandals", price: 49.99, image: "../six.png", category: "shoes", description: "Shiny gold sandals." },
+  { id: 97, name: "Running Sneakers", price: 79.99, image: "../seven.png", category: "shoes", description: "Performance running sneakers." },
+  { id: 98, name: "Ankle Boots", price: 89.99, image: "../eight.png", category: "shoes", description: "Stylish ankle boots." },
+  { id: 99, name: "Ballet Flats", price: 39.99, image: "../nine.png", category: "shoes", description: "Comfortable ballet flats." },
+  { id: 100, name: "High Heels", price: 69.99, image: "../ten.png", category: "shoes", description: "Elegant high heels." },
+
+  // More Jewelry
+  { id: 101, name: "Rose Gold Ring", price: 99.99, image: "../eleven.png", category: "jewelry", description: "Beautiful rose gold ring." },
+  { id: 102, name: "Choker Necklace", price: 44.99, image: "../back.png", category: "jewelry", description: "Trendy choker necklace." },
+  { id: 103, name: "Diamond Earrings", price: 149.99, image: "../twelve.png", category: "jewelry", description: "Sparkling diamond earrings." },
+  { id: 104, name: "Silver Bracelet", price: 29.99, image: "../thirteen.png", category: "jewelry", description: "Delicate silver bracelet." },
+  { id: 105, name: "Pearl Necklace", price: 79.99, image: "../fourteen.png", category: "jewelry", description: "Classic pearl necklace." },
+
+  // More Bags
+  { id: 106, name: "Designer Tote", price: 129.99, image: "../fine.png", category: "bags", description: "High-end designer tote." },
+  { id: 107, name: "Evening Clutch", price: 89.99, image: "../foutheen.png", category: "bags", description: "Glamorous evening clutch." },
+  { id: 108, name: "Leather Backpack", price: 109.99, image: "../fifteen.png", category: "bags", description: "Durable leather backpack." },
+  { id: 109, name: "Crossbody Bag", price: 59.99, image: "../sixteen.png", category: "bags", description: "Convenient crossbody bag." },
+  { id: 110, name: "Wristlet Wallet", price: 24.99, image: "../seventeen.png", category: "bags", description: "Compact wristlet wallet." },
+
+  // More Makeup
+  { id: 111, name: "Nude Lipstick", price: 18.99, image: "../sixteen.png", category: "makeup", description: "Natural nude lipstick." },
+  { id: 112, name: "Eyeliner Pen", price: 14.99, image: "../thirteen.png", category: "makeup", description: "Precise eyeliner pen." },
+  { id: 113, name: "Foundation Palette", price: 39.99, image: "../eighteen.png", category: "makeup", description: "Versatile foundation palette." },
+  { id: 114, name: "Mascara Wand", price: 12.99, image: "../nineteen.png", category: "makeup", description: "Volumizing mascara wand." },
+  { id: 115, name: "Blush Compact", price: 22.99, image: "../twenty.png", category: "makeup", description: "Rosy blush compact." },
+
+  // More Human Hair
+  { id: 116, name: "Wavy Wig", price: 109.99, image: "../one.png", category: "human-hair", description: "Stunning wavy wig." },
+  { id: 117, name: "Clip-in Extensions", price: 89.99, image: "../two.png", category: "human-hair", description: "Easy clip-in extensions." },
+  { id: 118, name: "Ponytail Extension", price: 49.99, image: "../three.png", category: "human-hair", description: "Convenient ponytail extension." },
+  { id: 119, name: "Hair Topper", price: 79.99, image: "../four.png", category: "human-hair", description: "Natural hair topper." },
+  { id: 120, name: "Synthetic Wig", price: 59.99, image: "../five.png", category: "human-hair", description: "Affordable synthetic wig." },
+];
 
 // Export for use in other scripts
 if (typeof module !== 'undefined' && module.exports) {
