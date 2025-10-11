@@ -240,13 +240,13 @@ function initApp() {
     modal.innerHTML = `
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <img src="${product.image}" alt="${product.name}" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+        <img src="${product.image}" alt="${product.name}" loading="lazy" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
         <h2>${product.name}</h2>
         <p>${product.description}</p>
         <div class="price" style="font-size: 24px; color: var(--primary-color); margin: 20px 0;">$${product.price}</div>
         <div class="buttons">
-          <button class="add-to-cart" onclick="addToCart(${product.id}); closeModal();">Add to Cart</button>
-          <button class="add-to-wishlist" onclick="addToWishlist(${product.id}); closeModal();">❤️ Add to Wishlist</button>
+          <button class="add-to-cart" onclick="addToCart(${product.id}); closeModal();" aria-label="Add ${product.name} to cart">Add to Cart</button>
+          <button class="add-to-wishlist" onclick="addToWishlist(${product.id}); closeModal();" aria-label="Add ${product.name} to wishlist">❤️ Add to Wishlist</button>
         </div>
       </div>
     `;
@@ -337,7 +337,7 @@ function initCartPage() {
     const cartItem = document.createElement('div');
     cartItem.className = 'cart-item';
     cartItem.innerHTML = `
-      <img src="${item.image}" alt="${item.name}">
+      <img src="${item.image}" alt="${item.name}" loading="lazy">
       <div>
         <h3>${item.name}</h3>
         <p>$${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}</p>
