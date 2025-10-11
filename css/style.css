@@ -83,6 +83,13 @@ h1, h2, h3 {
   position: relative;
 }
 
+.nav-links a[href*="index"]::before { content: "🏠 "; }
+.nav-links a[href*="category"]::before { content: "📂 "; }
+.nav-links a[href*="account"]::before { content: "👤 "; }
+.nav-links a[href*="carts"]::before { content: "🛒 "; }
+.nav-links a[href*="wishlist"]::before { content: "❤️ "; }
+.nav-links a[href*="offers"]::before { content: "🏷️ "; }
+
 .nav-links a:hover {
   background: var(--primary-color);
   color: white;

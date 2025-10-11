@@ -20,7 +20,7 @@
 - [x] Add interactivity: Auto-slider, search/filter JS, add to cart/wishlist buttons, quantity selectors.
 - [x] Add uniqueness: Dark mode toggle, image zoom modals, infinite scroll, animations (fade-in, hover effects).
 - [x] Add functionality: Product detail modals, sorting (price, name), responsive mobile menu.
-- [ ] Test: Launch in browser, verify cart persistence, responsiveness, interactivity.
+- [x] Test: Launch in browser, verify cart persistence, responsiveness, interactivity.
 
 ## Phase 4: Polish & Demo
 - [ ] Refine UI: Ensure beautiful design, unique elements (e.g., custom icons, gradients).
