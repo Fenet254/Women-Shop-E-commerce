@@ -93,13 +93,6 @@ const products = [
   { id: 70, name: "Mascara", price: 24.99, image: "../twen.png", category: "makeup", description: "Lengthening mascara." },
   { id: 71, name: "Blush", price: 22.99, image: "../twtw.png", category: "makeup", description: "Rosy blush." },
 
-  // Human Hair
-  { id: 72, name: "Straight Wig", price: 99.99, image: "../one.png", category: "human-hair", description: "Natural straight wig." },
-  { id: 73, name: "Curly Extensions", price: 79.99, image: "../two.png", category: "human-hair", description: "Beautiful curly extensions." },
-  { id: 74, name: "Bob Wig", price: 89.99, image: "../three.png", category: "human-hair", description: "Chic bob wig." },
-  { id: 75, name: "Lace Frontal", price: 119.99, image: "../four.png", category: "human-hair", description: "Premium lace frontal." },
-  { id: 76, name: "Braided Hair", price: 69.99, image: "../five.png", category: "human-hair", description: "Stylish braided hair." },
-];
 
 // Export for use in other scripts
 if (typeof module !== 'undefined' && module.exports) {
