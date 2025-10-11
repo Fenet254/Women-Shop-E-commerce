@@ -52,6 +52,7 @@ function initApp() {
   initThemeToggle();
   renderFeaturedSection();
   renderRelatedSection();
+  renderAdvertisementSection();
 
   // Create theme toggle if not exists
   function createThemeToggle() {
@@ -368,6 +369,24 @@ function initApp() {
       </div>
     `;
     footer.insertAdjacentElement('beforebegin', relatedSection);
+  }
+
+  // Render advertisement section before footer
+  function renderAdvertisementSection() {
+    const advertisementGrid = document.querySelector('.advertisement-grid');
+    if (!advertisementGrid) return;
+
+    const images = [
+      'back.png', 'bottoms.png', 'ff.png', 'fifteen.png', 'fine.png', 'foutheen.png',
+      'ii.png', 'seventeen.png', 'seventen.png', 'sixteen.png', 'thirteen.png',
+      'twelve.png', 'twen.png', 'twtw.png', 'eighteen.png'
+    ];
+
+    advertisementGrid.innerHTML = images.map(img => `
+      <div class="advertisement-item" onclick="showNotification('Advertisement clicked!')">
+        <img src="../${img}" alt="Advertisement">
+      </div>
+    `).join('');
   }
 
   // Expose functions globally for HTML onclick
