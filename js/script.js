@@ -50,6 +50,8 @@ function initApp() {
   initSlider();
   initSearch();
   initThemeToggle();
+  renderFeaturedSection();
+  renderRelatedSection();
 
   // Create theme toggle if not exists
   function createThemeToggle() {
@@ -316,6 +318,57 @@ function initApp() {
       }, 1000);
     }
   });
+
+  // Render featured section under search bar
+  function renderFeaturedSection() {
+    const searchBar = document.querySelector('.search-bar');
+    if (!searchBar) return;
+
+    const featuredSection = document.createElement('div');
+    featuredSection.className = 'featured-section';
+    featuredSection.innerHTML = `
+      <h2>Featured Categories</h2>
+      <div class="featured-grid">
+        <div class="featured-item">
+          <img src="../image/dressimage/dress.png" alt="Dresses">
+          <h3>Dresses</h3>
+          <p>Explore our latest dress collection.</p>
+        </div>
+        <div class="featured-item">
+          <img src="../image/skirtimage/skirt1.png" alt="Skirts">
+          <h3>Skirts</h3>
+          <p>Stylish skirts for every occasion.</p>
+        </div>
+        <div class="featured-item">
+          <img src="../image/suitimage/suit1.png" alt="Suits">
+          <h3>Suits</h3>
+          <p>Elegant suits for formal wear.</p>
+        </div>
+      </div>
+    `;
+    searchBar.insertAdjacentElement('afterend', featuredSection);
+  }
+
+  // Render related section before footer
+  function renderRelatedSection() {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+
+    const relatedSection = document.createElement('div');
+    relatedSection.className = 'related-section';
+    relatedSection.innerHTML = `
+      <h2>You Might Also Like</h2>
+      <div class="related-products">
+        ${products.slice(0, 4).map(product => `
+          <div class="related-product">
+            <img src="${product.image}" alt="${product.name}">
+            <h4>${product.name}</h4>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    footer.insertAdjacentElement('beforebegin', relatedSection);
+  }
 
   // Expose functions globally for HTML onclick
   window.renderProducts = renderProducts;
