@@ -29,7 +29,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: white;
   color: var(--dark-color);
   line-height: 1.6;
   min-height: 100vh;
@@ -303,6 +303,87 @@ h1, h2, h3 {
 .filters select:focus, .filters input:focus {
   border-color: var(--secondary-color);
   box-shadow: 0 0 10px rgba(147, 112, 219, 0.3);
+}
+
+.category-nav {
+  display: none; /* Hide old nav */
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: var(--transition);
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.category-card h3 {
+  color: var(--dark-color);
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.category-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.category-card .cta-button {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.category-card .cta-button:hover {
+  background: var(--secondary-color);
+  transform: scale(1.05);
 }
 
 footer {

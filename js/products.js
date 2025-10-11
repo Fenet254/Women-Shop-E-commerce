@@ -64,6 +64,41 @@ const products = [
   { id: 49, name: "Tulle Skirt", price: 59.99, image: "../image/skirtimage/skirt7.png", category: "skirts", description: "Poofy tulle skirt." },
   { id: 50, name: "Executive Suit", price: 259.99, image: "../image/suitimage/suit2.png", category: "suits", description: "Executive power suit." },
   { id: 51, name: "Flannel Pajamas", price: 34.99, image: "../image/pjamaimage/pink-pijama.png", category: "pajamas", description: "Warm flannel pajamas." },
+
+  // Shoes
+  { id: 52, name: "Red Heels", price: 79.99, image: "../six.png", category: "shoes", description: "Classic red high heels." },
+  { id: 53, name: "White Sneakers", price: 59.99, image: "../seven.png", category: "shoes", description: "Comfortable white sneakers." },
+  { id: 54, name: "Black Boots", price: 99.99, image: "../eight.png", category: "shoes", description: "Stylish black boots." },
+  { id: 55, name: "Sandals", price: 39.99, image: "../nine.png", category: "shoes", description: "Summer sandals." },
+  { id: 56, name: "Loafers", price: 69.99, image: "../ten.png", category: "shoes", description: "Elegant loafers." },
+
+  // Jewelry
+  { id: 57, name: "Gold Necklace", price: 49.99, image: "../eleven.png", category: "jewelry", description: "Shiny gold necklace." },
+  { id: 58, name: "Diamond Earrings", price: 129.99, image: "../back.png", category: "jewelry", description: "Sparkling diamond earrings." },
+  { id: 59, name: "Silver Bracelet", price: 34.99, image: "../bottoms.png", category: "jewelry", description: "Delicate silver bracelet." },
+  { id: 60, name: "Pearl Ring", price: 89.99, image: "../ff.png", category: "jewelry", description: "Elegant pearl ring." },
+  { id: 61, name: "Hoop Earrings", price: 59.99, image: "../fifteen.png", category: "jewelry", description: "Trendy hoop earrings." },
+
+  // Bags
+  { id: 62, name: "Leather Handbag", price: 119.99, image: "../fine.png", category: "bags", description: "Luxury leather handbag." },
+  { id: 63, name: "Tote Bag", price: 49.99, image: "../foutheen.png", category: "bags", description: "Practical tote bag." },
+  { id: 64, name: "Clutch Purse", price: 79.99, image: "../ii.png", category: "bags", description: "Evening clutch purse." },
+  { id: 65, name: "Backpack", price: 89.99, image: "../seventeen.png", category: "bags", description: "Stylish backpack." },
+  { id: 66, name: "Crossbody Bag", price: 69.99, image: "../seventen.png", category: "bags", description: "Convenient crossbody bag." },
+
+  // Makeup
+  { id: 67, name: "Red Lipstick", price: 19.99, image: "../sixteen.png", category: "makeup", description: "Bold red lipstick." },
+  { id: 68, name: "Foundation", price: 29.99, image: "../thirteen.png", category: "makeup", description: "Natural foundation." },
+  { id: 69, name: "Eyeshadow Palette", price: 39.99, image: "../twelve.png", category: "makeup", description: "Versatile eyeshadow palette." },
+  { id: 70, name: "Mascara", price: 24.99, image: "../twen.png", category: "makeup", description: "Lengthening mascara." },
+  { id: 71, name: "Blush", price: 22.99, image: "../twtw.png", category: "makeup", description: "Rosy blush." },
+
+  // Human Hair
+  { id: 72, name: "Straight Wig", price: 99.99, image: "../one.png", category: "human-hair", description: "Natural straight wig." },
+  { id: 73, name: "Curly Extensions", price: 79.99, image: "../two.png", category: "human-hair", description: "Beautiful curly extensions." },
+  { id: 74, name: "Bob Wig", price: 89.99, image: "../three.png", category: "human-hair", description: "Chic bob wig." },
+  { id: 75, name: "Lace Frontal", price: 119.99, image: "../four.png", category: "human-hair", description: "Premium lace frontal." },
+  { id: 76, name: "Braided Hair", price: 69.99, image: "../five.png", category: "human-hair", description: "Stylish braided hair." },
 ];
 
 // Export for use in other scripts
