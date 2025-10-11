@@ -56,6 +56,7 @@ function initApp() {
     const toggle = document.createElement('button');
     toggle.className = 'theme-toggle';
     toggle.innerHTML = '🌙';
+    toggle.setAttribute('aria-label', 'Toggle dark mode');
     document.body.appendChild(toggle);
     return toggle;
   }
