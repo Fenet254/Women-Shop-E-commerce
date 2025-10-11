@@ -22,7 +22,13 @@
 - [x] Add functionality: Product detail modals, sorting (price, name), responsive mobile menu.
 - [x] Test: Launch in browser, verify cart persistence, responsiveness, interactivity.
 
-## Phase 4: Polish & Demo
+## Phase 4: UI Enhancements
+- [x] Change color scheme from pink/purple to gray.
+- [x] Add margin-top to footer for spacing.
+- [x] Add featured section under search bar.
+- [x] Add related products section before footer.
+
+## Phase 5: Polish & Demo
 - [x] Refine UI: Ensure beautiful design, unique elements (e.g., custom icons, gradients).
 - [x] Optimize: Accessibility, performance.
 - [x] Final test and demo.
