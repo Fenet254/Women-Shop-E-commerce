@@ -4,21 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary-color: #ff69b4;
-  --secondary-color: #9370db;
-  --accent-color: #ffb6c1;
-  --dark-color: #333;
+  --primary-color: #6c757d;
+  --secondary-color: #495057;
+  --accent-color: #adb5bd;
+  --dark-color: #212529;
   --light-color: #f8f9fa;
   --shadow: 0 4px 8px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
 }
 
 [data-theme="dark"] {
-  --primary-color: #da70d6;
-  --secondary-color: #8a2be2;
-  --accent-color: #ff1493;
+  --primary-color: #495057;
+  --secondary-color: #343a40;
+  --accent-color: #6c757d;
   --dark-color: #f8f9fa;
-  --light-color: #333;
+  --light-color: #212529;
 }
 
 * {
@@ -305,7 +305,99 @@ footer {
   background: var(--dark-color);
   color: white;
   padding: 40px 20px;
-  margin-top: auto;
+  margin-top: 100px;
+}
+
+.related-section {
+  padding: 40px 20px;
+  background: var(--light-color);
+  text-align: center;
+}
+
+.related-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.related-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.related-product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.related-product:hover {
+  transform: translateY(-5px);
+}
+
+.related-product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.related-product h4 {
+  color: var(--dark-color);
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.featured-section {
+  padding: 40px 20px;
+  background: var(--accent-color);
+  text-align: center;
+}
+
+.featured-section h2 {
+  color: var(--dark-color);
+  margin-bottom: 30px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.featured-item:hover {
+  transform: translateY(-5px);
+}
+
+.featured-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.featured-item h3 {
+  color: var(--dark-color);
+  margin: 15px 0 10px;
+}
+
+.featured-item p {
+  color: #666;
+  font-size: 14px;
 }
 
 .footer-container {
