@@ -378,7 +378,7 @@ function initWishlistPage() {
     const wishlistItem = document.createElement('div');
     wishlistItem.className = 'wishlist-item';
     wishlistItem.innerHTML = `
-      <img src="${item.image}" alt="${item.name}">
+      <img src="${item.image}" alt="${item.name}" loading="lazy">
       <div>
         <h3>${item.name}</h3>
         <p>$${item.price}</p>
