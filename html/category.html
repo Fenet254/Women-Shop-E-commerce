@@ -30,47 +30,16 @@
     </nav>
 
     <div class="page-container">
-        <div class="categories-grid">
-            <a href="Clothes.html" class="category-card">
-                <img src="../image/dressimage/dress1.png" alt="Clothes">
-                <h3>Clothes</h3>
-                <p>Discover trendy dresses, skirts, suits, and pajamas for every occasion.</p>
-                <button class="cta-button">Explore</button>
-            </a>
-            <a href="shoes.html" class="category-card">
-                <img src="../one.png" alt="Shoes">
-                <h3>Shoes</h3>
-                <p>Stylish footwear to complete your look, from heels to sneakers.</p>
-                <button class="cta-button">Explore</button>
-            </a>
-            <a href="jawlery.html" class="category-card">
-                <img src="../two.png" alt="Jewelry">
-                <h3>Jewelry</h3>
-                <p>Elegant accessories, necklaces, earrings, and more to shine bright.</p>
-                <button class="cta-button">Explore</button>
-            </a>
-            <a href="bags.html" class="category-card">
-                <img src="../three.png" alt="Bags">
-                <h3>Bags</h3>
-                <p>Fashionable handbags, clutches, and totes for everyday style.</p>
-                <button class="cta-button">Explore</button>
-            </a>
-            <a href="makeup.html" class="category-card">
-                <img src="../four.png" alt="Makeup">
-                <h3>Makeup</h3>
-                <p>Premium cosmetics, lipsticks, foundations, and beauty essentials.</p>
-                <button class="cta-button">Explore</button>
-            </a>
-            <a href="human-hair.html" class="category-card">
-                <img src="../five.png" alt="Human Hair">
-                <h3>Human Hair</h3>
-                <p>High-quality wigs, extensions, and hair products for stunning transformations.</p>
-                <button class="cta-button">Explore</button>
-            </a>
-        </div>
-
         <div class="main-content">
             <h1>Shop by Category</h1>
+            <div class="categories-nav">
+                <a href="Clothes.html">Clothes</a>
+                <a href="shoes.html">Shoes</a>
+                <a href="jawlery.html">Jewelry</a>
+                <a href="bags.html">Bags</a>
+                <a href="makeup.html">Makeup</a>
+                <a href="human-hair.html">Human Hair</a>
+            </div>
             <h2>Featured Products Across Categories</h2>
             <div class="filters">
                 <select onchange="filterByCategory(this.value)">
@@ -86,6 +55,18 @@
                     <option value="price-high">Price: High to Low</option>
                     <option value="name">Name</option>
                 </select>
+            </div>
+            <div class="advertisement-section">
+                <img src="../image/dressimage/dress1.png" alt="Ad 1">
+                <img src="../image/dressimage/dress2.png" alt="Ad 2">
+                <img src="../image/dressimage/dress3.png" alt="Ad 3">
+                <img src="../image/dressimage/dress4.png" alt="Ad 4">
+                <img src="../image/dressimage/dress5.png" alt="Ad 5">
+                <img src="../image/dressimage/dress6.png" alt="Ad 6">
+                <img src="../image/dressimage/dress7.png" alt="Ad 7">
+                <img src="../image/dressimage/dress8.png" alt="Ad 8">
+                <img src="../image/dressimage/dress9.png" alt="Ad 9">
+                <img src="../image/dressimage/dress10.png" alt="Ad 10">
             </div>
             <div class="product-container">
                 <!-- Products will be rendered here by JS -->
