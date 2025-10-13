@@ -1,7 +1,7 @@
 // Product data for Girls Shop E-Commerce
 const products = [
   // Dresses
-  { id: 1, name: "Elegant Red Dress", price: 89.99, image: "../image/dressimage/dress.png", category: "dresses", description: "Stunning red dress perfect for parties." },
+  { id: 1, name: "Elegant Red Dress", price: 89.99, image: "../image/dressimage/dress.png", category: "dresses", description: "Stunning red dress perfect for parties.", sizes: ["S", "M", "L", "XL"], colors: ["Red"], reviews: [{ user: "Alice", rating: 5, comment: "Love it!" }], rating: 5 },
   { id: 2, name: "Summer Floral Dress", price: 59.99, image: "../image/dressimage/dress1.png", category: "dresses", description: "Light floral dress for summer outings." },
   { id: 3, name: "Black Evening Dress", price: 129.99, image: "../image/dressimage/dress2.png", category: "dresses", description: "Sophisticated black dress for evenings." },
   { id: 4, name: "Casual Blue Dress", price: 49.99, image: "../image/dressimage/dress3.png", category: "dresses", description: "Comfortable blue dress for daily wear." },
