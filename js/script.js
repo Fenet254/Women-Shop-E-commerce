@@ -10,6 +10,11 @@ fetch('../js/products.js')
     const match = text.match(/const products = (\[[\s\S]*?\]);/);
     if (match) {
       products = eval(match[1]);
+      // Load from localStorage if modified
+      const storedProducts = localStorage.getItem('products');
+      if (storedProducts) {
+        products = JSON.parse(storedProducts);
+      }
       initApp();
     }
   })
@@ -21,6 +26,27 @@ fetch('../js/products.js')
     ];
     initApp();
   });
+
+// Load additional scripts
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+}
+
+// Load PWA and Admin scripts
+Promise.all([
+  loadScript('../js/pwa.js'),
+  loadScript('../js/admin.js')
+]).then(() => {
+  console.log('PWA and Admin scripts loaded');
+}).catch(error => {
+  console.error('Error loading scripts:', error);
+});
 
 // Initialize app after products load
 function initApp() {

@@ -1,0 +1,21 @@
+{
+  "name": "Girls Shop - Fashion E-Commerce",
+  "short_name": "Girls Shop",
+  "description": "The most unique and functional e-commerce platform for girls' fashion",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#6c757d",
+  "icons": [
+    {
+      "src": "ff.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "ff.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
