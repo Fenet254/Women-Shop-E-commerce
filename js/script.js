@@ -48,6 +48,165 @@ Promise.all([
   console.error('Error loading scripts:', error);
 });
 
+// Voice search functionality
+function initVoiceSearch() {
+  const searchInput = document.querySelector('.search-bar input');
+  if (!searchInput || !('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) return;
+
+  const voiceBtn = document.createElement('button');
+  voiceBtn.innerHTML = '🎤';
+  voiceBtn.setAttribute('aria-label', 'Voice search');
+  voiceBtn.style.marginLeft = '10px';
+  voiceBtn.style.background = 'var(--primary-color)';
+  voiceBtn.style.color = 'white';
+  voiceBtn.style.border = 'none';
+  voiceBtn.style.borderRadius = '50%';
+  voiceBtn.style.width = '40px';
+  voiceBtn.style.height = '40px';
+  voiceBtn.style.cursor = 'pointer';
+  searchInput.parentNode.appendChild(voiceBtn);
+
+  voiceBtn.addEventListener('click', () => {
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'en-US';
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      searchInput.value = transcript;
+      performSearch(transcript);
+    };
+
+    recognition.onerror = (event) => {
+      showNotification('Voice search failed. Please try again.');
+    };
+  });
+}
+
+// Advanced filters
+function initAdvancedFilters() {
+  const filterContainer = document.querySelector('.filter-container');
+  if (!filterContainer) return;
+
+  filterContainer.innerHTML = `
+    <div class="advanced-filters">
+      <select id="size-filter">
+        <option value="">All Sizes</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">Extra Large</option>
+      </select>
+      <select id="color-filter">
+        <option value="">All Colors</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="pink">Pink</option>
+      </select>
+      <input type="range" id="price-filter" min="0" max="200" value="200">
+      <span id="price-value">$200</span>
+      <button id="apply-filters">Apply Filters</button>
+    </div>
+  `;
+
+  const priceFilter = document.getElementById('price-filter');
+  const priceValue = document.getElementById('price-value');
+  priceFilter.addEventListener('input', () => {
+    priceValue.textContent = '$' + priceFilter.value;
+  });
+
+  document.getElementById('apply-filters').addEventListener('click', () => {
+    const size = document.getElementById('size-filter').value;
+    const color = document.getElementById('color-filter').value;
+    const maxPrice = parseInt(priceFilter.value);
+
+    filteredProducts = products.filter(product => {
+      return (!size || product.size === size) &&
+             (!color || product.color === color) &&
+             product.price <= maxPrice;
+    });
+    renderProducts();
+  });
+}
+
+// User profiles
+function initUserProfiles() {
+  const user = JSON.parse(localStorage.getItem('user'));
+  if (!user) return;
+
+  // Add user menu to navbar
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    const userMenu = document.createElement('div');
+    userMenu.className = 'user-menu';
+    userMenu.innerHTML = `
+      <button class="user-btn">${user.email.split('@')[0]}</button>
+      <div class="user-dropdown">
+        <a href="account.html">Profile</a>
+        <a href="#" onclick="logout()">Logout</a>
+      </div>
+    `;
+    navbar.appendChild(userMenu);
+  }
+}
+
+window.logout = function() {
+  localStorage.removeItem('user');
+  window.location.reload();
+};
+
+// Social sharing
+function initSocialSharing() {
+  document.querySelectorAll('.product-card').forEach(card => {
+    const shareBtn = document.createElement('button');
+    shareBtn.innerHTML = '📤';
+    shareBtn.setAttribute('aria-label', 'Share product');
+    shareBtn.className = 'share-btn';
+    shareBtn.onclick = () => shareProduct(card);
+    card.querySelector('.buttons').appendChild(shareBtn);
+  });
+}
+
+function shareProduct(card) {
+  const productName = card.querySelector('h3').textContent;
+  const productImage = card.querySelector('img').src;
+  const url = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: productName,
+      text: `Check out this ${productName}!`,
+      url: url
+    });
+  } else {
+    // Fallback: copy to clipboard
+    navigator.clipboard.writeText(`${productName} - ${url}`);
+    showNotification('Link copied to clipboard!');
+  }
+}
+
+// Image search
+function initImageSearch() {
+  const imageSearchBtn = document.querySelector('.image-search-btn');
+  if (!imageSearchBtn) return;
+
+  imageSearchBtn.addEventListener('click', () => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        // Simulate image search (in real app, send to AI service)
+        showNotification('Image search feature coming soon!');
+      }
+    };
+    input.click();
+  });
+}
+
 // Initialize app after products load
 function initApp() {
   // DOM elements
@@ -75,6 +234,11 @@ function initApp() {
   updateWishlistCount();
   initSlider();
   initSearch();
+  initVoiceSearch();
+  initAdvancedFilters();
+  initUserProfiles();
+  initSocialSharing();
+  initImageSearch();
   initThemeToggle();
   renderFeaturedSection();
   renderRelatedSection();
