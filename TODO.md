@@ -33,16 +33,16 @@
 - [x] Optimize: Accessibility, performance.
 - [x] Final test and demo.
 
-## Phase 6: AI & Advanced Features
-- [ ] Enhance js/products.js: Add sizes, colors, reviews, ratings to product data.
-- [ ] Create js/ai.js: AI-powered recommendations based on user behavior (views, cart, wishlist).
-- [ ] Create js/chatbot.js: Simple chatbot for FAQs, product queries, support.
-- [ ] Create js/analytics.js: Track product views, popular items, user behavior.
+## Phase 6: AI & Advanced Features (In Progress)
+- [x] Enhance js/products.js: Add sizes, colors, reviews, ratings to product data.
+- [x] Create js/ai.js: AI-powered recommendations based on user behavior (views, cart, wishlist).
+- [x] Create js/chatbot.js: Simple chatbot for FAQs, product queries, support.
+- [x] Create js/analytics.js: Track product views, popular items, user behavior.
 - [ ] Create js/pwa.js: Service worker for offline support, install prompt.
 - [ ] Create js/admin.js: Simulated admin panel for managing products.
-- [ ] Update js/script.js: Integrate new modules, enhance search (voice, advanced filters), user profiles, social features.
-- [ ] Update css/style.css: Add styles for chatbot, reviews, admin panel, PWA, accessibility, multi-language.
-- [ ] Update html/index.html: Add recommendations, chatbot button, analytics tracking.
+- [ ] Update js/script.js: Integrate PWA/admin, enhance search (voice, advanced filters), add user profiles, social features.
+- [ ] Update css/style.css: Styles for chatbot (enhance), reviews, admin, PWA, accessibility, multi-language.
+- [ ] Update html/index.html: Add AI recommendations, chatbot button, analytics tracking.
 - [ ] Update html/category.html: Enhanced filters (size, color, price), image search.
 - [ ] Update html/skirt.html, html/suit.html, html/Clothes.html: Add reviews, sharing, recommendations.
 - [ ] Update html/carts.html: Advanced checkout with payment/shipping forms, progress bar.
