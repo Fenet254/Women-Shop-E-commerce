@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Girls Shop</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <script src="../js/products.js" defer></script>
+  <script src="../js/ai.js" defer></script>
+  <script src="../js/chatbot.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
+  <script src="../js/pwa.js" defer></script>
+  <script src="../js/admin.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <img src="../ff.png" alt="Girls Shop Logo">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="category.html">Categories</a>
+      <a href="account.html">Account</a>
+      <a href="carts.html">Cart <span class="cart-count"></span></a>
+      <a href="wishlist.html">Wishlist <span class="wishlist-count"></span></a>
+      <a href="offers.html">Offers</a>
+    </div>
+  </nav>
+
+  <div class="page-container">
+    <div class="main-content">
+      <h1>Admin Panel</h1>
+      <p>Welcome to the admin dashboard. Manage products, view analytics, and configure settings.</p>
+
+      <div class="admin-dashboard">
+        <div class="admin-stats">
+          <div class="stat-card">
+            <h3>Total Products</h3>
+            <p id="total-products">Loading...</p>
+          </div>
+          <div class="stat-card">
+            <h3>Total Views</h3>
+            <p id="total-views">Loading...</p>
+          </div>
+          <div class="stat-card">
+            <h3>Popular Category</h3>
+            <p id="popular-category">Loading...</p>
+          </div>
+          <div class="stat-card">
+            <h3>Revenue</h3>
+            <p id="revenue">$0.00</p>
+          </div>
+        </div>
+
+        <div class="admin-actions">
+          <button onclick="addNewProduct()">Add New Product</button>
+          <button onclick="exportData()">Export Data</button>
+          <button onclick="importData()">Import Data</button>
+        </div>
+
+        <div class="recent-activity">
+          <h3>Recent Activity</h3>
+          <ul id="activity-list">
+            <li>Loading...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Your go-to fashion destination for the latest trends in girls' clothing.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="account.html">Account</a>
+        <a href="carts.html">Cart</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: support@girlsshop.com</p>
+        <p>Phone: 1-800-SHOP-NOW</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Girls Shop. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Load admin dashboard data
+    document.addEventListener('DOMContentLoaded', () => {
+      // Simulate loading data
+      setTimeout(() => {
+        document.getElementById('total-products').textContent = products.length;
+        document.getElementById('total-views').textContent = Object.values(analytics.views).reduce((a, b) => a + b, 0);
+        const categories = [...new Set(products.map(p => p.category))];
+        document.getElementById('popular-category').textContent = categories[Math.floor(Math.random() * categories.length)];
+        document.getElementById('revenue').textContent = '$' + (Math.random() * 10000).toFixed(2);
+
+        const activities = [
+          'New product added: Summer Dress',
+          'User registered: john@example.com',
+          'Order placed: Order #12345',
+          'Product updated: Red Heels',
+          'Analytics reset by admin'
+        ];
+        document.getElementById('activity-list').innerHTML = activities.map(activity => `<li>${activity}</li>`).join('');
+      }, 1000);
+    });
+
+    window.exportData = function() {
+      const data = {
+        products,
+        analytics: analytics.getAnalytics(),
+        timestamp: new Date().toISOString()
+      };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'girls-shop-data.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showNotification('Data exported!');
+    };
+
+    window.importData = function() {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = '.json';
+      input.onchange = (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            const data = JSON.parse(event.target.result);
+            if (data.products) {
+              localStorage.setItem('products', JSON.stringify(data.products));
+              showNotification('Data imported successfully!');
+              location.reload();
+            }
+          } catch (error) {
+            showNotification('Invalid file format!');
+          }
+        };
+        reader.readAsText(file);
+      };
+      input.click();
+    };
+  </script>
+</body>
+</html>
