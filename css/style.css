@@ -4,13 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary-color: #6c757d;
-  --secondary-color: #495057;
-  --accent-color: #adb5bd;
+  --primary-color: #007bff; /* Alibaba-inspired blue */
+  --secondary-color: #0056b3;
+  --accent-color: #ff6b6b; /* Vibrant accent */
   --dark-color: #212529;
   --light-color: #f8f9fa;
+  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --shadow: 0 4px 8px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
+  --border-radius: 12px;
 }
 
 [data-theme="dark"] {
@@ -45,7 +47,7 @@ h1, h2, h3 {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--gradient);
   backdrop-filter: blur(10px);
   padding: 15px 20px;
   display: flex;
@@ -55,6 +57,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .navbar img {
