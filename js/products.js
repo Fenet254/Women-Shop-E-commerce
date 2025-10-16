@@ -168,3 +168,73 @@ const products = [
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = products;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.querySelector(".login-form");
+  const registerForm = document.querySelector(".register-form");
+  const loginContainer = document.querySelector(".account-form:nth-child(1)");
+  const registerContainer = document.querySelector(".account-form:nth-child(2)");
+
+  const toggleButtons = document.createElement("div");
+  toggleButtons.className = "toggle-buttons";
+  toggleButtons.innerHTML = `
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showRegister()">Register</button>
+  `;
+  document.querySelector(".account-forms").prepend(toggleButtons);
+
+  window.showLogin = function () {
+    loginContainer.classList.remove("inactive");
+    registerContainer.classList.add("inactive");
+  };
+
+  window.showRegister = function () {
+    registerContainer.classList.remove("inactive");
+    loginContainer.classList.add("inactive");
+  };
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = loginForm.email.value;
+    const password = loginForm.password.value;
+
+    if (email && password) {
+      alert("Login successful!");
+    
+    } else {
+      alert("Please fill in all fields.");
+    }
+  });
+
+  registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = registerForm.email.value;
+    const password = registerForm.password.value;
+    const confirmPassword = registerForm.confirmPassword.value;
+
+    if (!email || !password || !confirmPassword) {
+      alert("Please fill in all fields.");
+    } else if (password !== confirmPassword) {
+      alert("Passwords do not match.");
+    } else {
+      alert("Registration successful!");
+      
+    }
+  });
+
+  showLogin();
+});
+function showLogin() {
+  document.getElementById("login-container").style.display = "block";
+  document.getElementById("register-container").style.display = "none";
+}
+
+function showRegister() {
+  document.getElementById("register-container").style.display = "block";
+  document.getElementById("login-container").style.display = "none";
+}
+
+// Optional: Set default view
+document.addEventListener("DOMContentLoaded", showLogin);
+
+
