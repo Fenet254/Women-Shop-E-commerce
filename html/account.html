@@ -5,8 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Account - Girls Shop</title>
+    <style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .wrapper {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+  }
+
+  .icon-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+  }
+
+  .logreg-box {
+    width: 100%;
+  }
+
+  .form-box {
+    display: none;
+  }
+
+  .form-box.login,
+  .form-box.register {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .form-box.active {
+    display: block;
+  }
+
+  .logreg-title h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .logreg-title p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .input-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-box input {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .input-box label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #555;
+  }
+
+  .media-options {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .media-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .media-options a i {
+    font-size: 18px;
+  }
+
+  .media-options a[href*="google"] {
+    background-color: #db4437;
+    color: white;
+  }
+
+  .media-options a[href*="google"]:hover {
+    background-color: #c23321;
+  }
+
+  .media-options a[href*="facebook"] {
+    background-color: #3b5998;
+    color: white;
+  }
+
+  .media-options a[href*="facebook"]:hover {
+    background-color: #2d4373;
+  }
+
+  .input-box .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+     width: 100%;
+      height: 45px;
+      background: lab(54.39% -29.24 -5.69);
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      font-size: 16px;
+      color: #222;
+      font-weight: 600;
+    
+  }
+  .btn:hover {
+    background-color: #d81b60;
+  }
+
+  .logreg-link {
+    font-size: 14.5px;
+      color: black;
+      text-align: center;
+      font-weight: 500;
+      margin: 20px 0 15px;
+  
+  }
+
+  .logreg-link a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+  }
+    .logreg-link p a {
+      color: red;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  .logreg-link a:hover {
+    text-decoration: underline;
+  }
+
+ .media-options {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .media-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 300px;
+     border-radius: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .media-options a:hover {
+      background: rgba(225, 225, 255, 0.1);
+    }
+    .media-options a i {
+       margin-right: 5px;
+      font-size: 22px;
+      margin: 0 8px 1.5px 0;
+    }
+    .media-options a span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  media-options a[href*="google"] {
+    background-color: #db4437;
+    color: white;
+  }
+
+  .media-options a[href*="google"]:hover {
+    background-color: #c23321;
+  }
+
+  .media-options a[href*="facebook"] {
+    background-color: #3b5998;
+    color: white;
+  }
+
+  .media-options a[href*="facebook"]:hover {
+    background-color: #2d4373;
+  }
+  .icon-close {
+      top: 0;
+      right: 0;
+      position: absolute;
+      height: 45px;
+      width: 45px;
+      background: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 10px;
+    }
+    .icon-close i {
+      font-size: 32px;
+      color: #333;
+    }
+
+</style>
     <script>
   document.addEventListener('DOMContentLoaded', function () {
     // Show login form by default
@@ -88,7 +349,7 @@
               <label for="loginEmail">Email</label>
             </div>
             <div class="input-box">
-              <span class="icon"><i class="bx bxs-lock-alt" aria-hidden="true"></i></span>
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
               <input type="password" id="loginPassword" name="login_password" required>
               <label for="loginPassword">Password</label>
             </div>
@@ -113,17 +374,17 @@
                 </div>
           <form action="/register" method="post">
             <div class="input-box">
-              <span class="icon"><i class="bx bxs-user" aria-hidden="true"></i></span>
+              <span class="icon"><i class="bx bxs-user" ></i></span>
               <input type="text" id="registerName" name="register_name" required>
               <label for="registerName">Full Name</label>
             </div>
             <div class="input-box">
-              <span class="icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
-              <input type="email" id="registerEmail" name="register_email" required>
-              <label for="registerEmail">Email</label>
-            </div>
+         <span class="icon"><i class="bx bxs-envelope"></i></span>
+        <input type="email" id="registerEmail" name="register_email" required>
+         <label for="registerEmail">Email</label>
+          </div>
             <div class="input-box">
-              <span class="icon"><i class="bx bxs-lock-alt" aria-hidden="true"></i></span>
+              <span class="icon"><i class="bx bxs-lock-alt" ></i></span>
               <input type="password" id="registerPassword" name="register_password" required>
               <label for="registerPassword">Password</label>
             </div>
