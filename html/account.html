@@ -7,6 +7,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Account - Girls Shop</title>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Show login form by default
+    toggleForm('login');
+
+    // Handle "Register here" link
+    const registerLink = document.querySelector('.login .logreg-link a');
+    if (registerLink) {
+      registerLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleForm('register');
+      });
+    }
+
+    // Handle "Login" link in register form
+    const loginLink = document.querySelector('.register .logreg-link a');
+    if (loginLink) {
+      loginLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleForm('login');
+      });
+    }
+  });
+
+  function toggleForm(type) {
+    const loginForm = document.querySelector('.form-box.login');
+    const registerForm = document.querySelector('.form-box.register');
+    if (type === 'register') {
+      loginForm.style.display = 'none';
+      registerForm.style.display = 'block';
+    } else {
+      loginForm.style.display = 'block';
+      registerForm.style.display = 'none';
+    }
+  }
+</script>
 </head>
 <body>
     <nav class="navbar">
@@ -30,104 +66,93 @@
     </nav>
 
     <h1>My Account</h1>
-<section class="section">
-  <div class="wrapper">
-    <span class="icon-close">
-      <i class="bx bx-x"></i>
-    </span>
-    <div class="logreg-box">
+  
 
-      <div class="form-box login">
-        <div class="logreg-title">
-          <h2>Login</h2>
-          <p>Please login to use the platform</p>
-        </div>
-        <form action="" method="post">  <!-- Added method="post" -->
-          <div class="input-box">
-            <span class="icon">
-              <i class="bi bi-envelope"></i>
-            </span>
-            <input type="email" id="loginEmail" name="email" required> <!-- Added id -->
-            <label for="loginEmail">Email</label>  <!-- Corrected for attribute -->
-          </div>
-          <div class="input-box">
-            <span class="icon">
-              <i class="bx bxs-lock-alt"></i>
-            </span>
-            <input type="password" id="loginPassword" name="password" required> <!-- Added id -->
-            <label for="loginPassword">Password</label> <!-- Corrected for attribute -->
-          </div>
-          <div class="remember-forgot">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-            <a href="#">Forgot password?</a>
-          </div>
-          <button type="submit" name="login" class="btn">Login</button>
-          <div class="logreg-link">
-            <p>Don't have an account?
-              <a href="#" class="register-link">Register</a>
-            </p>
-          </div>
-        </form>
-      </div>
+  <section class="section">
+    <div class="wrapper" id="popupWrapper">
+      <span class="icon-close" onclick="closePopup()" title="Close">
+        <i class="bx bx-x" aria-hidden="true"></i>
+      </span>
 
-      <!-- REGISTER -->
-      <div class="form-box register">
-        <div class="logreg-title">
-          <h2>Registration</h2>
-          <p>Please provide the following to verify your identity</p>
+      <div class="logreg-box">
+        <!-- LOGIN -->
+        <div class="form-box login">
+          <div class="logreg-title">
+            <h2>Login</h2>
+            <p>Please login to use the platform</p>
+          </div>
+          <form action="/login" method="post">
+            <div class="input-box">
+              <span class="icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+              <input type="email" id="loginEmail" name="login_email" required>
+              <label for="loginEmail">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt" aria-hidden="true"></i></span>
+              <input type="password" id="loginPassword" name="login_password" required>
+              <label for="loginPassword">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" name="remember_me"> Remember me</label>
+              <a href="/forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="logreg-link">
+              <p>Don't have an account?
+                <a href="#" onclick="toggleForm('register')">Register</a>
+              </p>
+            </div>
+          </form>
         </div>
 
-        <form action="" method="post"> <!-- Added method="post" -->
-          <div class="input-box">
-            <span class="icon">
-              <i class="bx bxs-user"></i>
-            </span>
-            <input type="text" id="registerName" name="name" required> <!-- Added id -->
-            <label for="registerName">Full Name</label> <!-- Corrected for attribute -->
-          </div>
-          <div class="input-box">
-            <span class="icon">
-              <i class="bi bi-envelope"></i>
-            </span>
-            <input type="email" id="registerEmail" name="email" required> <!-- Added id -->
-            <label for="registerEmail">Email</label>  <!-- Corrected for attribute -->
-          </div>
-          <div class="input-box">
-            <span class="icon">
-              <i class="bx bxs-lock-alt"></i>
-            </span>
-            <input type="password" id="registerPassword" name="password" required> <!-- Added id -->
-            <label for="registerPassword">Password</label> <!-- Corrected for attribute -->
-          </div>
-          <div class="remember-forgot">
-            <label>
-              <input type="checkbox"> I agree to the terms & conditions
-            </label>
-          </div>
-          <button type="submit" name="register" class="btn">Register</button>
-          <div class="logreg-link">
-            <p>Already have an account?
-              <a href="#" class="login-link">Login</a>
-            </p>
-          </div>
-        </form>
+        <!-- REGISTER -->
+        <div class="form-box register">
+          <div class="logreg-title">
+            <h2>Registration</h2>
+            <p>Please provide the following to verify your identity</p>
+                </div>
+          <form action="/register" method="post">
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user" aria-hidden="true"></i></span>
+              <input type="text" id="registerName" name="register_name" required>
+              <label for="registerName">Full Name</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+              <input type="email" id="registerEmail" name="register_email" required>
+              <label for="registerEmail">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt" aria-hidden="true"></i></span>
+              <input type="password" id="registerPassword" name="register_password" required>
+              <label for="registerPassword">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" name="terms_agree" required> I agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="logreg-link">
+              <p>Already have an account?
+                <a href="#" onclick="toggleForm('login')">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="media-options">
+        <a href="/auth/google" title="Login with Google">
+          <i class="bx bxl-google" aria-hidden="true"></i>
+          <span>Login with Google</span>
+        </a>
+        <a href="/auth/facebook" title="Login with Facebook">
+          <i class="bx bxl-facebook-circle" aria-hidden="true"></i>
+          <span>Login with Facebook</span>
+        </a>
       </div>
     </div>
-
-    <div class="media-options">
-      <a href="#">
-        <i class="bx bxl-google"></i>
-        <span>Login with Google</span>
-      </a>
-      <a href="#">
-        <i class="bx bxl-facebook-circle"></i>
-        <span>Login with Facebook</span>
-      </a>
-    </div>
-  </div>
 </section>
+
 
     <footer>
         <div class="footer-container">
@@ -174,8 +199,32 @@
             </div>
         </div>
     </footer>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function openPopup(type = 'login') {
+      const wrapper = document.getElementById('popupWrapper');
+      wrapper.classList.add('active-popup');
+      toggleForm(type);
+    }
+
+    function toggleForm(type) {
+      const wrapper = document.getElementById('popupWrapper');
+      const loginForm = wrapper.querySelector('.form-box.login');
+      const registerForm = wrapper.querySelector('.form-box.register');
+      if (type === 'register') {
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'block';
+      } else {
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
+      }
+    }
+
+    function closePopup() {
+      document.getElementById('popupWrapper').classList.remove('active-popup');
+    }
+  </script>
+
     <script src="../js/products.js"></script>
     <script src="../js/script.js"></script>
 </body>
