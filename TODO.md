@@ -1,35 +1,21 @@
-# Modernization Plan for Girls Shop Website (Alibaba-style and Beyond)
+# TODO List for PHP Backend Development
 
-## 1. UI/UX Modernization (Alibaba-style)
-- [ ] Update color scheme to vibrant, modern palette (e.g., gradients, Alibaba-inspired blues/whites)
-- [ ] Enhance layout: Mega menus, sticky headers, better product grids, hero banners
-- [ ] Add animations: Smooth transitions, hover effects, loading animations
-- [ ] Improve typography and icons (use Font Awesome or similar)
-- [ ] Make mobile-first with better responsive design
+## Database Setup
+- [ ] Create MySQL database named 'girls_shop' in XAMPP/phpMyAdmin.
+- [ ] Run schema.sql to create tables: users, products, categories, cart, wishlist, orders.
 
-## 2. Advanced Features (Like Alibaba)
-- [ ] Enhanced search: Auto-suggestions, filters (price, size, color, brand), sorting
-- [ ] Product details: Zoom, multiple images, reviews/ratings, related products
-- [ ] Personalization: User profiles, recommendations based on browsing history
-- [ ] Categories: Expand category pages with subcategories, trending items
-- [ ] Offers/Deals: Flash sales, coupons, countdown timers
+## Backend Files Creation
+- [ ] Create php/config.php (database configuration).
+- [ ] Create php/db.php (PDO connection class).
+- [ ] Create php/api/products.php (product CRUD API).
+- [ ] Create php/api/users.php (user signup/login API).
+- [ ] Create php/api/cart.php (cart management API).
+- [ ] Create php/api/wishlist.php (wishlist management API).
+- [ ] Create php/api/orders.php (order placement API).
 
-## 3. Beyond Alibaba (Cutting-edge)
-- [ ] AI Integration: AI-powered recommendations (using simple ML or API), chatbot with NLP, image search
-- [ ] AR/VR: Virtual try-on for clothes (using WebXR)
-- [ ] Advanced Analytics: Track user behavior, heatmaps
-- [ ] Social Features: User-generated content, social login, share products
-- [ ] Performance: Lazy loading, caching, CDN for images
-- [ ] Security: Enhanced auth, HTTPS, data encryption
+## Testing
+- [ ] Test APIs with Postman or similar tool.
+- [ ] Ensure JSON responses and error handling.
 
-## 4. Technical Enhancements
-- [ ] Refactor JS: Modular code, use modern ES6+, perhaps integrate a framework like React for better state management
-- [ ] Add APIs: Simulate backend with JSON Server or use real APIs for products/reviews
-- [ ] PWA: Already present, enhance with offline mode
-- [ ] Testing: Add unit tests, accessibility improvements
-
-## Followup Steps
-- [ ] Implement changes step-by-step
-- [ ] Test on multiple devices/browsers
-- [ ] Add performance optimizations
-- [ ] Deploy and monitor
+## Integration
+- [ ] Update frontend JS to fetch data from APIs (once frontend is ready).
