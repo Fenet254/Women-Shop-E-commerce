@@ -140,5 +140,13 @@ h1 {
   font-weight: bold;
 }
 
+.advertisement-section img {
+  width: 300px;     
+  height: auto;     
+  margin: 10px;
+  border-radius: 8px; 
+}
+
+
 
 
