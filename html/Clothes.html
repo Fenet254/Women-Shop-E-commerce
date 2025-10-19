@@ -29,35 +29,53 @@
         </div>
     </nav>
 
-    <h1>Clothes Collection</h1>
-    <p>Explore our wide range of clothing items including dresses, skirts, suits, and pajamas.</p>
+    <div class="page-container">
+        <div class="main-content">
+            <h1>Clothes Collection</h1>
+            <p>Explore our wide range of clothing items including dresses, skirts, suits, and pajamas.</p>
 
-    <div class="category-nav">
-        <a href="skirt.html" class="category-link">Skirts & Dresses</a>
-        <a href="suit.html" class="category-link">Suits</a>
-        <a href="#" class="category-link">Pajamas</a>
-        <a href="#" class="category-link">Jeans</a>
-        <a href="#" class="category-link">Coats</a>
-        <a href="#" class="category-link">Bottoms</a>
-    </div>
+            <div class="category-nav">
+                <a href="skirt.html" class="category-link">Skirts & Dresses</a>
+                <a href="suit.html" class="category-link">Suits</a>
+                <a href="pajamas.html" class="category-link">Pajamas</a>
+                <a href="jeans.html" class="category-link">Jeans</a>
+                <a href="coats.html" class="category-link">Coats</a>
+                <a href="buttons.html" class="category-link">Bottoms</a>
+            </div>
 
-    <div class="filters">
-        <select onchange="filterByCategory(this.value)">
-            <option value="all">All Clothes</option>
-            <option value="dresses">Dresses</option>
-            <option value="skirts">Skirts</option>
-            <option value="suits">Suits</option>
-            <option value="pajamas">Pajamas</option>
-        </select>
-        <select onchange="sortProducts(this.value)">
-            <option value="">Sort By</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="name">Name</option>
-        </select>
-    </div>
-    <div class="product-container">
-        <!-- Products will be rendered here by JS -->
+            <div class="advertisement-section">
+                <h2>Featured Collections</h2>
+                <div class="advertisement-grid">
+                    <img src="../image/dressimage/dress.png" alt="Elegant Dress">
+                    <img src="../image/skirtimage/skirt1.png" alt="Stylish Skirt">
+                    <img src="../image/suitimage/suit1.png" alt="Professional Suit">
+                    <img src="../image/pjamaimage/black-pjama.png" alt="Comfortable Pajamas">
+                    <img src="../image/dressimage/dress1.png" alt="Summer Dress">
+                    <img src="../image/skirtimage/skirt2.png" alt="Denim Skirt">
+                    <img src="../image/suitimage/suit2.png" alt="Pinstripe Suit">
+                    <img src="../image/pjamaimage/blue-pjama.png" alt="Blue Pajamas">
+                </div>
+            </div>
+
+            <div class="filters">
+                <select onchange="filterByCategory(this.value)">
+                    <option value="all">All Clothes</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="skirts">Skirts</option>
+                    <option value="suits">Suits</option>
+                    <option value="pajamas">Pajamas</option>
+                </select>
+                <select onchange="sortProducts(this.value)">
+                    <option value="">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name</option>
+                </select>
+            </div>
+            <div class="product-container">
+                <!-- Products will be rendered here by JS -->
+            </div>
+        </div>
     </div>
 
     <footer>
