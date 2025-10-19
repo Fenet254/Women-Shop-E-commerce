@@ -1,34 +1,9 @@
-# TODO List for Clothes Category Page Improvements
+# TODO: Enhance Category Nav Bar and Clothes Section with Images and Modern UI
 
-## 1. Improve Clothes.html Styling
-- [ ] Add proper page container and main content structure
-- [ ] Style the category navigation links
-- [ ] Add advertisement section with available images
-- [ ] Ensure responsive design
-
-## 2. Add Images to Clothes.html
-- [ ] Add dress images (dress1.png to dress10.png)
-- [ ] Add skirt images (skirt1.png to skirt13.png)
-- [ ] Add suit images (suit1.png to suit9.png)
-- [ ] Add pajama images (black-pjama.png, blue-pjama.png, pink-pijama.png)
-
-## 3. Create Subcategory Pages
-- [ ] Create pajamas.html page
-- [ ] Create jeans.html page
-- [ ] Create coats.html page
-- [ ] Create buttons.html page
-
-## 4. Add Images to Subcategory Pages
-- [ ] Add pajama images to pajamas.html
-- [ ] Add placeholder images for jeans.html
-- [ ] Add placeholder images for coats.html
-- [ ] Add placeholder images for buttons.html
-
-## 5. Change Filters to Listed Options
-- [ ] Replace "All Clothes" dropdown with listed options at right corner
-- [ ] Replace "Sort By" dropdown with listed options at right corner
-- [ ] Style the new filter layout
-
-## 6. Update Navigation Links
-- [ ] Update Clothes.html category nav links to point to new pages
-- [ ] Ensure all links work properly
+## Tasks
+- [ ] Update html/category.html: Add thumbnail images to categories-nav links for visual appeal
+- [ ] Update html/category.html: Expand advertisement-section with images from all available folders (dressimage, skirtimage, suitimage, pjamaimage, shoes, and numbered images like one.png, two.png, etc.)
+- [ ] Update html/Clothes.html: Enhance category-nav with images/icons for each sub-link (skirt.html, suit.html, etc.)
+- [ ] Update html/Clothes.html: Expand advertisement-grid with all available images from sub-folders and additional images to maximize visuals
+- [ ] Update css/style.css: Add modern UI styles (grid layouts, hover effects, responsive design) for nav bars and image sections
+- [ ] Test updated pages locally for UI and functionality
