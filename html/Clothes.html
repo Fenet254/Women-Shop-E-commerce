@@ -29,35 +29,87 @@
         </div>
     </nav>
 
-    <h1>Clothes Collection</h1>
-    <p>Explore our wide range of clothing items including dresses, skirts, suits, and pajamas.</p>
+    <div class="page-container">
+        <div class="main-content">
+            <h1>Clothes Collection</h1>
+            <p>Explore our wide range of clothing items including dresses, skirts, suits, and pajamas.</p>
 
-    <div class="category-nav">
-        <a href="skirt.html" class="category-link">Skirts & Dresses</a>
-        <a href="suit.html" class="category-link">Suits</a>
-        <a href="#" class="category-link">Pajamas</a>
-        <a href="#" class="category-link">Jeans</a>
-        <a href="#" class="category-link">Coats</a>
-        <a href="#" class="category-link">Bottoms</a>
-    </div>
+            <div class="category-nav">
+                <a href="skirt.html" class="category-link">Skirts & Dresses</a>
+                <a href="suit.html" class="category-link">Suits</a>
+                <a href="pajamas.html" class="category-link">Pajamas</a>
+                <a href="jeans.html" class="category-link">Jeans</a>
+                <a href="coats.html" class="category-link">Coats</a>
+                <a href="buttons.html" class="category-link">Bottoms</a>
+            </div>
 
-    <div class="filters">
-        <select onchange="filterByCategory(this.value)">
-            <option value="all">All Clothes</option>
-            <option value="dresses">Dresses</option>
-            <option value="skirts">Skirts</option>
-            <option value="suits">Suits</option>
-            <option value="pajamas">Pajamas</option>
-        </select>
-        <select onchange="sortProducts(this.value)">
-            <option value="">Sort By</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="name">Name</option>
-        </select>
-    </div>
-    <div class="product-container">
-        <!-- Products will be rendered here by JS -->
+            <div class="advertisement-section">
+                <h2>Featured Collections</h2>
+                <div class="advertisement-grid">
+                    <!-- Dresses -->
+                    <img src="../image/dressimage/dress.png" alt="Elegant Red Dress">
+                    <img src="../image/dressimage/dress1.png" alt="Summer Floral Dress">
+                    <img src="../image/dressimage/dress2.png" alt="Black Evening Dress">
+                    <img src="../image/dressimage/dress3.png" alt="Casual Blue Dress">
+                    <img src="../image/dressimage/dress4.png" alt="Vintage Pink Dress">
+                    <img src="../image/dressimage/dress5.png" alt="Maxi Green Dress">
+                    <img src="../image/dressimage/dress6.png" alt="Chic White Dress">
+                    <img src="../image/dressimage/dress7.png" alt="Bohemian Yellow Dress">
+                    <img src="../image/dressimage/dress8.png" alt="Sleeveless Purple Dress">
+                    <img src="../image/dressimage/dress9.png" alt="Classic Black Dress">
+                    <img src="../image/dressimage/dress10.png" alt="Off-Shoulder Dress">
+
+                    <!-- Skirts -->
+                    <img src="../image/skirtimage/skirt1.png" alt="Pleated Mini Skirt">
+                    <img src="../image/skirtimage/skirt2.png" alt="Denim Midi Skirt">
+                    <img src="../image/skirtimage/skirt3.png" alt="Leather Pencil Skirt">
+                    <img src="../image/skirtimage/skirt4.png" alt="Floral A-Line Skirt">
+                    <img src="../image/skirtimage/skirt5.png" alt="High-Waisted Skirt">
+                    <img src="../image/skirtimage/skirt7.png" alt="Tulle Tutu Skirt">
+                    <img src="../image/skirtimage/skirt8.png" alt="Wrap Skirt">
+                    <img src="../image/skirtimage/skirt9.png" alt="Chiffon Skirt">
+                    <img src="../image/skirtimage/skirt10.png" alt="Asymmetrical Skirt">
+                    <img src="../image/skirtimage/skirt11.png" alt="Velvet Skirt">
+                    <img src="../image/skirtimage/skirt12.png" alt="Cargo Skirt">
+                    <img src="../image/skirtimage/skirt13.png" alt="Maxi Skirt">
+
+                    <!-- Suits -->
+                    <img src="../image/suitimage/suit1.png" alt="Tailored Blazer Suit">
+                    <img src="../image/suitimage/suit2.png" alt="Pinstripe Suit">
+                    <img src="../image/suitimage/suit3.png" alt="Velvet Suit">
+                    <img src="../image/suitimage/suit4.png" alt="Casual Suit">
+                    <img src="../image/suitimage/suit5.png" alt="Two-Piece Suit">
+                    <img src="../image/suitimage/suit6.png" alt="Jumpsuit Suit">
+                    <img src="../image/suitimage/suit7.png" alt="Tuxedo Suit">
+                    <img src="../image/suitimage/suit8.png" alt="Skirt Suit">
+                    <img src="../image/suitimage/suit9.png" alt="Pant Suit">
+
+                    <!-- Pajamas -->
+                    <img src="../image/pjamaimage/black-pjama.png" alt="Black Pajama Set">
+                    <img src="../image/pjamaimage/blue-pjama.png" alt="Blue Pajama Set">
+                    <img src="../image/pjamaimage/pink-pijama.png" alt="Pink Pajama Set">
+                </div>
+            </div>
+
+            <div class="filters">
+                <select onchange="filterByCategory(this.value)">
+                    <option value="all">All Clothes</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="skirts">Skirts</option>
+                    <option value="suits">Suits</option>
+                    <option value="pajamas">Pajamas</option>
+                </select>
+                <select onchange="sortProducts(this.value)">
+                    <option value="">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name</option>
+                </select>
+            </div>
+            <div class="product-container">
+                <!-- Products will be rendered here by JS -->
+            </div>
+        </div>
     </div>
 
     <footer>
