@@ -348,6 +348,109 @@
                 });
             });
         });
+
+        // Typing effect for hero title
+        const typingText = document.getElementById('typing-text');
+        const text = "Welcome to Girls Shop";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                typingText.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        typeWriter();
+
+        // Particles animation
+        function createParticles() {
+            const particlesContainer = document.querySelector('.particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Slider controls
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length / 2; // Since slides are duplicated
+
+        function showSlide(index) {
+            const slideTrack = document.querySelector('.slide-track');
+            slideTrack.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
+            currentSlide = index;
+        }
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        // Auto-slide
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // Testimonial slider
+        let testimonialIndex = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        document.querySelector('.testimonial-next').addEventListener('click', () => {
+            testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+            showTestimonial(testimonialIndex);
+        });
+
+        document.querySelector('.testimonial-prev').addEventListener('click', () => {
+            testimonialIndex = (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(testimonialIndex);
+        });
+
+        showTestimonial(testimonialIndex);
+
+        // Countdown timer
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown-timer');
+            const targetDate = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = `Limited Time Offer: ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    countdownElement.innerHTML = "Offer Expired";
+                }
+            }, 1000);
+        }
+
+        startCountdown();
     </script>
 </body>
 </html>
