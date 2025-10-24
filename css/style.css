@@ -1078,8 +1078,7 @@ footer {
 
 .advertisement-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: column;
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 40px 20px;
   background: var(--light-color);
