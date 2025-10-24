@@ -69,14 +69,17 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to Girls Shop</h1>
+            <h1 id="typing-text"></h1>
             <p>Discover the latest trends in fashion and beauty</p>
             <a href="#featured" class="cta-button">Shop Now</a>
         </div>
+        <div class="particles"></div>
     </section>
 
     <!-- Infinite Carousel Slider -->
     <div class="slider">
+        <button class="prev"><</button>
+        <button class="next">></button>
         <div class="slide-track">
             <img class="slide" src="../image/dressimage/dress4.png" alt="Fashion Slide 1">
             <img class="slide" src="../" alt="Fashion Slide 2">
@@ -133,6 +136,9 @@
     <!-- Categories Section -->
     <section class="categories-section">
         <h2>Shop by Category</h2>
+
+        <br>
+        <br>
         <div class="categories-grid">
             <div class="category-card">
                 <img src="../image/dressimage/dress.png" alt="Dresses">
@@ -176,6 +182,7 @@
     <!-- Featured Products Section -->
     <section id="featured" class="featured-section">
         <h2>Featured Products</h2>
+        <br>
         <div class="filters">
             <select onchange="filterByCategory(this.value)">
                 <option value="all">All Categories</option>
@@ -199,7 +206,7 @@
     <!-- Testimonials Section -->
     <section class="testimonials-section">
         <h2>What Our Customers Say</h2>
-        <div class="testimonials-grid">
+        <div class="testimonials-slider">
             <div class="testimonial">
                 <div class="stars">★★★★★</div>
                 <p>"Amazing quality and fast shipping! Love my new dress."</p>
@@ -216,11 +223,15 @@
                 <cite>- Maya K.</cite>
             </div>
         </div>
+        <button class="testimonial-prev"><</button>
+        <button class="testimonial-next">></button>
     </section>
+          
+    
 
-    <!-- Latest Advertisements Section -->
     <section class="advertisement-section">
-        <h2>Latest Advertisements</h2>
+        
+        <br>
         <div class="advertisement-grid">
             <img src="../one.png" alt="Ad 1">
             <img src="../two.png" alt="Ad 2">
@@ -241,6 +252,7 @@
     <section class="newsletter-section">
         <h2>Stay Updated</h2>
         <p>Subscribe to our newsletter for the latest trends and exclusive offers</p>
+        <div id="countdown-timer">Limited Time Offer: 00:00:00</div>
         <form class="newsletter-form">
             <input type="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
