@@ -3,31 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/new.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Clothes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Bags - Girls Shop</title>
 </head>
 <body>
-  <h1>BAGS</h1>
-
+    <!-- Interactive Navigation Bar -->
     <nav class="navbar">
-  <div class="nav-links">
-    <a href="Handbags.html">Handbags</a>
-    <a href="Shoulder Bags.html">Shoulder Bags</a>
-    <a href="Laptop Bags.html">Laptop Bags</a>
-  </div>
+        <a href="index.html" class="logo">
+            <img src="../im.png" alt="Girls Shop Logo">
+        </a>
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="Search products..." required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <div class="dropdown">
+                <a href="category.html" class="nav-item dropdown-toggle">Categories</a>
+                <div class="dropdown-menu">
+                    <a href="Clothes.html">Clothes</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="bags.html">Bags</a>
+                    <a href="human-hair.html">Human Hair</a>
+                    <a href="makeup.html">Makeup</a>
+                    <a href="jawlery.html">Jewelry</a>
+                </div>
+            </div>
+            <a href="account.html" class="nav-item">Account</a>
+            <a href="carts.html" class="nav-item cart-link">
+                <i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span>
+            </a>
+            <a href="wishlist.html" class="nav-item">
+                <i class="fas fa-heart"></i> Wishlist
+            </a>
+            <a href="offers.html" class="nav-item">Offers</a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-  <div class="search-bar">
-    <form action="search.html" method="GET">
-      <input type="text" name="query" placeholder="Search products..." required>
-      <button type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <h3>Menu</h3>
+                <button class="close-mobile-menu">&times;</button>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="index.html">Home</a>
+                <a href="category.html">Categories</a>
+                <a href="account.html">Account</a>
+                <a href="carts.html">Cart</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="offers.html">Offers</a>
+            </div>
+        </div>
+    </div>
 
-    
-    
-    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bags Collection</h1>
+            <p>Carry your style with our trendy and functional bags</p>
+            <a href="#featured" class="cta-button">Shop Bags</a>
+        </div>
+        <div class="particles"></div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h2>Shop by Bag Type</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="../image/gfddt bag.jpg" alt="Handbags">
+                <h3>Handbags</h3>
+                <p>Elegant handbags for every occasion</p>
+                <button class="cta-button">Shop Handbags</button>
+            </div>
+            <div class="category-card">
+                <img src="../image/gfddt bag.jpg" alt="Shoulder Bags">
+                <h3>Shoulder Bags</h3>
+                <p>Comfortable shoulder bags for daily use</p>
+                <button class="cta-button">Shop Shoulder Bags</button>
+            </div>
+            <div class="category-card">
+                <img src="../image/gfddt bag.jpg" alt="Laptop Bags">
+                <h3>Laptop Bags</h3>
+                <p>Professional laptop bags for work</p>
+                <button class="cta-button">Shop Laptop Bags</button>
+            </div>
+            <div class="category-card">
+                <img src="../image/gfddt bag.jpg" alt="Backpacks">
+                <h3>Backpacks</h3>
+                <p>Stylish backpacks for everyday adventures</p>
+                <button class="cta-button">Shop Backpacks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="featured-section">
+        <h2>Featured Bags</h2>
+        <div class="filters">
+            <select onchange="filterByCategory(this.value)">
+                <option value="all">All Bags</option>
+                <option value="handbags">Handbags</option>
+                <option value="shoulder">Shoulder Bags</option>
+                <option value="laptop">Laptop Bags</option>
+                <option value="backpacks">Backpacks</option>
+            </select>
+            <select onchange="sortProducts(this.value)">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name</option>
+            </select>
+        </div>
+        <div class="product-container">
+            <!-- Products will be rendered here by JS -->
+        </div>
+    </section>
+
+    <!-- Advertisement Section -->
+    <section class="advertisement-section">
+        <h2>Trending Now</h2>
+        <div class="advertisement-grid">
+            <img src="../image/gfddt bag.jpg" alt="Ad 1">
+            <img src="../image/gfddt bag.jpg" alt="Ad 2">
+            <img src="../image/gfddt bag.jpg" alt="Ad 3">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Welcome to <b>Girls Shop</b> 💖 — your ultimate destination for fashion, beauty, and lifestyle. Discover trendy dresses, elegant suits, cozy pajamas, and more!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return & Refund Policy</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <p>📍 Addis Ababa, Ethiopia</p>
+                <p>📧 support@girlsshop.com</p>
+                <p>📞 +251 912 345 678</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Girls Shop. All Rights Reserved.</p>
+            <div class="payment-icons">
+                💳 Visa | 💳 MasterCard | 💳 PayPal
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        // Mobile menu functionality
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-menu-overlay').style.display = 'block';
+        });
+
+        document.querySelector('.close-mobile-menu').addEventListener('click', function() {
+            document.querySelector('.mobile-menu-overlay').style.display = 'none';
+        });
+
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+
+        // Theme toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const icon = document.querySelector('.theme-toggle i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Particles animation
+        function createParticles() {
+            const particlesContainer = document.querySelector('.particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+    </script>
 </body>
 </html>
