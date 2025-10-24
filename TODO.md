@@ -1,31 +1,53 @@
-# Plan to Make the Website More Interesting
+# TODO: Organize Website Pages and Links
 
-## Information Gathered
-- The website is a static e-commerce site for women's fashion with HTML, CSS, and JS.
-- Current features: navbar, hero section, infinite image carousel, categories grid, featured products (JS-loaded), testimonials, advertisement grid, newsletter signup, footer.
-- Styling includes gradients, shadows, hover effects, responsive design, dark mode toggle, and basic animations.
-- JS handles mobile menu, dropdowns, theme toggle, and smooth scrolling.
-- The site has a chatbot feature but it's hidden (display: none).
+## Overview
+Standardize navigation, add missing footers, ensure functional links, and improve page structure for modern, functional design.
 
-## Plan
-- [ ] Add scroll-triggered animations (fade-in, slide-up) for sections to make the page feel more dynamic.
-- [ ] Enhance the hero section with a typing effect for the welcome text and a subtle particle background.
-- [ ] Add interactive controls to the carousel (play/pause, next/prev buttons).
-- [ ] Make testimonials into a sliding carousel for better engagement.
-- [ ] Add a "Trending Now" section with animated product cards (e.g., pulse effect on hover).
-- [ ] Enable and enhance the chatbot feature (make it visible and add more responses).
-- [ ] Add a floating action button for quick access to cart or wishlist.
-- [ ] Include a countdown timer for a limited-time offer in the newsletter section.
-- [ ] Add hover sound effects or subtle audio cues (optional, if user approves).
-- [ ] Improve loading animations for product images.
+## Steps
 
-## Dependent Files to Edit
-- `html/index.html`: Add new sections (e.g., trending, enhanced hero), modify existing elements (e.g., testimonials to slider).
-- `css/style.css`: Add CSS for new animations, effects, and styles (e.g., keyframes for fade-in, typing effect).
-- `js/script.js`: Add JS for scroll animations, carousel controls, typing effect, countdown timer, and chatbot enhancements.
+### 1. Standardize Navigation Bar
+- Update all HTML pages to use the consistent navigation bar from index.html.
+- Ensure dropdown for categories works and links to existing pages.
+- Remove or fix non-existent links (e.g., Heels.html in shoes.html).
 
-## Followup Steps
-- [ ] Test the site locally to ensure animations work smoothly.
-- [ ] Check responsiveness on mobile and desktop.
-- [ ] Validate that new features don't break existing functionality.
-- [ ] Get user feedback on the changes and iterate if needed.
+### 2. Add Footer to Missing Pages
+- Add footer to shoes.html
+- Add footer to bags.html
+- Verify footer is present in all other pages (index.html, account.html, category.html, Clothes.html already have it).
+
+### 3. Fix and Organize Links
+- Ensure all nav links point to existing pages.
+- Update footer links to be functional or placeholders.
+- For category pages like shoes.html and bags.html, add proper content sections.
+
+### 4. Improve Page Structure
+- Enhance shoes.html: Add hero, categories, products sections.
+- Enhance bags.html: Add hero, categories, products sections.
+- Ensure all pages have consistent structure: nav, main content, footer.
+
+### 5. Enhance Responsiveness and Styling
+- Update CSS if needed for consistency.
+- Ensure mobile menu works on all pages.
+
+### 6. Test and Verify
+- Check all links are functional.
+- Ensure pages load correctly.
+- Verify footer appears on all pages.
+
+## Files to Edit
+- html/shoes.html
+- html/bags.html
+- html/account.html (if needed)
+- html/category.html (if needed)
+- html/Clothes.html (if needed)
+- css/style.css (if updates needed)
+- Other pages as identified.
+
+## Progress Tracking
+- [ ] Create TODO.md
+- [ ] Update shoes.html nav and add footer
+- [ ] Update bags.html nav and add footer
+- [ ] Verify and fix links in all pages
+- [ ] Improve page structures
+- [ ] Update CSS for consistency
+- [ ] Final verification
