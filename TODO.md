@@ -44,9 +44,9 @@ Standardize navigation, add missing footers, ensure functional links, and improv
 - Other pages as identified.
 
 ## Progress Tracking
-- [ ] Create TODO.md
-- [ ] Update shoes.html nav and add footer
-- [ ] Update bags.html nav and add footer
+- [x] Create TODO.md
+- [x] Update shoes.html nav and add footer
+- [x] Update bags.html nav and add footer
 - [ ] Verify and fix links in all pages
 - [ ] Improve page structures
 - [ ] Update CSS for consistency
