@@ -9,67 +9,290 @@
     <title>Categories - Girls Shop</title>
 </head>
 <body>
+    <!-- Enhanced Navigation Bar with Mega Menu -->
     <nav class="navbar">
         <a href="index.html" class="logo">
             <img src="../im.png" alt="Girls Shop Logo">
         </a>
         <div class="search-bar">
-            <form>
-                <input type="text" placeholder="Search products..." required>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+                <div id="search-suggestions" class="search-suggestions"></div>
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="category.html">Categories</a>
-            <a href="account.html">Account</a>
-            <a href="carts.html">Cart</a>
-            <a href="wishlist.html">Wishlist</a>
-            <a href="offers.html">Offers</a>
+            <a href="index.html" class="nav-item">Home</a>
+            <div class="dropdown">
+                <a href="category.html" class="nav-item dropdown-toggle">Categories</a>
+                <div class="mega-menu">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-column">
+                            <h4><a href="Clothes.html">👗 Clothes</a></h4>
+                            <ul>
+                                <li><a href="skirt.html">Skirts & Dresses</a></li>
+                                <li><a href="suit.html">Suits</a></li>
+                                <li><a href="pajamas.html">Pajamas</a></li>
+                                <li><a href="jeans.html">Jeans</a></li>
+                                <li><a href="coats.html">Coats</a></li>
+                                <li><a href="buttons.html">Bottoms</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="shoes.html">👠 Shoes</a></h4>
+                            <ul>
+                                <li><a href="shoes.html#heels">Heels</a></li>
+                                <li><a href="shoes.html#sneakers">Sneakers</a></li>
+                                <li><a href="shoes.html#boots">Boots</a></li>
+                                <li><a href="shoes.html#sandals">Sandals</a></li>
+                                <li><a href="shoes.html#loafers">Loafers</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="bags.html">👜 Bags</a></h4>
+                            <ul>
+                                <li><a href="bags.html#handbags">Handbags</a></li>
+                                <li><a href="bags.html#backpacks">Backpacks</a></li>
+                                <li><a href="bags.html#wallets">Wallets</a></li>
+                                <li><a href="bags.html#clutches">Clutches</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="human-hair.html">💇 Human Hair</a></h4>
+                            <ul>
+                                <li><a href="human-hair.html#straight">Straight Hair</a></li>
+                                <li><a href="human-hair.html#wavy">Wavy Hair</a></li>
+                                <li><a href="human-hair.html#curly">Curly Hair</a></li>
+                                <li><a href="human-hair.html#braids">Braids</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="makeup.html">💄 Makeup</a></h4>
+                            <ul>
+                                <li><a href="makeup.html#foundation">Foundation</a></li>
+                                <li><a href="makeup.html#lipstick">Lipstick</a></li>
+                                <li><a href="makeup.html#eyeshadow">Eyeshadow</a></li>
+                                <li><a href="makeup.html#skincare">Skincare</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="jawlery.html">💍 Jewelry</a></h4>
+                            <ul>
+                                <li><a href="jawlery.html#necklaces">Necklaces</a></li>
+                                <li><a href="jawlery.html#earrings">Earrings</a></li>
+                                <li><a href="jawlery.html#bracelets">Bracelets</a></li>
+                                <li><a href="jawlery.html#rings">Rings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="account.html" class="nav-item">Account</a>
+            <a href="carts.html" class="nav-item cart-link">
+                <i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span>
+            </a>
+            <a href="wishlist.html" class="nav-item">
+                <i class="fas fa-heart"></i> Wishlist
+            </a>
+            <a href="offers.html" class="nav-item">Offers</a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <h3>Menu</h3>
+                <button class="close-mobile-menu">&times;</button>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="index.html">Home</a>
+                <a href="category.html">Categories</a>
+                <a href="account.html">Account</a>
+                <a href="carts.html">Cart</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="offers.html">Offers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> > <span>Categories</span>
+    </div>
+
     <div class="page-container">
+        <!-- Advanced Sidebar Filters -->
+        <aside class="filters-sidebar">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="Clothes.html" class="category-link">👗 Clothes</a></li>
+                    <li><a href="shoes.html" class="category-link">👠 Shoes</a></li>
+                    <li><a href="bags.html" class="category-link">👜 Bags</a></li>
+                    <li><a href="human-hair.html" class="category-link">💇 Human Hair</a></li>
+                    <li><a href="makeup.html" class="category-link">💄 Makeup</a></li>
+                    <li><a href="jawlery.html" class="category-link">💍 Jewelry</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" id="min-price" min="0" max="200" value="0" step="5">
+                    <input type="range" id="max-price" min="0" max="200" value="200" step="5">
+                    <div class="price-display">
+                        <span id="min-price-display">$0</span> - <span id="max-price-display">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Size</h3>
+                <div class="size-options">
+                    <label><input type="checkbox" value="XS"> XS</label>
+                    <label><input type="checkbox" value="S"> S</label>
+                    <label><input type="checkbox" value="M"> M</label>
+                    <label><input type="checkbox" value="L"> L</label>
+                    <label><input type="checkbox" value="XL"> XL</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Color</h3>
+                <div class="color-options">
+                    <label><input type="checkbox" value="red"><span class="color-swatch" style="background-color: red;"></span> Red</label>
+                    <label><input type="checkbox" value="blue"><span class="color-swatch" style="background-color: blue;"></span> Blue</label>
+                    <label><input type="checkbox" value="black"><span class="color-swatch" style="background-color: black;"></span> Black</label>
+                    <label><input type="checkbox" value="white"><span class="color-swatch" style="background-color: white;"></span> White</label>
+                    <label><input type="checkbox" value="pink"><span class="color-swatch" style="background-color: pink;"></span> Pink</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Rating</h3>
+                <div class="rating-options">
+                    <label><input type="checkbox" value="4"><span class="stars">★★★★☆</span> & Up</label>
+                    <label><input type="checkbox" value="3"><span class="stars">★★★☆☆</span> & Up</label>
+                    <label><input type="checkbox" value="2"><span class="stars">★★☆☆☆</span> & Up</label>
+                </div>
+            </div>
+
+            <button class="apply-filters-btn">Apply Filters</button>
+            <button class="clear-filters-btn">Clear All</button>
+        </aside>
+
         <div class="main-content">
-            <h1>Shop by Category</h1>
-            <div class="categories-nav">
-                <a href="Clothes.html">Clothes</a>
-                <a href="shoes.html">Shoes</a>
-                <a href="jawlery.html">Jewelry</a>
-                <a href="bags.html">Bags</a>
-                <a href="makeup.html">Makeup</a>
-                <a href="human-hair.html">Human Hair</a>
+            <div class="content-header">
+                <h1>Shop by Category</h1>
+                <div class="view-options">
+                    <button class="view-toggle active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-toggle" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
             </div>
-            <h2>Featured Products Across Categories</h2>
-            <div class="filters">
-                <select onchange="filterByCategory(this.value)">
-                    <option value="all">All Categories</option>
-                    <option value="dresses">Dresses</option>
-                    <option value="skirts">Skirts</option>
-                    <option value="suits">Suits</option>
-                    <option value="pajamas">Pajamas</option>
-                </select>
-                <select onchange="sortProducts(this.value)">
-                    <option value="">Sort By</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="name">Name</option>
-                </select>
+
+            <!-- Category Cards Grid -->
+            <div class="categories-grid">
+                <div class="category-card" data-category="clothes">
+                    <div class="category-image">
+                        <img src="../image/dressimage/dress.png" alt="Clothes">
+                        <div class="category-overlay">
+                            <h3>👗 Clothes</h3>
+                            <p>Trendy fashion for every occasion</p>
+                            <a href="Clothes.html" class="shop-category-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="shoes">
+                    <div class="category-image">
+                        <img src="../six.png" alt="Shoes">
+                        <div class="category-overlay">
+                            <h3>👠 Shoes</h3>
+                            <p>Step into style with our collection</p>
+                            <a href="shoes.html" class="shop-category-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="bags">
+                    <div class="category-image">
+                        <img src="../image/gfddt bag.jpg" alt="Bags">
+                        <div class="category-overlay">
+                            <h3>👜 Bags</h3>
+                            <p>Complete your look with perfect bags</p>
+                            <a href="bags.html" class="shop-category-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="hair">
+                    <div class="category-image">
+                        <img src="../this.png" alt="Human Hair">
+                        <div class="category-overlay">
+                            <h3>💇 Human Hair</h3>
+                            <p>Premium hair extensions & wigs</p>
+                            <a href="human-hair.html" class="shop-category-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="makeup">
+                    <div class="category-image">
+                        <img src="../eleven.png" alt="Makeup">
+                        <div class="category-overlay">
+                            <h3>💄 Makeup</h3>
+                            <p>Beauty products for every look</p>
+                            <a href="makeup.html" class="shop-category-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="jewelry">
+                    <div class="category-image">
+                        <img src="../twelve.png" alt="Jewelry">
+                        <div class="category-overlay">
+                            <h3>💍 Jewelry</h3>
+                            <p>Sparkle with our jewelry collection</p>
+                            <a href="jawlery.html" class="shop-category-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="advertisement-section">
-                <img src="../image/dressimage/dress1.png" alt="Ad 1">
-                <img src="../image/dressimage/dress2.png" alt="Ad 2">
-                <img src="../image/dressimage/dress3.png" alt="Ad 3">
-                <img src="../image/dressimage/dress4.png" alt="Ad 4">
-                <img src="../image/dressimage/dress5.png" alt="Ad 5">
-                <img src="../image/dressimage/dress6.png" alt="Ad 6">
-                <img src="../image/dressimage/dress7.png" alt="Ad 7">
-                <img src="../image/dressimage/dress8.png" alt="Ad 8">
-                <img src="../image/dressimage/dress9.png" alt="Ad 9">
-                <img src="../image/dressimage/dress10.png" alt="Ad 10">
+
+            <!-- Top Filters and Sort -->
+            <div class="top-filters">
+                <div class="results-count">
+                    <span id="results-count">Showing 1-24 of 100 products</span>
+                </div>
+                <div class="sort-options">
+                    <select id="sort-select" onchange="sortProducts(this.value)">
+                        <option value="">Sort By</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
             </div>
-            <div class="product-container">
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="product-grid">
                 <!-- Products will be rendered here by JS -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn prev-btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="page-numbers">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span>...</span>
+                    <button class="page-btn">10</button>
+                </div>
+                <button class="page-btn next-btn"><i class="fas fa-chevron-right"></i> Next</button>
             </div>
         </div>
     </div>

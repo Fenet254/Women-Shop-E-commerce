@@ -29,85 +29,161 @@
         </div>
     </nav>
 
-    <div class="page-container">
-        <div class="main-content">
-            <h1>Clothes Collection</h1>
-            <p>Explore our wide range of clothing items including dresses, skirts, suits, and pajamas.</p>
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> > <a href="category.html">Categories</a> > <span>Clothes</span>
+    </div>
 
-            <div class="category-nav">
-                <a href="skirt.html" class="category-link">Skirts & Dresses</a>
-                <a href="suit.html" class="category-link">Suits</a>
-                <a href="pajamas.html" class="category-link">Pajamas</a>
-                <a href="jeans.html" class="category-link">Jeans</a>
-                <a href="coats.html" class="category-link">Coats</a>
-                <a href="buttons.html" class="category-link">Bottoms</a>
+    <div class="page-container">
+        <!-- Advanced Sidebar Filters -->
+        <aside class="filters-sidebar">
+            <div class="filter-section">
+                <h3>Subcategories</h3>
+                <ul class="category-list">
+                    <li><a href="#dresses" class="subcategory-link active">👗 Dresses</a></li>
+                    <li><a href="#skirts" class="subcategory-link">👖 Skirts</a></li>
+                    <li><a href="#suits" class="subcategory-link">👔 Suits</a></li>
+                    <li><a href="#pajamas" class="subcategory-link">🛏️ Pajamas</a></li>
+                    <li><a href="#jeans" class="subcategory-link">👖 Jeans</a></li>
+                    <li><a href="#coats" class="subcategory-link">🧥 Coats</a></li>
+                    <li><a href="#bottoms" class="subcategory-link">👖 Bottoms</a></li>
+                </ul>
             </div>
 
-            <div class="advertisement-section">
-                <h2>Featured Collections</h2>
-                <div class="advertisement-grid">
-                    <!-- Dresses -->
-                    <img src="../image/dressimage/dress.png" alt="Elegant Red Dress">
-                    <img src="../image/dressimage/dress1.png" alt="Summer Floral Dress">
-                    <img src="../image/dressimage/dress2.png" alt="Black Evening Dress">
-                    <img src="../image/dressimage/dress3.png" alt="Casual Blue Dress">
-                    <img src="../image/dressimage/dress4.png" alt="Vintage Pink Dress">
-                    <img src="../image/dressimage/dress5.png" alt="Maxi Green Dress">
-                    <img src="../image/dressimage/dress6.png" alt="Chic White Dress">
-                    <img src="../image/dressimage/dress7.png" alt="Bohemian Yellow Dress">
-                    <img src="../image/dressimage/dress8.png" alt="Sleeveless Purple Dress">
-                    <img src="../image/dressimage/dress9.png" alt="Classic Black Dress">
-                    <img src="../image/dressimage/dress10.png" alt="Off-Shoulder Dress">
-
-                    <!-- Skirts -->
-                    <img src="../image/skirtimage/skirt1.png" alt="Pleated Mini Skirt">
-                    <img src="../image/skirtimage/skirt2.png" alt="Denim Midi Skirt">
-                    <img src="../image/skirtimage/skirt3.png" alt="Leather Pencil Skirt">
-                    <img src="../image/skirtimage/skirt4.png" alt="Floral A-Line Skirt">
-                    <img src="../image/skirtimage/skirt5.png" alt="High-Waisted Skirt">
-                    <img src="../image/skirtimage/skirt7.png" alt="Tulle Tutu Skirt">
-                    <img src="../image/skirtimage/skirt8.png" alt="Wrap Skirt">
-                    <img src="../image/skirtimage/skirt9.png" alt="Chiffon Skirt">
-                    <img src="../image/skirtimage/skirt10.png" alt="Asymmetrical Skirt">
-                    <img src="../image/skirtimage/skirt11.png" alt="Velvet Skirt">
-                    <img src="../image/skirtimage/skirt12.png" alt="Cargo Skirt">
-                    <img src="../image/skirtimage/skirt13.png" alt="Maxi Skirt">
-
-                    <!-- Suits -->
-                    <img src="../image/suitimage/suit1.png" alt="Tailored Blazer Suit">
-                    <img src="../image/suitimage/suit2.png" alt="Pinstripe Suit">
-                    <img src="../image/suitimage/suit3.png" alt="Velvet Suit">
-                    <img src="../image/suitimage/suit4.png" alt="Casual Suit">
-                    <img src="../image/suitimage/suit5.png" alt="Two-Piece Suit">
-                    <img src="../image/suitimage/suit6.png" alt="Jumpsuit Suit">
-                    <img src="../image/suitimage/suit7.png" alt="Tuxedo Suit">
-                    <img src="../image/suitimage/suit8.png" alt="Skirt Suit">
-                    <img src="../image/suitimage/suit9.png" alt="Pant Suit">
-
-                    <!-- Pajamas -->
-                    <img src="../image/pjamaimage/black-pjama.png" alt="Black Pajama Set">
-                    <img src="../image/pjamaimage/blue-pjama.png" alt="Blue Pajama Set">
-                    <img src="../image/pjamaimage/pink-pijama.png" alt="Pink Pajama Set">
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" id="min-price" min="0" max="200" value="0" step="5">
+                    <input type="range" id="max-price" min="0" max="200" value="200" step="5">
+                    <div class="price-display">
+                        <span id="min-price-display">$0</span> - <span id="max-price-display">$200</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="filters">
-                <select onchange="filterByCategory(this.value)">
-                    <option value="all">All Clothes</option>
-                    <option value="dresses">Dresses</option>
-                    <option value="skirts">Skirts</option>
-                    <option value="suits">Suits</option>
-                    <option value="pajamas">Pajamas</option>
-                </select>
-                <select onchange="sortProducts(this.value)">
-                    <option value="">Sort By</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="name">Name</option>
-                </select>
+            <div class="filter-section">
+                <h3>Size</h3>
+                <div class="size-options">
+                    <label><input type="checkbox" value="XS"> XS</label>
+                    <label><input type="checkbox" value="S"> S</label>
+                    <label><input type="checkbox" value="M"> M</label>
+                    <label><input type="checkbox" value="L"> L</label>
+                    <label><input type="checkbox" value="XL"> XL</label>
+                    <label><input type="checkbox" value="XXL"> XXL</label>
+                </div>
             </div>
-            <div class="product-container">
+
+            <div class="filter-section">
+                <h3>Color</h3>
+                <div class="color-options">
+                    <label><input type="checkbox" value="red"><span class="color-swatch" style="background-color: red;"></span> Red</label>
+                    <label><input type="checkbox" value="blue"><span class="color-swatch" style="background-color: blue;"></span> Blue</label>
+                    <label><input type="checkbox" value="black"><span class="color-swatch" style="background-color: black;"></span> Black</label>
+                    <label><input type="checkbox" value="white"><span class="color-swatch" style="background-color: white;"></span> White</label>
+                    <label><input type="checkbox" value="pink"><span class="color-swatch" style="background-color: pink;"></span> Pink</label>
+                    <label><input type="checkbox" value="green"><span class="color-swatch" style="background-color: green;"></span> Green</label>
+                    <label><input type="checkbox" value="yellow"><span class="color-swatch" style="background-color: yellow;"></span> Yellow</label>
+                    <label><input type="checkbox" value="purple"><span class="color-swatch" style="background-color: purple;"></span> Purple</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Material</h3>
+                <div class="material-options">
+                    <label><input type="checkbox" value="cotton"> Cotton</label>
+                    <label><input type="checkbox" value="silk"> Silk</label>
+                    <label><input type="checkbox" value="linen"> Linen</label>
+                    <label><input type="checkbox" value="wool"> Wool</label>
+                    <label><input type="checkbox" value="polyester"> Polyester</label>
+                    <label><input type="checkbox" value="denim"> Denim</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Rating</h3>
+                <div class="rating-options">
+                    <label><input type="checkbox" value="4"><span class="stars">★★★★☆</span> & Up</label>
+                    <label><input type="checkbox" value="3"><span class="stars">★★★☆☆</span> & Up</label>
+                    <label><input type="checkbox" value="2"><span class="stars">★★☆☆☆</span> & Up</label>
+                </div>
+            </div>
+
+            <button class="apply-filters-btn">Apply Filters</button>
+            <button class="clear-filters-btn">Clear All</button>
+        </aside>
+
+        <div class="main-content">
+            <div class="content-header">
+                <h1>👗 Clothes Collection</h1>
+                <p>Discover trendy fashion for every occasion - from elegant dresses to comfortable pajamas</p>
+                <div class="view-options">
+                    <button class="view-toggle active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-toggle" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <!-- Subcategory Tabs -->
+            <div class="subcategory-tabs">
+                <button class="tab-btn active" data-tab="dresses">Dresses</button>
+                <button class="tab-btn" data-tab="skirts">Skirts</button>
+                <button class="tab-btn" data-tab="suits">Suits</button>
+                <button class="tab-btn" data-tab="pajamas">Pajamas</button>
+                <button class="tab-btn" data-tab="jeans">Jeans</button>
+                <button class="tab-btn" data-tab="coats">Coats</button>
+                <button class="tab-btn" data-tab="bottoms">Bottoms</button>
+            </div>
+
+            <!-- Top Filters and Sort -->
+            <div class="top-filters">
+                <div class="results-count">
+                    <span id="results-count">Showing 1-24 of 100 products</span>
+                </div>
+                <div class="sort-options">
+                    <select id="sort-select" onchange="sortProducts(this.value)">
+                        <option value="">Sort By</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Featured Banner -->
+            <div class="featured-banner">
+                <div class="banner-content">
+                    <h2>🌟 New Arrivals</h2>
+                    <p>Check out our latest fashion trends</p>
+                    <button class="cta-button">Explore Now</button>
+                </div>
+                <div class="banner-image">
+                    <img src="../image/dressimage/dress.png" alt="New Arrivals">
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="product-grid">
                 <!-- Products will be rendered here by JS -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="load-more-btn" class="load-more-btn">Load More Products</button>
+                <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Loading...
+                </div>
+            </div>
+
+            <!-- Quick View Modal -->
+            <div id="quick-view-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modal-product-details">
+                        <!-- Product details will be loaded here -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
