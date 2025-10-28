@@ -66,14 +66,43 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Enhanced Hero Section with Video Background -->
     <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="../video/fashion-show.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="../im.png" alt="Fashion Background" class="hero-fallback">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 id="typing-text"></h1>
             <p>Discover the latest trends in fashion and beauty</p>
-            <a href="#featured" class="cta-button">Shop Now</a>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50000">0</span>+
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1000">0</span>+
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span>+
+                    <span class="stat-label">Countries</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#featured" class="cta-button primary">Shop Now</a>
+                <a href="#categories" class="cta-button secondary">Explore Categories</a>
+            </div>
         </div>
         <div class="particles"></div>
+        <div class="floating-elements">
+            <div class="floating-item" style="top: 20%; left: 10%; animation-delay: 0s;">👗</div>
+            <div class="floating-item" style="top: 60%; right: 15%; animation-delay: 2s;">💄</div>
+            <div class="floating-item" style="bottom: 30%; left: 20%; animation-delay: 4s;">👠</div>
+            <div class="floating-item" style="top: 40%; right: 10%; animation-delay: 1s;">👜</div>
+        </div>
     </section>
 
     <!-- Infinite Carousel Slider -->
@@ -349,7 +378,7 @@
             });
         });
 
-        // Typing effect for hero title
+        // Enhanced typing effect for hero title
         const typingText = document.getElementById('typing-text');
         const text = "Welcome to Girls Shop";
         let index = 0;
@@ -363,6 +392,36 @@
         }
 
         typeWriter();
+
+        // Animated counter for hero stats
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                element.textContent = Math.floor(current).toLocaleString();
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                }
+            }, 30);
+        }
+
+        // Start counters when hero is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = document.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        animateCounter(stat, target);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.hero'));
 
         // Particles animation
         function createParticles() {
