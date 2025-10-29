@@ -15,8 +15,9 @@
             <img src="../im.png" alt="Girls Shop Logo">
         </a>
         <div class="search-bar">
-            <form>
-                <input type="text" placeholder="Search products..." required>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+                <div id="search-suggestions" class="search-suggestions"></div>
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
@@ -24,13 +25,66 @@
             <a href="index.html" class="nav-item">Home</a>
             <div class="dropdown">
                 <a href="category.html" class="nav-item dropdown-toggle">Categories</a>
-                <div class="dropdown-menu">
-                    <a href="Clothes.html">Clothes</a>
-                    <a href="shoes.html">Shoes</a>
-                    <a href="bags.html">Bags</a>
-                    <a href="human-hair.html">Human Hair</a>
-                    <a href="makeup.html">Makeup</a>
-                    <a href="jawlery.html">Jewelry</a>
+                <div class="mega-menu">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-column">
+                            <h4><a href="Clothes.html">👗 Clothes</a></h4>
+                            <ul>
+                                <li><a href="skirt.html">Skirts & Dresses</a></li>
+                                <li><a href="suit.html">Suits</a></li>
+                                <li><a href="pajamas.html">Pajamas</a></li>
+                                <li><a href="jeans.html">Jeans</a></li>
+                                <li><a href="coats.html">Coats</a></li>
+                                <li><a href="buttons.html">Bottoms</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="shoes.html">👠 Shoes</a></h4>
+                            <ul>
+                                <li><a href="shoes.html#heels">Heels</a></li>
+                                <li><a href="shoes.html#sneakers">Sneakers</a></li>
+                                <li><a href="shoes.html#boots">Boots</a></li>
+                                <li><a href="shoes.html#sandals">Sandals</a></li>
+                                <li><a href="shoes.html#loafers">Loafers</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="bags.html">👜 Bags</a></h4>
+                            <ul>
+                                <li><a href="bags.html#handbags">Handbags</a></li>
+                                <li><a href="bags.html#backpacks">Backpacks</a></li>
+                                <li><a href="bags.html#wallets">Wallets</a></li>
+                                <li><a href="bags.html#clutches">Clutches</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="human-hair.html">💇 Human Hair</a></h4>
+                            <ul>
+                                <li><a href="human-hair.html#straight">Straight Hair</a></li>
+                                <li><a href="human-hair.html#wavy">Wavy Hair</a></li>
+                                <li><a href="human-hair.html#curly">Curly Hair</a></li>
+                                <li><a href="human-hair.html#braids">Braids</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="makeup.html">💄 Makeup</a></h4>
+                            <ul>
+                                <li><a href="makeup.html#foundation">Foundation</a></li>
+                                <li><a href="makeup.html#lipstick">Lipstick</a></li>
+                                <li><a href="makeup.html#eyeshadow">Eyeshadow</a></li>
+                                <li><a href="makeup.html#skincare">Skincare</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4><a href="jawlery.html">💍 Jewelry</a></h4>
+                            <ul>
+                                <li><a href="jawlery.html#necklaces">Necklaces</a></li>
+                                <li><a href="jawlery.html#earrings">Earrings</a></li>
+                                <li><a href="jawlery.html#bracelets">Bracelets</a></li>
+                                <li><a href="jawlery.html#rings">Rings</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a href="account.html" class="nav-item">Account</a>

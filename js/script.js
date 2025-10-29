@@ -340,25 +340,75 @@ function initApp() {
     setInterval(nextSlide, 5000);
   }
 
+  // Perform search with query
+  function performSearch(overrideQuery) {
+    const query = overrideQuery ? overrideQuery.toLowerCase() : searchInput.value.toLowerCase();
+    filteredProducts = products.filter(product =>
+      product.name.toLowerCase().includes(query) ||
+      product.description.toLowerCase().includes(query) ||
+      product.category.toLowerCase().includes(query)
+    );
+    renderProducts();
+  }
+
   // Search functionality
   function initSearch() {
     if (!searchInput || !searchButton) return;
 
-    function performSearch() {
-      const query = searchInput.value.toLowerCase();
-      filteredProducts = products.filter(product =>
-        product.name.toLowerCase().includes(query) ||
-        product.description.toLowerCase().includes(query) ||
-        product.category.toLowerCase().includes(query)
-      );
-      renderProducts();
-    }
-
-    searchButton.addEventListener('click', performSearch);
+    searchButton.addEventListener('click', () => performSearch());
     searchInput.addEventListener('keyup', (e) => {
       if (e.key === 'Enter') performSearch();
     });
+
+    // Mega menu toggle
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    if (dropdownToggle) {
+      dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const megaMenu = document.querySelector('.mega-menu');
+        if (megaMenu) {
+          megaMenu.classList.toggle('show');
+        }
+      });
+    }
+
+    // Search suggestions
+    const searchSuggestions = document.getElementById('search-suggestions');
+    if (searchInput && searchSuggestions) {
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+        if (query.length > 1) {
+          const suggestions = products.filter(product =>
+            product.name.toLowerCase().includes(query)
+          ).slice(0, 5);
+
+          searchSuggestions.innerHTML = suggestions.map(product =>
+            `<div class="suggestion-item" onclick="selectSuggestion('${product.name}')">${product.name}</div>`
+          ).join('');
+          searchSuggestions.style.display = suggestions.length > 0 ? 'block' : 'none';
+        } else {
+          searchSuggestions.style.display = 'none';
+        }
+      });
+
+      // Hide suggestions when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
+          searchSuggestions.style.display = 'none';
+        }
+      });
+    }
   }
+
+  // Select search suggestion
+  window.selectSuggestion = function(name) {
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+      searchInput.value = name;
+      document.getElementById('search-suggestions').style.display = 'none';
+      performSearch(name);
+    }
+  };
 
   // Theme toggle
   function initThemeToggle() {

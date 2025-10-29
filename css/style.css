@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary-color: #007bff; /* Alibaba-inspired blue */
+  --primary-color: #007bff; /* Alibaba blue */
   --secondary-color: #0056b3;
-  --accent-color: #ff6b6b; /* Vibrant accent */
+  --accent-color: #ff6b6b; /* Keep accent for highlights */
   --dark-color: #212529;
   --light-color: #f8f9fa;
-  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* Blue gradient */
   --shadow: 0 4px 8px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
   --border-radius: 12px;
