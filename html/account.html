@@ -17,6 +17,192 @@
     padding: 0;
   }
 
+  /* Dashboard Styles */
+  .dashboard-section {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 80vh;
+  }
+
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+  }
+
+  .dashboard-sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .dashboard-sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dashboard-sidebar li {
+    margin-bottom: 10px;
+  }
+
+  .dashboard-sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .dashboard-sidebar a:hover,
+  .dashboard-sidebar a.active {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .dashboard-content {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .profile-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .order-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .order-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .order-details img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .wishlist-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+
+  .wishlist-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .settings-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .settings-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .settings-form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .settings-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+  }
+
+  .edit-profile-btn {
+    background: linear-gradient(135deg, #28a745, #20c997);
+  }
+
+  .edit-profile-btn:hover {
+    background: linear-gradient(135deg, #20c997, #17a2b8);
+  }
+
+  /* Auth Section Styles */
   .wrapper {
     background: transparent;
     border-radius: 25px;
@@ -24,7 +210,7 @@
     max-width: 400px;
     width: 100%;
     padding: 30px;
-    
+
     position: relative;
    backdrop-filter: blur(15px);
   box-shadow: -1px 0 10px rgba(0,0,0,.2);
@@ -39,7 +225,7 @@
 
   .form-box {
     display: none;
-   
+
   }
 
   .form-box.login,
@@ -64,11 +250,11 @@
     margin-bottom: 20px;
   }
   .logreg-box .logreg-title {
-  text-align: center; 
-  margin-bottom: 20px; 
+  text-align: center;
+  margin-bottom: 20px;
   color: #fff;
 }
-.logreg-box .input-box { 
+.logreg-box .input-box {
   position: relative;
   width: 100%;
   height: 50px;
@@ -79,7 +265,7 @@
   .input-box {
     position: relative;
     margin-bottom: 20px;
-  
+
   }
 
   .input-box input {
@@ -95,7 +281,7 @@
   }
 
   .input-box label {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -113,7 +299,7 @@
   font-size: 19px;
   color: #fff;
   }
-.logreg-box .remember-forgot { 
+.logreg-box .remember-forgot {
   font-size: 14.5px;
   color: #fff;
   font-weight: 500;
@@ -129,13 +315,13 @@
   color: #fff;
   text-decoration: none;
 }
-.remember-forgot a:hover { 
+.remember-forgot a:hover {
   text-decoration: underline;
 }
-.logreg-box .btn { 
+.logreg-box .btn {
   width: 100%;
   height: 45px;
-  background: #fff; 
+  background: #fff;
   border: none;
   outline: none;
   border-radius: 40px;
@@ -152,17 +338,17 @@
   font-weight: 500;
   margin: 20px 0 15px;
 }
-.logreg-link p a { 
+.logreg-link p a {
   color:blue;
-  text-decoration: none; 
+  text-decoration: none;
   font-weight: 600;
 }
 .logreg-link p a:hover {
   text-decoration: underline;
 }
 .media-options {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 .media-options a {
@@ -197,24 +383,6 @@ background: transparent;
     align-items: center;
     font-size: 13px;
     margin-bottom: 15px;
-  }
-
-  .btn {
-     width: 100%;
-      height: 45px;
-      background: lab(54.39% -29.24 -5.69);
-      border: none;
-      outline: none;
-      border-radius: 40px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      font-size: 16px;
-      color: #222;
-      font-weight: 600;
-    
-  }
-  .btn:hover {
-    background-color: #d81b60;
   }
 
   .logreg-link a:hover {
@@ -295,42 +463,7 @@ footer {
 }
 
 </style>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Show login form by default
-    toggleForm('login');
 
-    // Handle "Register here" link
-    const registerLink = document.querySelector('.login .logreg-link a');
-    if (registerLink) {
-      registerLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleForm('register');
-      });
-    }
-
-    // Handle "Login" link in register form
-    const loginLink = document.querySelector('.register .logreg-link a');
-    if (loginLink) {
-      loginLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleForm('login');
-      });
-    }
-  });
-
-  function toggleForm(type) {
-    const loginForm = document.querySelector('.form-box.login');
-    const registerForm = document.querySelector('.form-box.register');
-    if (type === 'register') {
-      loginForm.style.display = 'none';
-      registerForm.style.display = 'block';
-    } else {
-      loginForm.style.display = 'block';
-      registerForm.style.display = 'none';
-    }
-  }
-</script>
 </head>
 <body>
     <nav class="navbar">
@@ -353,90 +486,189 @@ footer {
         </div>
     </nav>
 
-   
-  
-  <section class="section">
-    
-    <div class="wrapper" id="popupWrapper">
-  
-      <div class="logreg-box">
-        <!-- LOGIN -->
-        <div class="form-box login">
-          <div class="logreg-title">
-            <h2>LOGIN</h2>
-            <p>Please login to use the platform</p>
-          </div>
-          <form action="/login" method="post">
-            <div class="input-box">
-          <span class="icon"><i class="bx bxs-envelope"></i></span>
-         <input type="email" id="registerEmail" name="register_email" required>
-          <label for="registerEmail">Email</label>
-                 </div>
-            <div class="input-box">
-              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
-              <input type="password" id="loginPassword" name="login_password" required>
-              <label for="loginPassword">Password</label>
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <div class="dashboard-container">
+            <div class="dashboard-sidebar">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#" onclick="showTab('profile')">Profile</a></li>
+                    <li><a href="#" onclick="showTab('orders')">Order History</a></li>
+                    <li><a href="#" onclick="showTab('wishlist')">Wishlist</a></li>
+                    <li><a href="#" onclick="showTab('settings')">Settings</a></li>
+                    <li><a href="#" onclick="logout()">Logout</a></li>
+                </ul>
             </div>
-            <div class="remember-forgot">
-              <label><input type="checkbox" name="remember_me"> Remember me</label>
-              <a href="/forgot-password">Forgot password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="logreg-link">
-              <p>Don't have an account?
-                <a href="#" onclick="toggleForm('register')">Register</a>
-              </p>
-            </div>
-          </form>
-        </div>
-
-        <!-- REGISTER -->
-        <div class="form-box register">
-          <div class="logreg-title">
-            <h2>Registration</h2>
-            <p>Please provide the following to verify your identity</p>
+            <div class="dashboard-content">
+                <!-- Profile Tab -->
+                <div id="profile-tab" class="tab-content active">
+                    <h2>My Profile</h2>
+                    <div class="profile-info">
+                        <div class="profile-avatar">
+                            <img src="../image/avatar.png" alt="User Avatar" onerror="this.src='../image/default-avatar.png'">
+                        </div>
+                        <div class="profile-details">
+                            <p><strong>Name:</strong> <span id="user-name">John Doe</span></p>
+                            <p><strong>Email:</strong> <span id="user-email">john@example.com</span></p>
+                            <p><strong>Phone:</strong> <span id="user-phone">+251 912 345 678</span></p>
+                            <p><strong>Address:</strong> <span id="user-address">Addis Ababa, Ethiopia</span></p>
+                        </div>
+                    </div>
+                    <button class="btn edit-profile-btn">Edit Profile</button>
                 </div>
-          <form action="/register" method="post">
-            <div class="input-box">
-              <span class="icon"><i class="bx bxs-user" ></i></span>
-              <input type="text" id="registerName" name="register_name" required>
-              <label for="registerName">Full Name</label>
-            </div>
-            <div class="input-box">
-         <span class="icon"><i class="bx bxs-envelope"></i></span>
-        <input type="email" id="registerEmail" name="register_email" required>
-         <label for="registerEmail">Email</label>
-          </div>
-            <div class="input-box">
-              <span class="icon"><i class="bx bxs-lock-alt" ></i></span>
-              <input type="password" id="registerPassword" name="register_password" required>
-              <label for="registerPassword">Password</label>
-            </div>
-            <div class="remember-forgot">
-              <label><input type="checkbox" name="terms_agree" required> I agree to the terms & conditions</label>
-            </div>
-            <button type="submit" class="btn">Register</button>
-            <div class="logreg-link">
-              <p>Already have an account?
-                <a href="#" onclick="toggleForm('login')">Login</a>
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
 
-      <div class="media-options">
-        <a href="/auth/google" title="Login with Google">
-          <i class="bx bxl-google" aria-hidden="true"></i>
-          <span>Login with Google</span>
-        </a>
-        <a href="/auth/facebook" title="Login with Facebook">
-          <i class="bx bxl-facebook-circle" aria-hidden="true"></i>
-          <span>Login with Facebook</span>
-        </a>
-      </div>
-    </div>
-</section>
+                <!-- Orders Tab -->
+                <div id="orders-tab" class="tab-content">
+                    <h2>Order History</h2>
+                    <div class="orders-list">
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span>Order #12345</span>
+                                <span>Status: Delivered</span>
+                                <span>Date: 2023-10-15</span>
+                            </div>
+                            <div class="order-details">
+                                <img src="../image/dressimage/dress.png" alt="Product">
+                                <div>
+                                    <p>Elegant Dress</p>
+                                    <p>Quantity: 1</p>
+                                    <p>Price: $50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span>Order #12346</span>
+                                <span>Status: Processing</span>
+                                <span>Date: 2023-10-20</span>
+                            </div>
+                            <div class="order-details">
+                                <img src="../image/skirtimage/skirt1.png" alt="Product">
+                                <div>
+                                    <p>Stylish Skirt</p>
+                                    <p>Quantity: 2</p>
+                                    <p>Price: $40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wishlist Tab -->
+                <div id="wishlist-tab" class="tab-content">
+                    <h2>My Wishlist</h2>
+                    <div class="wishlist-grid">
+                        <!-- Wishlist items will be populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Settings Tab -->
+                <div id="settings-tab" class="tab-content">
+                    <h2>Account Settings</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="notifications">Email Notifications</label>
+                            <input type="checkbox" id="notifications" checked>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsletter">Newsletter Subscription</label>
+                            <input type="checkbox" id="newsletter" checked>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Language</label>
+                            <select id="language">
+                                <option value="en">English</option>
+                                <option value="am">Amharic</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Save Settings</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Register Section (shown if not logged in) -->
+    <section class="section" id="auth-section" style="display: none;">
+        <div class="wrapper" id="popupWrapper">
+            <div class="logreg-box">
+                <!-- LOGIN -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>LOGIN</h2>
+                        <p>Please login to use the platform</p>
+                    </div>
+                    <form class="login-form" action="/login" method="post">
+                        <div class="input-box">
+                            <span class="icon"><i class="bx bxs-envelope"></i></span>
+                            <input type="email" id="loginEmail" name="login_email" required>
+                            <label for="loginEmail">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                            <input type="password" id="loginPassword" name="login_password" required>
+                            <label for="loginPassword">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="remember_me"> Remember me</label>
+                            <a href="/forgot-password">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="logreg-link">
+                            <p>Don't have an account?
+                                <a href="#" onclick="toggleForm('register')">Register</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- REGISTER -->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Registration</h2>
+                        <p>Please provide the following to verify your identity</p>
+                    </div>
+                    <form class="register-form" action="/register" method="post">
+                        <div class="input-box">
+                            <span class="icon"><i class="bx bxs-user"></i></span>
+                            <input type="text" id="registerName" name="register_name" required>
+                            <label for="registerName">Full Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="bx bxs-envelope"></i></span>
+                            <input type="email" id="registerEmail" name="register_email" required>
+                            <label for="registerEmail">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                            <input type="password" id="registerPassword" name="register_password" required>
+                            <label for="registerPassword">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="terms_agree" required> I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="logreg-link">
+                            <p>Already have an account?
+                                <a href="#" onclick="toggleForm('login')">Login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="media-options">
+                <a href="/auth/google" title="Login with Google">
+                    <i class="bx bxl-google" aria-hidden="true"></i>
+                    <span>Login with Google</span>
+                </a>
+                <a href="/auth/facebook" title="Login with Facebook">
+                    <i class="bx bxl-facebook-circle" aria-hidden="true"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
@@ -486,6 +718,37 @@ footer {
     </footer>
 
   <script>
+    // Dashboard functionality
+    function showTab(tabName) {
+      // Hide all tabs
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      // Remove active class from sidebar links
+      const sidebarLinks = document.querySelectorAll('.dashboard-sidebar a');
+      sidebarLinks.forEach(link => link.classList.remove('active'));
+
+      // Show selected tab
+      const selectedTab = document.getElementById(tabName + '-tab');
+      if (selectedTab) {
+        selectedTab.classList.add('active');
+      }
+
+      // Add active class to clicked sidebar link
+      const clickedLink = document.querySelector(`.dashboard-sidebar a[onclick="showTab('${tabName}')"]`);
+      if (clickedLink) {
+        clickedLink.classList.add('active');
+      }
+    }
+
+    function logout() {
+      // Implement logout functionality
+      alert('Logged out successfully!');
+      // Redirect to home or login page
+      window.location.href = 'index.html';
+    }
+
+    // Auth section functionality
     function openPopup(type = 'login') {
       const wrapper = document.getElementById('popupWrapper');
       wrapper.classList.add('active-popup');
@@ -508,6 +771,43 @@ footer {
     function closePopup() {
       document.getElementById('popupWrapper').classList.remove('active-popup');
     }
+
+    // Initialize dashboard on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check if user is logged in (this would be replaced with actual authentication check)
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+      if (isLoggedIn) {
+        document.querySelector('.dashboard-section').style.display = 'block';
+        document.getElementById('auth-section').style.display = 'none';
+        showTab('profile'); // Show profile tab by default
+      } else {
+        document.querySelector('.dashboard-section').style.display = 'none';
+        document.getElementById('auth-section').style.display = 'block';
+      }
+
+      // Handle login form submission
+      const loginForm = document.querySelector('.login-form');
+      if (loginForm) {
+        loginForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Simulate login (replace with actual authentication)
+          localStorage.setItem('isLoggedIn', 'true');
+          location.reload(); // Reload to show dashboard
+        });
+      }
+
+      // Handle register form submission
+      const registerForm = document.querySelector('.register-form');
+      if (registerForm) {
+        registerForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Simulate registration (replace with actual registration)
+          localStorage.setItem('isLoggedIn', 'true');
+          location.reload(); // Reload to show dashboard
+        });
+      }
+    });
   </script>
 
     <script src="../js/products.js"></script>
