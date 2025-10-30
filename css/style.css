@@ -2710,6 +2710,8 @@ input[type="checkbox"] {
     color: #ff6b9d !important;
 }
 .categories-section {
+   padding: 80px 0;
+   margin-bottom: 130px;
   padding: 40px 20px;
   background: #fdfdfd;
   text-align: center;
@@ -2735,7 +2737,7 @@ input[type="checkbox"] {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   padding: 20px;
   transition: all 0.3s ease;
@@ -2811,7 +2813,12 @@ input[type="checkbox"] {
     height: 200px;
   }
 }
-
+.featured-section {
+    padding: 60px 0;
+    background-color: #e75353;
+    text-align: center;
+    border-top: 2px solid #eee; /* optional visual divider */
+}
 
 
 
