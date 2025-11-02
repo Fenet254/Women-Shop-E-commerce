@@ -311,34 +311,7 @@ function initApp() {
     });
   }
 
-  // Slider functionality
-  function initSlider() {
-    if (!slider || !slideTrack) return;
 
-    const slides = slideTrack.children;
-    const totalSlides = slides.length;
-
-    function showSlide(index) {
-      slideTrack.style.transform = `translateX(-${index * 100}%)`;
-      currentSlide = index;
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      showSlide(currentSlide);
-    }
-
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    // Auto-slide
-    setInterval(nextSlide, 5000);
-  }
 
   // Perform search with query
   function performSearch(overrideQuery) {
@@ -745,4 +718,50 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.cart-container')) initCartPage();
   if (document.querySelector('.wishlist-container')) initWishlistPage();
   if (document.querySelector('.login-form') || document.querySelector('.register-form')) initAccountPage();
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.slider');
+  const slideTrack = slider.querySelector('.slide-track');
+  const slides = slider.querySelectorAll('.slide');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
+
+  let currentSlide = 0;
+  const totalSlides = slides.length;
+  let autoSlideInterval;
+
+  // Show specific slide
+  function showSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    slideTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  // Next & Previous functions
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  // Button events
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+
+  // Auto slide
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Pause on hover
+  slider.addEventListener('mouseenter', stopAutoSlide);
+  slider.addEventListener('mouseleave', startAutoSlide);
+
+  // Start automatically
+  startAutoSlide();
 });
