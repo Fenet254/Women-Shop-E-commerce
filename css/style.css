@@ -2767,12 +2767,13 @@ input[type="checkbox"] {
 }
  .slider {
   position: relative;
-  max-width: 95%;
+  max-width: 98%;
+ 
   margin: auto;
    overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 40px;
+padding:40px ;
 }
 
 /* Slide track holds all slides side-by-side */
@@ -2812,4 +2813,10 @@ input[type="checkbox"] {
 .slide:hover {
   opacity: 0.85;
   transform: scale(1.03);
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
