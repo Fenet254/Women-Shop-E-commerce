@@ -131,15 +131,23 @@
     </section>
 
     <!-- Advertisement Section -->
-    <section class="advertisement-section">
-        <h2>Trending Now</h2>
-        <div class="advertisement-grid">
-            <img src="../image/bags/beter bag.webp" alt="Ad 1">
-            <img src="../image/bags/good bag.jpg" alt="Ad 2">
-            <img src="../image/bags/very good bag.webp" alt="Ad 3">
-            <img src="../image/bags/best bag.avif" alt="Ad 4">
-        </div>
-    </section>
+   <section class="advertisement-section">
+  <h2>Trending Now</h2>
+  <div class="advertisement-slider">
+    <div class="slide active">
+      <img src="../image/bags/beter bag.webp" alt="Ad 1">
+    </div>
+    <div class="slide">
+      <img src="../image/bags/good bag.jpg" alt="Ad 2">
+    </div>
+    <div class="slide">
+      <img src="../image/bags/very good bag.webp" alt="Ad 3">
+    </div>
+    <div class="slide">
+      <img src="../image/bags/best bag.avif" alt="Ad 4">
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -246,6 +254,29 @@
         }
 
         createParticles();
+        // ===== Advertisement Auto Slide =====
+let currentAdIndex = 0;
+const slides = document.querySelectorAll('.advertisement-slider .slide');
+const totalSlides = slides.length;
+
+function showNextAd() {
+  const currentSlide = slides[currentAdIndex];
+  currentSlide.classList.remove('active');
+  currentSlide.classList.add('prev');
+
+  currentAdIndex = (currentAdIndex + 1) % totalSlides;
+  const nextSlide = slides[currentAdIndex];
+  nextSlide.classList.add('active');
+
+  // reset previous after animation
+  setTimeout(() => {
+    currentSlide.classList.remove('prev');
+    currentSlide.style.left = '100%';
+  }, 1000);
+}
+
+// Change image every 4 seconds
+setInterval(showNextAd, 4000);
     </script>
 </body>
 </html>
